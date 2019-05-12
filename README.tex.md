@@ -5,31 +5,42 @@
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
 `my-latex-pgfplots-graphs` _is a place to keep all my scientific
-graphs by using LaTeX and the pgfplots package._
+graphs by using LaTeX and the pgfplots package. I link to these
+graphs from other repos._
 
-My
-[LaTeX math mode cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode-cheat-sheet)
-will have more information about LaTeX.
+For more information on LaTeX refer to my
+[LaTeX Math Mode cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode-cheat-sheet).
 
 [GitHub Webpage](https://jeffdecola.github.io/my-latex-pgfplots-graphs/).
 
 ## LIST OF GRAPHS
 
-## APPLIED MATHEMATICS
+_This is a massive work in progress as I update my mathematics cheat sheets._
 
-## PURE MATHEMATICS
+### APPLIED MATHEMATICS
 
-### CHANGES
+#### ELECTRICAL ENGINEERING
 
-### FOUNDATIONS
+#### PHYSICS
 
-### NUMBER SYSTEMS
+### PURE MATHEMATICS
 
-### SPACES
+#### CHANGES
 
-### STRUCTURES
+#### FOUNDATIONS
 
-* $f(x) = y$
+#### NUMBER SYSTEMS
+
+#### SPACES
+
+#### STRUCTURES
+
+* ALGEBRA
+
+  * `coordinate-plane` The coordinate plane (2D Number plane) with plot $(3,2)$
+  * `f-of-x-equals-2x` $f(x) = 2x$
+  * `f-of-x-equals-sqrt-x` $f(x) = \sqrt{x}$
+  * `f-of-x-equals-minus-1-over-3-times-x-minus-3` $f(x)=-\frac{1}{3}x-3$
 
 ## UPDATE GITHUB WEBPAGE USING CONCOURSE (OPTIONAL)
 

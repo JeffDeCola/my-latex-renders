@@ -1,0 +1,19 @@
+# my-latex-pgfplots-graphs task-readme-github-pages.yml
+
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: golang
+    tag: 1.7.1
+
+inputs:
+- name: my-latex-pgfplots-graphs
+
+outputs:
+- name: my-latex-pgfplots-graphs-updated
+
+run:
+  path: ./my-latex-pgfplots-graphs/ci/scripts/readme-github-pages.sh
+  # args: [-debug]

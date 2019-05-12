@@ -1,0 +1,15 @@
+// CONCOURSE
+.credentials.yml
+
+// Ignore .vagrant
+**/.vagrant
+**/.log
+
+**/ubuntu-1604-virtualbox-vm/*.log
+
+// Ignore Packer
+**/packer_cache
+**/*.box
+**/*.iso
+**/*.iso.lock
+**/*.vdi
