@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2019.5.8)  12 MAY 2019 04:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2019.5.8)  12 MAY 2019 05:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -480,8 +480,7 @@ File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
 \pgfarrowlength=\dimen166
 \pgfarrowwidth=\dimen167
 \pgfarrowlinewidth=\dimen168
-)
-No file f-of-x-equals-minus-1-over-3-times-x-minus-3.aux.
+) (./f-of-x-equals-minus-1-over-3-times-x-minus-3.aux)
 \openout1 = `f-of-x-equals-minus-1-over-3-times-x-minus-3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -496,6 +495,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
+
 ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
@@ -511,8 +511,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ] (./f-of-x-equals-minus-1-over-3-times-x-minus-3.aux) ) 
 Here is how much of TeX's memory you used:
- 21000 strings out of 493030
- 562218 string characters out of 6136261
+ 21002 strings out of 493030
+ 562316 string characters out of 6136261
  729692 words of memory out of 5000000
  24233 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000

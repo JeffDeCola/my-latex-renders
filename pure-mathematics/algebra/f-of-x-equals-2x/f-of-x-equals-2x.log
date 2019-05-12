@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2019.5.8)  12 MAY 2019 04:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2019.5.8)  12 MAY 2019 05:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -480,8 +480,7 @@ File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
 \pgfarrowlength=\dimen166
 \pgfarrowwidth=\dimen167
 \pgfarrowlinewidth=\dimen168
-)
-No file f-of-x-equals-2x.aux.
+) (./f-of-x-equals-2x.aux)
 \openout1 = `f-of-x-equals-2x.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -496,7 +495,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
-ABD: EveryShipout initializing macros
+ ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.13} into 
@@ -511,8 +510,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ] (./f-of-x-equals-2x.aux) ) 
 Here is how much of TeX's memory you used:
- 20988 strings out of 493030
- 561780 string characters out of 6136261
+ 20990 strings out of 493030
+ 561822 string characters out of 6136261
  729692 words of memory out of 5000000
  24221 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
