@@ -37,7 +37,9 @@ _This is a massive work in progress as I update my mathematics cheat sheets._
 
 * ALGEBRA
 
-  * `coordinate-plane` The coordinate plane (2D Number plane) with plot $(3,2)$
+  * coordinate-plane
+  
+    The coordinate plane (2D Number plane) with plot $(3,2)$
   * `f-of-x-equals-2x` $f(x) = 2x$
   * `f-of-x-equals-sqrt-x` $f(x) = \sqrt{x}$
   * `f-of-x-equals-minus-1-over-3-times-x-minus-3` $f(x)=-\frac{1}{3}x-3$
