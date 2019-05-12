@@ -1,8 +1,8 @@
 # COORDINATE PLANE
 
-This graph was created using the LaTeX pgfplots package.
 Refer to
-[.tex](coordinate-plane.tex)
+[coordinate-plane.tex](coordinate-plane.tex)
+for the LaTeX code.
 
 <p align="center">
     <img src="coordinate-plane.svg"
