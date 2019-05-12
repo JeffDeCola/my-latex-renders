@@ -37,7 +37,7 @@ _This is a massive work in progress as I update my mathematics cheat sheets._
 
 * ALGEBRA
 
-  * [coordinate-plane](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/pure-mathematics/algebra/coordinate-plan)
+  * [coordinate-plane](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/pure-mathematics/algebra/coordinate-plane)
     The coordinate plane (2D Number plane) with plot $(3,2)$
   * [f-of-x-equals-2x](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/pure-mathematics/algebra/f-of-x-equals-2x)
     $f(x) = 2x$
