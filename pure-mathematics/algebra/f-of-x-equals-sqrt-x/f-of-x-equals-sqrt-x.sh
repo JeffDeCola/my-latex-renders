@@ -1,22 +1,22 @@
 #!/bin/bash -e
-# coordinate-plane.sh
+# f-of-x-equals-sqrt-x.sh
 
 echo " "
 echo "************************************************************************"
-echo "****************************************** coordinate-plane.sh (START) *"
+echo "************************************** f-of-x-equals-sqrt-x.sh (START) *"
 echo " "
 
 echo "Create .dvi file"
-echo "latex coordinate-plane.tex"
-latex coordinate-plane.tex
+echo "latex f-of-x-equals-sqrt-x.tex"
+latex f-of-x-equals-sqrt-x.tex
 echo " "
 
 echo "Convert .dvi to .svg"
 echo "    -n no fonts"
 echo "    -a This option forces dvisvgm to vectorize everything"
-dvisvgm -n -a coordinate-plane.dvi
+dvisvgm -n -a f-of-x-equals-sqrt-x.dvi
 echo " "
 
-echo "******************************************** coordinate-plane.sh (END) *"
+echo "**************************************** f-of-x-equals-sqrt-x.sh (END) *"
 echo "************************************************************************"
 echo " "
