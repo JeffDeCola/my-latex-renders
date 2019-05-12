@@ -1,7 +1,5 @@
 # my-latex-pgfplots-graphs
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/8b4765d37169a21f7f72/maintainability)](https://codeclimate.com/github/JeffDeCola/my-latex-pgfplots-graphs/maintainability)
-[![Issue Count](https://codeclimate.com/github/JeffDeCola/my-latex-pgfplots-graphs/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-latex-pgfplots-graphs/issues)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
 `my-latex-pgfplots-graphs` _is a place to keep all my scientific
