@@ -38,13 +38,13 @@ _This is a massive work in progress as I update my mathematics cheat sheets._
 * ALGEBRA
 
   * [coordinate-plane](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/pure-mathematics/algebra/coordinate-plan)
-  The coordinate plane (2D Number plane) with plot <img alt="$(3,2)$" src="svgs/c2b3cecb67a773c47721114a4b95184e.svg" align="middle" width="36.40362pt" height="24.56553pt"/>
+    The coordinate plane (2D Number plane) with plot $(3,2)$
   * [f-of-x-equals-2x](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/pure-mathematics/algebra/f-of-x-equals-2x)
-  <img alt="$f(x) = 2x$" src="svgs/1c9d6807786d5d3d1c49ccb5c3b6556f.svg" align="middle" width="71.303265pt" height="24.56553pt"/>
+    $f(x) = 2x$
   * [f-of-x-equals-sqrt-x](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/pure-mathematics/algebra/f-of-x-equals-sqrt-x)
-  <img alt="$f(x) = \sqrt{x}$" src="svgs/ac95dfbba07837bc60d1bd101cd4a439.svg" align="middle" width="76.84842pt" height="24.99552pt"/>
+    $f(x) = \sqrt{x}$
   * [f-of-x-equals-minus-1-over-3-times-x-minus-3](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/pure-mathematics/algebra/f-of-x-equals-minus-1-over-3-times-x-minus-3)
-  <img alt="$f(x)=-\frac{1}{3}x-3$" src="svgs/03245464a2f5dfd20e1017d0c6a2d9f2.svg" align="middle" width="114.582105pt" height="27.72033pt"/>
+    $f(x)=-\frac{1}{3}x-3$
 
 ## UPDATE GITHUB WEBPAGE USING CONCOURSE (OPTIONAL)
 
