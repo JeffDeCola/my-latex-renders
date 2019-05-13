@@ -9,4 +9,4 @@ for the LaTeX code.
     align="middle"
 </p>
 
-![IMAGE](pgfplots-pics/celestial-sphere.svg)
+![IMAGE](celestial-sphere.svg)

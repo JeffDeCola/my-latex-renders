@@ -19,7 +19,7 @@ _This is a massive work in progress as I update my mathematics cheat sheets._
 
 #### ASTRONOMY
 
-* [celestial-sphere](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/applied-mathematics/astronomy/celectial-sphere)
+* [celestial-sphere](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/applied-mathematics/astronomy/celestial-sphere)
   Celestial Sphere
 
 #### ELECTRICAL ENGINEERING
