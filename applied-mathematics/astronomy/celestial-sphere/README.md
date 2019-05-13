@@ -8,3 +8,5 @@ for the LaTeX code.
     <img src="celestial-sphere.svg"
     align="middle"
 </p>
+
+![IMAGE](pgfplots-pics/celestial-sphere.svg)
