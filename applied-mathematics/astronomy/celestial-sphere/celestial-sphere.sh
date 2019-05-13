@@ -17,8 +17,8 @@ echo "    -a This option forces dvisvgm to vectorize everything"
 dvisvgm -n -a celestial-sphere.dvi
 echo " "
 
-echo "cp celestial-sphere.svg /mnt/c/Users/Jeff/home/jeff/cheatsheets/my-cheat-sheets/other/mathematics/pure/structures/algebra-cheat-sheet/pgfplots-pics/."
-cp celestial-sphere.svg /mnt/c/Users/Jeff/home/jeff/cheatsheets/my-cheat-sheets/other/mathematics/pure/structures/algebra-cheat-sheet/pgfplots-pics/.
+echo "cp celestial-sphere.svg /mnt/c/Users/Jeff/home/jeff/cheatsheets/my-cheat-sheets/other/science/earth-and-space-science/astronomy-cheat-sheet/pgfplots-pics/."
+cp celestial-sphere.svg /mnt/c/Users/Jeff/home/jeff/cheatsheets/my-cheat-sheets/other/science/earth-and-space-science/astronomy-cheat-sheet/pgfplots-pics/.
 echo " "
 
 echo "******************************************** celestial-sphere.sh (END) *"
