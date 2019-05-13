@@ -17,6 +17,11 @@ _This is a massive work in progress as I update my mathematics cheat sheets._
 
 ### APPLIED MATHEMATICS
 
+#### ASTRONOMY
+
+* [celestial-sphere](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/applied-mathematics/astronomy/celectial-sphere)
+  Celestial Sphere
+
 #### ELECTRICAL ENGINEERING
 
 #### PHYSICS
