@@ -43,14 +43,19 @@ _This is a massive work in progress as I update my mathematics cheat sheets._
 
 #### SPACES
 
+* GEOMETRY
+
+* [celestial-sphere](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/applied-mathematics/spaces/geometry/3d-coordinate-plane-on-3d-coordinate-plane)
+  Celestial Sphere
+
 #### STRUCTURES
 
 * ALGEBRA
 
-  * [coordinate-plane](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/pure-mathematics/algebra/coordinate-plane) The coordinate plane (2D Number plane) with plot $(3,2)$
-  * [f-of-x-equals-2x](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/pure-mathematics/algebra/f-of-x-equals-2x) $f(x) = 2x$
-  * [f-of-x-equals-sqrt-x](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/pure-mathematics/algebra/f-of-x-equals-sqrt-x) $f(x) = \sqrt{x}$
-  * [f-of-x-equals-minus-1-over-3-times-x-minus-3](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/pure-mathematics/algebra/f-of-x-equals-minus-1-over-3-times-x-minus-3) $f(x)=-\frac{1}{3}x-3$
+  * [coordinate-plane](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/pure-mathematics/structures/algebra/coordinate-plane) The coordinate plane (2D Number plane) with plot $(3,2)$
+  * [f-of-x-equals-2x](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/pure-mathematics/structures/algebra/f-of-x-equals-2x) $f(x) = 2x$
+  * [f-of-x-equals-sqrt-x](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/pure-mathematics/structures/algebra/f-of-x-equals-sqrt-x) $f(x) = \sqrt{x}$
+  * [f-of-x-equals-minus-1-over-3-times-x-minus-3](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/pure-mathematics/structures/algebra/f-of-x-equals-minus-1-over-3-times-x-minus-3) $f(x)=-\frac{1}{3}x-3$
 
 ## UPDATE GITHUB WEBPAGE USING CONCOURSE (OPTIONAL)
 
