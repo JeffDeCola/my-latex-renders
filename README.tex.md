@@ -3,8 +3,15 @@
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
 `my-latex-pgfplots-graphs` _is a place to keep all my scientific
-graphs by using LaTeX and the pgfplots package. I link to these
-graphs from other repos._
+graphs by using LaTeX and the tikz, pgfplots and tikz-3dplot.
+I link to these graphs from other repos._
+
+Packages I use to create graphics,
+
+* `tikz` - For graphics
+* `tik-3dplot` - Pro­vides an easy way to de­fine '3D
+   co­or­di­nate frames' so you can then plot with tikz
+* `pgfplots` - High-qual­ity func­tion plots in 2D/3D
 
 For more information on LaTeX refer to my
 [LaTeX Math Mode cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode-cheat-sheet).
