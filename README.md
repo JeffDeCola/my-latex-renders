@@ -45,8 +45,8 @@ _This is a massive work in progress as I update my mathematics cheat sheets._
 
 * GEOMETRY
 
-* [celestial-sphere](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/applied-mathematics/spaces/geometry/3d-coordinate-plane-on-3d-coordinate-plane)
-  Celestial Sphere
+  * [a-second-3d-coordinate-plane-on-a-sphere](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/pure-mathematics/spaces/geometry/a-second-3d-coordinate-plane-on-a-sphere)
+    A second 3D Coordinate Plane on a Sphere
 
 #### STRUCTURES
 
