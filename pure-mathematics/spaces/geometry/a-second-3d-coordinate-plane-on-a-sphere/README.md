@@ -5,6 +5,6 @@ Refer to
 for the LaTeX code.
 
 <p align="center">
-    <img src="(a-second-3d-coordinate-plane-on-a-sphere.svg"
+    <img src="a-second-3d-coordinate-plane-on-a-sphere.svg"
     align="middle"
 </p>

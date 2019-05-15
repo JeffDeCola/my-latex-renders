@@ -5,6 +5,6 @@ Refer to
 for the LaTeX code.
 
 <p align="center">
-    <img src="f-of-x-equals-sqrt-x.svg"
+    <img src="coordinate-plane.svg"
     align="middle"
 </p>
