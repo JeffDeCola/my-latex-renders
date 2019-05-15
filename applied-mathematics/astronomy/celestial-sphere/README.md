@@ -5,6 +5,6 @@ Refer to
 for the LaTeX code.
 
 <p align="center">
-    <img src="(celestial-sphere.svg"
+    <img src="celestial-sphere.svg"
     align="middle"
 </p>
