@@ -1,0 +1,29 @@
+\documentclass[border=5mm]{standalone}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+
+\begin{document}
+
+% DEFINE 3D COORDINATE FRAME (using tikz-3dplot)
+% Will set the orientation of x,y,z
+% Syntax: \tdplotsetdisplay{\theta_d}{\phi_d}
+\tdplotsetmaincoords{70}{100}
+
+% SET SOME VARIABLES
+\pgfmathsetmacro{\sphereRadius}{1}
+
+% USE tdplot_main_coords FOR YOUR DEFINED 3D COORDINATE FRAME
+% Coordinate transformation provided by tikz-3dplot
+\begin{tikzpicture}[scale=6, tdplot_main_coords]
+
+    % SPHERE
+    \shadedraw[tdplot_screen_coords, ball color = white] (0,0) circle (\sphereRadius);
+
+    % X, Y, Z AXIS
+    \draw[thick,->] (0,0,0) -- (1.7,0,0) node[anchor=north east] {$x$};
+    \draw[thick,->] (0,0,0) -- (0,1.7,0) node[anchor=north west] {$y$};
+    \draw[thick,->] (0,0,-1.7) -- (0,0,1.7) node[anchor=south] {$z$};
+
+\end{tikzpicture}
+
+\end{document}

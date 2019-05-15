@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2019.5.8)  15 MAY 2019 04:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2019.5.8)  15 MAY 2019 04:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**celestial-sphere.tex
-(./celestial-sphere.tex
+**a-second-3d-coordinate-plane-on-a-sphere.tex
+(./a-second-3d-coordinate-plane-on-a-sphere.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -377,73 +377,38 @@ tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 \arrowsize=\dimen151
 )))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarybending.code.tex
-File: tikzlibrarybending.code.tex 2013/09/17 v3.0.1a (rcs-revision 1.2)
+No file a-second-3d-coordinate-plane-on-a-sphere.aux.
+\openout1 = `a-second-3d-coordinate-plane-on-a-sphere.aux'.
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulebending.code.te
-x
-File: pgfmodulebending.code.tex 2013/09/30 v3.0.1a (rcs-revision 1.18)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulenonlineartransf
-ormations.code.tex
-File: pgfmodulenonlineartransformations.code.tex 2013/10/09 v3.0.1a (rcs-revisi
-on 1.4)
-\pgftransformnonlinearflatness=\dimen152
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarycurvilinear.
-code.tex
-File: pgflibrarycurvilinear.code.tex 2015/05/14 v3.0.1a (rcs-revision 1.4)
-\pgf@curvilinear@time@a=\dimen153
-\pgf@curvilinear@length@a=\dimen154
-\pgf@curvilinear@length@b=\dimen155
-\pgf@curvilinear@length@c=\dimen156
-\pgf@curvilinear@length@d=\dimen157
-)
-\pgf@arrows@the@rigidity=\dimen158
-))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibraryquotes.code.tex
-File: tikzlibraryquotes.code.tex 2014/03/21 v3.0.1a (rcs-revision 1.4)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibraryangles.code.tex
-File: tikzlibraryangles.code.tex 2013/08/28 v3.0.1a (rcs-revision 1.1)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
-) (./celestial-sphere.aux)
-\openout1 = `celestial-sphere.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 26.
+(Font)              <7> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 26.
+(Font)              <5> on input line 23.
  [1
 
-] (./celestial-sphere.aux) ) 
+]
+(./a-second-3d-coordinate-plane-on-a-sphere.aux) ) 
 Here is how much of TeX's memory you used:
- 12387 strings out of 493030
- 261159 string characters out of 6136261
- 302522 words of memory out of 5000000
- 15718 multiletter control sequences out of 15000+600000
+ 11761 strings out of 493030
+ 246400 string characters out of 6136261
+ 277762 words of memory out of 5000000
+ 15115 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,5n,58p,421b,748s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,5n,58p,445b,655s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on celestial-sphere.dvi (1 page, 25572 bytes).
+Output written on a-second-3d-coordinate-plane-on-a-sphere.dvi (1 page, 8340 by
+tes).

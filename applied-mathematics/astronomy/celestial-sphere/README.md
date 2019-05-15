@@ -1,4 +1,4 @@
-# CELESTIAL SPHERE
+# celestial-sphere
 
 Refer to
 [celestial-sphere.tex](celestial-sphere.tex)

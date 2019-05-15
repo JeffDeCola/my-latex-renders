@@ -1,4 +1,4 @@
-# COORDINATE PLANE
+# coordinate-plane
 
 Refer to
 [coordinate-plane.tex](coordinate-plane.tex)
