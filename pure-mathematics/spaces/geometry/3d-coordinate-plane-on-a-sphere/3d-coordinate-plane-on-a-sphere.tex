@@ -74,9 +74,9 @@
 
     % LABEL POINT P AND Q (usetikzlibrary{positioning})
     \node at (P) [tdplot_screen_coords, circle, color=red!80!black, fill, inner sep=1.5pt] {};
-    \node at (P) [tdplot_screen_coords, color=red!80!black, left = 1mm of P] {$P$};
+    \node at (P) [tdplot_screen_coords, color=red!80!black, left = 1mm] {$P$};
     \node at (Q) [tdplot_screen_coords, circle, color=green!60!black, fill, inner sep=1.5pt] {};
-    \node at (Q) [tdplot_screen_coords, color=green!60!black, right = 1mm of Q] {$Q$};
+    \node at (Q) [tdplot_screen_coords, color=green!60!black, right = 1mm] {$Q$};
 
     % DRAW THETA & PHI ARCS FOR RED VECTOR P
     % Syntax: \tdplotdrawarc[coordinate frame, draw options]{center point}{r}{angle}{label options}{label}
@@ -96,7 +96,7 @@
     \tdplotsetthetaplanecoords{\vectorPhiQ}
     \tdplotdrawarc[tdplot_rotated_coords, color=green!60!black]{(Origin)}{\sphereRadius/2}{90}{\vectorThetaQ}{anchor=south west, color=green!60!black}{$\theta_A$}
 
-    % DRAW CIRCLES (ARCS) ON SPHERE FOR VECTORS
+    % DRAW RED AND GREEN CIRCLES (ARCS) ON SPHERE FOR VECTORS
     \tdplotsetthetaplanecoords{\vectorPhiP}
     \draw[tdplot_rotated_coords, dashed, color=red] (\sphereRadius,0,0) arc (0:231:\sphereRadius);
     \draw[tdplot_rotated_coords, dashed, color=red] (\sphereRadius,0,0) arc (360:270:\sphereRadius);
@@ -110,7 +110,7 @@
     \draw[tdplot_rotated_coords, very thick, color=blue] (\sphereRadius,0,0) arc (0:\vectorThetaQ:\sphereRadius);
     \draw[tdplot_rotated_coords, thick, color=green] (\sphereRadius,0,0) arc (360:330:\sphereRadius);
 
-    % DRAW ARC FROM P TO Q ON SPHERE
+    % DRAW A BLUE ARC FROM P TO Q ON SPHERE
     % 0,0,0 would be on the equator.
     % Syntax: The angle in degrees rotated around x,y,z axis.
     % I HAVE NO IDEA HOW TO CALCULATE THIS - THIS WOULD BE A GREAT EXERCISE

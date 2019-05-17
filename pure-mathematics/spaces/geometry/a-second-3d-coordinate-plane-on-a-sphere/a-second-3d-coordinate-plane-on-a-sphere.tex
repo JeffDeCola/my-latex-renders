@@ -55,9 +55,9 @@
     % Syntax: \tdplotsetcoord{Coordinate name without parentheses}{r}{\theta}{\phi}
     \tdplotsetcoord{P}{\vectorRadiusP}{\vectorThetaP}{\vectorPhiP}
 
-    % LABEL POINT P AND Q (usetikzlibrary{positioning})
+    % LABEL POINT P (usetikzlibrary{positioning})
     \node at (P) [tdplot_screen_coords, circle, color=black, fill, inner sep=1.5pt] {};
-    \node at (P) [tdplot_screen_coords, color=black, above left = 1mm of P] {$P$};
+    \node at (P) [tdplot_screen_coords, color=black, above left = 1mm] {$P$};
 
     % DRAW RED VECTOR FROM ORIGIN TO POINT P
     \draw[very thick, color=red, ->] (Origin) -- (P);
