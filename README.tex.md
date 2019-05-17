@@ -45,6 +45,8 @@ _This is a massive work in progress as I update my mathematics cheat sheets._
 
 * GEOMETRY
 
+  * [3d-coordinate-plane-on-a-sphere](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/pure-mathematics/spaces/geometry/3d-coordinate-plane-on-a-sphere)
+    3D Coordinate Plane on a Sphere
   * [a-second-3d-coordinate-plane-on-a-sphere](https://github.com/JeffDeCola/my-latex-pgfplots-graphs/tree/master/pure-mathematics/spaces/geometry/a-second-3d-coordinate-plane-on-a-sphere)
     A second 3D Coordinate Plane on a Sphere
 

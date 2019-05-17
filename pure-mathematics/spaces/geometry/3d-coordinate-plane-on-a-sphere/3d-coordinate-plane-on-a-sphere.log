@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2019.5.8)  16 MAY 2019 11:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2019.5.8)  17 MAY 2019 02:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**celestial-sphere.tex
-(./celestial-sphere.tex
+**3d-coordinate-plane-on-a-sphere.tex
+(./3d-coordinate-plane-on-a-sphere.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -380,8 +380,8 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
-) (./celestial-sphere.aux)
-\openout1 = `celestial-sphere.aux'.
+) (./3d-coordinate-plane-on-a-sphere.aux)
+\openout1 = `3d-coordinate-plane-on-a-sphere.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
@@ -398,19 +398,20 @@ LaTeX Font Info:    ... okay on input line 6.
 
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 24.
+(Font)              <7> on input line 45.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 24.
+(Font)              <5> on input line 45.
  [1
 
-] (./celestial-sphere.aux) ) 
+]
+(./3d-coordinate-plane-on-a-sphere.aux) ) 
 Here is how much of TeX's memory you used:
- 11883 strings out of 493030
- 249257 string characters out of 6136261
- 279653 words of memory out of 5000000
- 15232 multiletter control sequences out of 15000+600000
+ 12168 strings out of 493030
+ 254541 string characters out of 6136261
+ 293674 words of memory out of 5000000
+ 15517 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,5n,58p,421b,654s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,5n,58p,436b,730s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on celestial-sphere.dvi (1 page, 12804 bytes).
+Output written on 3d-coordinate-plane-on-a-sphere.dvi (1 page, 22680 bytes).
