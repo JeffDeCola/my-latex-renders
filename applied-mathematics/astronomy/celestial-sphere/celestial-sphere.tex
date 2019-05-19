@@ -6,88 +6,232 @@
 \begin{document}
 
 % DEFINE YOUR 3D COORDINATE FRAME / ORIENTATION (using tikz-3dplot)
-% Will set the orientation of x,y,z
-% Set polar coordinate. theta ( z -> phi) phi (x -> y) 
-% Syntax: \tdplotsetdisplay{\theta_d}{\phi_d}
-\tdplotsetmaincoords{70}{150}
+    
+    % Will set the orientation of x,y,z
+    % Set polar coordinate. theta ( z -> phi) phi (x -> y) 
+    % Syntax: \tdplotsetdisplay{\theta_d}{\phi_d}
+    \pgfmathsetmacro{\theta}{70}
+    \pgfmathsetmacro{\phi}{150}
+    \tdplotsetmaincoords{\theta}{\phi}
 
 % SET SOME VARIABLES
 
-    % Sphere radius
+    % CELESTIAL SPHERE RADIUS
     \pgfmathsetmacro{\sphereRadius}{1}
 
-    % Set Polar (2D) Coordinates for Ecliptic
-    \pgfmathsetmacro{\vectorRadiusEcliptic}{0}
-    \pgfmathsetmacro{\vectorThetaEcliptic}{23.5}
-    \pgfmathsetmacro{\vectorPhiEcliptic}{0}
+    % EARTH RADIUS
+    \pgfmathsetmacro{\earthRadius}{.15}
 
-    % Set Polar (2D) Coordinates for Star
+    % ECLIPTIC 2D POLAR ANGLES FOR 3D COORDINATES
+    % Obviously 23.5 degrees
+    \pgfmathsetmacro{\vectorRadiusEcliptic}{0}
+    \pgfmathsetmacro{\vectorPhiEcliptic}{0}
+    \pgfmathsetmacro{\vectorThetaEcliptic}{23.5}
+
+    % STAR - DECLINATION & RIGHT ASCENSION
+    \pgfmathsetmacro{\starRightAscension}{20}
+    \pgfmathsetmacro{\starDeclination}{60}
+    % STAR 2D POLAR ANGLES FOR 3D COORDINATES
     \pgfmathsetmacro{\vectorRadiusStar}{1}
-    \pgfmathsetmacro{\vectorThetaSar}{25}
-    \pgfmathsetmacro{\vectorPhiStar}{45}
+    \pgfmathsetmacro{\vectorPhiStar}{90+\starRightAscension}
+    \pgfmathsetmacro{\vectorThetaStar}{90-\starDeclination}
+
+    % OBSERVER ZENITH - MAP IT LIKE DECLINATION & RIGHT ASCENSION
+    \pgfmathsetmacro{\zenithRightAscension}{30}
+    \pgfmathsetmacro{\zenithDeclination}{70}
+    % OBSERVER ZENITH 2D POLAR ANGLES FOR 3D COORDINATES
+    \pgfmathsetmacro{\vectorRadiusZenith}{1}
+    \pgfmathsetmacro{\vectorPhiZenith}{90+\zenithRightAscension}
+    \pgfmathsetmacro{\vectorThetaZenith}{90-\zenithDeclination}
+
+    % MERIDIAN 2D POLAR ANGLES FOR 3D COORDINATES
+    % Perpendicular to Celestial Equator
+    \pgfmathsetmacro{\vectorRadiusMeridian}{1}
+    \pgfmathsetmacro{\vectorPhiMeridian}{\zenithRightAscension}
+    \pgfmathsetmacro{\vectorThetaMeridian}{90}
 
 % USE tdplot_main_coords FOR YOUR DEFINED 3D COORDINATE FRAME
 % Coordinate transformation provided by tikz-3dplot
-\begin{tikzpicture}[scale=6, tdplot_main_coords]
+\begin{tikzpicture}[scale=8, tdplot_main_coords]
 
-    % DEFINE coordinates - the origin
-    \coordinate (Origin) at (0,0,0);
-    \coordinate (northCelestialPole) at (0,0,\sphereRadius);
-    \coordinate (southCelestialPole) at (0,0,-\sphereRadius);
-    \coordinate (springEquinox) at (0,\sphereRadius,0);
-    \coordinate (autumnEquinox) at (0,-\sphereRadius,0);
+    % DEFINE MAIN COORDINATES
 
-    % DRAW CELESTIAL SPHERE ON 3D COORDINATE SYSTEM
-    \shadedraw[tdplot_screen_coords] (0,0) circle (\sphereRadius);
+        \coordinate (Origin) at (0,0,0);
+        \coordinate (northCelestialPole) at (0,0,\sphereRadius);
+        \coordinate (southCelestialPole) at (0,0,-\sphereRadius);
+        \coordinate (springEquinox) at (0,\sphereRadius,0);
+        \coordinate (autumnEquinox) at (0,-\sphereRadius,0);
 
-    % DRAW MAIN COORDINATE SYSTEM AXES - X, Y, Z AXIS WITH LABEL (NODE)
-    % Syntax: \draw[characteristics] (start point) -- (end point) node [anchor=position] {label};
-    \draw[thick, color=black, ->] (Origin) -- (\sphereRadius+.5,0,0) node[anchor=north east] {$x$};
-    \draw[thick, color=black, ->] (Origin) -- (0,\sphereRadius+.5,0) node[anchor=north west] {$y$};
-    \draw[thick, color=black, ->] (Origin) -- (0,0,\sphereRadius+.5) node[anchor=south] {$z$};
-    \draw[dashed, color=black, ->] (Origin) -- (-\sphereRadius-.5,0,0);
-    \draw[dashed, color=black, ->] (Origin) -- (0,-\sphereRadius-.5,0);
-    \draw[dashed, color=black, ->] (Origin) -- (0,0,-\sphereRadius-.5);
+    % CELESTIAL SPHERE & A 3D AXIS (SHADING)
 
-    % DRAW GREEN CELESTIAL EQUATOR & LABEL
-    % \draw[thin, fill, color=white] (\sphereRadius,0,0) arc (0:360:\sphereRadius);
-    \draw[dashed, thin, color=green!60!black] (\sphereRadius,0,0) arc (0:360:\sphereRadius);
-    \draw[thin, color=green!60!black] (\sphereRadius,0,0) arc (0:-20:\sphereRadius);
-    \draw[thin, color=green!60!black] (\sphereRadius,0,0) arc (0:150:\sphereRadius);
-    \node at (1,.7,0) [color=green!60!black] {Celestial Equator};
-    \node at (\sphereRadius,0,0) [circle, color=green!60!black, fill, inner sep=1.5pt] {};
-    \node at (-\sphereRadius,0,0) [circle, color=green!60!black, fill, inner sep=1.5pt] {};
+        % DRAW CELESTIAL SPHERE ON MAIN 3D COORDINATE SYSTEM
+        \shadedraw[tdplot_screen_coords, thin, color=black, outer color=black!70, inner color=white] (0,0) circle (\sphereRadius);
 
-    % LABEL CELESTIAL POLES (WITH BLACK DOTS)
-    \node at (northCelestialPole) [circle, color=black, fill, inner sep=1.5pt] {};
-    \node at (northCelestialPole) [color=black, above right = 6mm] {North Celestial Pole};
-    \node at (southCelestialPole) [circle, color=black, fill, inner sep=1.5pt] {};
-    \node at (southCelestialPole) [color=black, below right = 6mm] {South Celestial Pole};
+        % DRAW MAIN COORDINATE SYSTEM AXES. X, Y, Z AXIS WITH LABELS (BLACK)
+        % Syntax: \draw[characteristics] (start point) -- (end point) node [anchor=position] {label};
+        %%% \draw[thick, color=black, ->] (Origin) -- (\sphereRadius+.5,0,0) node[anchor=north east] {$x$};
+        %%%\draw[thick, color=black, ->] (Origin) -- (0,\sphereRadius+.5,0) node[anchor=north west] {$y$};
+        %%%\draw[thick, color=black, ->] (Origin) -- (0,0,\sphereRadius+.5) node[anchor=south] {$z$};
+        %%%\draw[dashed, color=black, ->] (Origin) -- (-\sphereRadius-.5,0,0);
+        %%%\draw[dashed, color=black, ->] (Origin) -- (0,-\sphereRadius-.5,0);
+        %%%\draw[dashed, color=black, ->] (Origin) -- (0,0,-\sphereRadius-.5);
 
-    % DRAW EARTH & LABEL EARTH
-    \draw[thick] (0,0) circle (0.1cm);
-    \shade[ball color=blue!60!white, opacity=0.80] (0,0) circle (0.1cm);
-    \node at (Origin) [color=black, above left = 5mm of Origin] {Earth};
+        % DRAW AND LABEL CELESTIAL POLES (GREEN DOTS)
+        % North and South Poles
+        \node at (northCelestialPole) [circle, color=green!50!black, fill, inner sep=1.5pt] {};
+        \node at (northCelestialPole) [color=black, above right = 10mm] {North Celestial Pole};
+        \node at (southCelestialPole) [circle, color=green!50!black, fill, inner sep=1.5pt] {};
+        \node at (southCelestialPole) [color=black, below right = 10mm] {South Celestial Pole};
 
-    % SET ECLIPTIC COORDINATES
-    % Set the rotated coordinate definition within display using a translation
-    % Coordinate and Euler angles in the "z(\alpha)y(\beta)z(\gamma)" euler rotation convention
-    % Syntax: \tdplotsetrotatedcoords{\alpha}{\beta}{\gamma}
-    \tdplotsetrotatedcoords{\vectorPhiEcliptic}{\vectorThetaEcliptic}{0}
+    % EARTH (BLUE)
 
-    % DRAW RED ECLIPTIC & LABEL
-    % \draw[thin, fill, color=white] (\sphereRadius,0,0) arc (0:360:\sphereRadius);
-    \draw[tdplot_rotated_coords, dashed, thin, color=red!80!black] (\sphereRadius,0,0) arc (0:360:\sphereRadius);
-    \draw[tdplot_rotated_coords, thin, color=red!80!black] (\sphereRadius,0,0) arc (0:-20:\sphereRadius);
-    \draw[tdplot_rotated_coords, thin, color=red!80!black] (\sphereRadius,0,0) arc (0:160:\sphereRadius);
-    \node at (.9,.7,0) [tdplot_rotated_coords, color=red!80!black] {Ecliptic};
+        % DRAW EARTH & LABEL
+        %%%\draw[thick] (0,0) circle (\earthRadius cm);
+        %%%\shade[ball color=blue!60!white, opacity=0.40] (0,0) circle (\earthRadius cm);
+        %%%\node at (Origin) [color=black, below left = 5mm of Origin] {Earth};
 
-    % LABEL ECLIPTIC (EQUINOX) POLES (WITH RED DOTS)
-    \node at (springEquinox) [tdplot_rotated_coords, circle, color=red!80!black, fill, inner sep=1.5pt] {};
-    \node at (springEquinox) [tdplot_rotated_coords, color=red!80!black, below = 6mm] {Spring Equinox};
-    \node at (autumnEquinox) [tdplot_rotated_coords, circle, color=red!80!black, fill, inner sep=1.5pt] {};
-    \node at (autumnEquinox) [tdplot_rotated_coords, color=red!80!black, above = 6mm] {Autumn Equinox};
+    % CELESTIAL EQUATOR (GREEN)
+
+        % DRAW CELESTIAL EQUATOR & LABEL (GREEN)
+        %%% \draw[dashed, thick, color=green!80!black] (\sphereRadius,0,0) arc (0:360:\sphereRadius);
+        %%% \tdplotdrawarc[very thick, color=green!80!black]{(Origin)}{\sphereRadius}{-25}{155}{};
+        %%% \node at (1.5,0,.3) [color=green!80!black] {Celestial Equator};
+
+        % (GREEN DOTS)
+        %%% \node at (\sphereRadius,0,0) [circle, color=green!80!black, fill, inner sep=1.5pt] {};
+        %%% \node at (-\sphereRadius,0,0) [circle, color=green!80!black, fill, inner sep=1.5pt] {};
+
+    % ECLIPTIC & EQUINOX (RED)
+
+        % SET ECLIPTIC COORDINATES
+        % Set the rotated coordinate definition within display using a translation
+        % Coordinate and Euler angles in the "z(\alpha)y(\beta)z(\gamma)" euler rotation convention
+        % Syntax: \tdplotsetrotatedcoords{\alpha}{\beta}{\gamma}
+        %%% \tdplotsetrotatedcoords{\vectorPhiEcliptic}{\vectorThetaEcliptic}{0}
+
+        % DRAW ECLIPTIC & LABEL (RED)
+        %%% \draw[tdplot_rotated_coords, dashed, thick, color=red!80!black] (\sphereRadius,0,0) arc (0:360:\sphereRadius);
+        %%% \tdplotdrawarc[tdplot_rotated_coords, very thick, color=red!80!black]{(Origin)}{\sphereRadius}{-25}{155}{};
+        %%% \node at (1.3,0,.3) [tdplot_rotated_coords, color=red!80!black] {Ecliptic};
+
+        % SPRING AND AUTUMN EQUINOX & LABEL (RED DOTS)
+        %%% \node at (springEquinox) [tdplot_rotated_coords, circle, color=red!80!black, fill, inner sep=1.5pt] {};
+        %%% \node at (springEquinox) [tdplot_rotated_coords, color=red!80!black, right= 8mm] {Spring (Vernal) Equinox};
+        %%% \node at (autumnEquinox) [tdplot_rotated_coords, circle, color=red!80!black, fill, inner sep=1.5pt] {};
+        %%% \node at (autumnEquinox) [tdplot_rotated_coords, color=red!80!black, left = 8mm] {Autumn Equinox};
+
+    % STAR (WHITE)
+
+        % DEFINE SECOND 3D COORDINATE FRAME / ORIENTATION (using tikz-3dplot)
+        % This defines Srarxy, Starxz and Staryz that you may use.
+        % Syntax: \tdplotsetcoord{Coordinate name without parentheses}{r}{\theta}{\phi}
+        \tdplotsetcoord{Star}{\vectorRadiusStar}{\vectorThetaStar}{\vectorPhiStar}
+
+        % SET STAR COORDINATES
+        % Set the rotated coordinate definition within display using a translation
+        % Coordinate and Euler angles in the "z(\alpha)y(\beta)z(\gamma)" euler rotation convention
+        % Syntax: \tdplotsetrotatedcoords{\alpha}{\beta}{\gamma}
+        \tdplotsetrotatedcoords{\vectorPhiStar}{\vectorThetaStar}{0}
+
+        % DRAW VECTOR FROM ORIGIN TO STAR (WHITE)
+        %%% \draw[tdplot_rotated_coords, thick, color=white, ->] (Origin) -- (0,0,\sphereRadius);
+        %\draw[thick, color=white] (Origin) -- (Star);
+        % Add some dashed line to make it easier to see
+        %%% \draw[dashed, thick, color=white] (Starxy) -- (Star);
+        %%% \draw[dashed, thick, color=white] (Origin) -- (Starxy);
+        % I did this one by eye, I'm sure there is a better way to do this.
+        %%% \draw[dashed, thick, color=white] (Origin) -- (-.34,.95,0);
+
+        % DRAW & LABEL STAR (usetikzlibrary{positioning}) (WHITE)
+        \node at (Star) [tdplot_screen_coords, circle, color=white, fill, inner sep=1.5pt] {};
+        \node at (Star) [tdplot_screen_coords, color=white, above = 1mm] {$Star$};
+
+    % RIGHT ASCENSION & DECLINATION (WHITE)
     
+        % DRAW THETA & PHI ARCS FOR STAR VECTOR (WHITE)
+        % Syntax: \tdplotdrawarc[coordinate frame, draw options]{center point}{r}{angle}{label options}{label}
+        %%% \tdplotdrawarc[very thick, color=white, ->]{(Origin)}{\sphereRadius}{90}{\vectorPhiStar}{very thick, above = 3mm, color=white}{$Right Ascension\qquad\qquad$}
+        % Set the rotated coordinate system so the x'-y' plane lies within the
+        % "theta plane" of the main coordinate system
+        % Syntax: \tdplotsetthetaplanecoords{\phi}
+        %%% \tdplotsetthetaplanecoords{\vectorPhiStar}
+        %%% \tdplotdrawarc[tdplot_rotated_coords, very thick, color=white, ->]{(Origin)}{\sphereRadius}{90}{\vectorThetaStar}{very thick, left = 1mm, color=white}{$Declination$}
+    
+    % CIRCLE OF HORIZON, OBSERVER & ZENITH (BLUE)
+
+        % DEFINE SECOND 3D COORDINATE FRAME / ORIENTATION (using tikz-3dplot)
+        % This defines Srarxy, Starxz and Staryz that you may use.
+        % Syntax: \tdplotsetcoord{Coordinate name without parentheses}{r}{\theta}{\phi}
+        \tdplotsetcoord{Zenith}{\vectorRadiusZenith}{\vectorThetaZenith}{\vectorPhiZenith}
+
+        % SET ZENITH COORDINATES
+        % Set the rotated coordinate definition within display using a translation
+        % Coordinate and Euler angles in the "z(\alpha)y(\beta)z(\gamma)" euler rotation convention
+        % Syntax: \tdplotsetrotatedcoords{\alpha}{\beta}{\gamma}
+        \tdplotsetrotatedcoords{\vectorPhiZenith}{\vectorThetaZenith}{0}
+
+        % DRAW CIRCULAR PLANE HORIZON & LABEL (BLUE)
+        \draw[tdplot_rotated_coords, fill, color=blue, opacity=.2] (\sphereRadius,0,\earthRadius) arc (0:360:\sphereRadius);
+        \draw[tdplot_rotated_coords, dashed, thin, color=blue!80!black, opacity=1] (\sphereRadius,0,\earthRadius) arc (0:360:\sphereRadius);
+        \tdplotdrawarc[tdplot_rotated_coords, very thick, color=blue!80!black]{(0,0,\earthRadius)}{\sphereRadius}{10}{-175}{};
+        \node at (-1.2,-.2,.1) [tdplot_rotated_coords, color=blue!80!white] {Circle of Horizon};
+
+        % DRAW LINE FROM OBSERVER TO ZENITH (BLUE)
+         \draw[tdplot_rotated_coords, thick, color=blue, ->] (0,0,\earthRadius) -- (0,0,\sphereRadius);
+        % \draw[tdplot_rotated_coords, thick, color=red] (Origin) -- (Zenith);
+
+        % LABEL ZENITH (WITH BLUE DOT)
+         \node at (0,0,\sphereRadius) [tdplot_rotated_coords, circle, color=blue, fill, inner sep=1.5pt] {};
+         \node at (0,0,\sphereRadius) [tdplot_rotated_coords, color=blue!80!black, above right = 10mm] {Zenith};
+
+        % LABEL OBSERVER (WITH BLUE DOT)
+         \node at (0,0,\earthRadius) [tdplot_rotated_coords, circle, color=blue!80!black, fill, inner sep=1.5pt] {};
+         \node at (0,0,\earthRadius) [tdplot_rotated_coords, color=blue!80!black, right = 1mm] {Observer};
+
+        % DRAW DASHED LINES ON HORIZON
+        \draw[tdplot_rotated_coords, dashed, thin, color=blue!80!white] (0,0,\earthRadius) -- (\sphereRadius,0,\earthRadius) node[color=black,anchor=south] {$S$};
+        \draw[tdplot_rotated_coords, dashed, thin, color=blue!80!white] (0,0,\earthRadius) -- (-\sphereRadius,0,\earthRadius) node[color=black,anchor=north] {$N$};
+        \draw[tdplot_rotated_coords, dashed, thin, color=blue!80!white] (0,0,\earthRadius) -- (0,\sphereRadius,\earthRadius) node[color=black,anchor=north] {$E$};
+        \draw[tdplot_rotated_coords, dashed, thin, color=blue!80!white] (0,0,\earthRadius) -- (0,-\sphereRadius,\earthRadius) node[color=black,anchor=south] {$W$};
+
+    % AZIMUTH & ALTITUDE (ORANGE)
+    
+        % DEFINE SECOND 3D COORDINATE FRAME / ORIENTATION (using tikz-3dplot)
+        % This defines Srarxy, Starxz and Staryz that you may use.
+        % Syntax: \tdplotsetcoord{Coordinate name without parentheses}{r}{\theta}{\phi}
+        \tdplotsetcoord{Star}{\vectorRadiusStar}{\vectorThetaStar}{\vectorPhiStar}
+
+        % SET STAR COORDINATES
+        % Set the rotated coordinate definition within display using a translation
+        % Coordinate and Euler angles in the "z(\alpha)y(\beta)z(\gamma)" euler rotation convention
+        % Syntax: \tdplotsetrotatedcoords{\alpha}{\beta}{\gamma}
+        \tdplotsetrotatedcoords{\vectorPhiStar}{\vectorThetaStar}{0}
+
+        % DRAW THETA & PHI ARCS FOR STAR VECTOR (ORANGE)
+        % Syntax: \tdplotdrawarc[coordinate frame, draw options]{center point}{r}{angle}{label options}{label}
+        \tdplotdrawarc[tdplot_rotated_coords, very thick, color=orange, ->]{(0,0,\earthRadius)}{\sphereRadius}{90}{\vectorPhiStar}{very thick, above = 3mm, color=orange}{$Azimuth\qquad\qquad$}
+        % Set the rotated coordinate system so the x'-y' plane lies within the
+        % "theta plane" of the main coordinate system
+        % Syntax: \tdplotsetthetaplanecoords{\phi}
+        \tdplotsetthetaplanecoords{\vectorPhiStar}
+        \tdplotdrawarc[tdplot_rotated_coords, very thick, color=orange, ->]{(0,0,\earthRadius)}{\sphereRadius}{90}{\vectorThetaStar}{very thick, left = 1mm, color=orange}{$Altitude$}
+
+    % MERIDIAN (ORANGE)
+
+        % SET MERIDIAN COORDINATES
+        % Set the rotated coordinate definition within display using a translation
+        % Coordinate and Euler angles in the "z(\alpha)y(\beta)z(\gamma)" euler rotation convention
+        % Syntax: \tdplotsetrotatedcoords{\alpha}{\beta}{\gamma}
+        %%% \tdplotsetrotatedcoords{\vectorPhiMeridian}{\vectorThetaMeridian}{0}
+
+        % DRAW  MERIDIAN & LABEL (ORANGE)
+        %%% \draw[tdplot_rotated_coords, dashed, thick, color=orange!80!black] (\sphereRadius,0,0) arc (0:360:\sphereRadius);
+        %%% \tdplotdrawarc[tdplot_rotated_coords, very thick, color=orange!80!black]{(0,0,0)}{\sphereRadius}{30}{215}{};
+        %%% \node at (.3,-.4,-3.3) [tdplot_rotated_coords, color=orange!80!black] {Meridian};
+
+    % DRAW CIRCLE AROUND SPHERE (BLACK)
+        \draw[tdplot_screen_coords, line width=1mm, color=black] (0,0) circle (\sphereRadius);
+
 \end{tikzpicture}
 
 \end{document}
