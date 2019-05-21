@@ -14,7 +14,7 @@ Packages I use to create graphics,
 * `pgfplots` - High-qual­ity func­tion plots in 2D/3D
 
 For more information on LaTeX refer to my
-[LaTeX Math Mode cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode-cheat-sheet).
+[LaTeX Math Mode cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md).
 
 [GitHub Webpage](https://jeffdecola.github.io/my-latex-pgfplots-graphs/).
 

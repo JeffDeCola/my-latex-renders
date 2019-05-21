@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2019.5.8)  18 MAY 2019 22:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2019.5.8)  21 MAY 2019 15:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -398,19 +398,19 @@ LaTeX Font Info:    ... okay on input line 6.
 
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 147.
+(Font)              <7> on input line 85.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 147.
+(Font)              <5> on input line 85.
  [1
 
 ] (./celestial-sphere.aux) ) 
 Here is how much of TeX's memory you used:
- 12132 strings out of 493030
- 254113 string characters out of 6136261
- 288898 words of memory out of 5000000
- 15481 multiletter control sequences out of 15000+600000
+ 12246 strings out of 493030
+ 256419 string characters out of 6136261
+ 307112 words of memory out of 5000000
+ 15595 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,5n,58p,421b,800s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,5n,58p,421b,798s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on celestial-sphere.dvi (1 page, 18344 bytes).
+Output written on celestial-sphere.dvi (1 page, 31276 bytes).
