@@ -1,5 +1,5 @@
 #!/bin/sh
-# my-latex-pgfplots-graphs readme-github-pages.sh
+# my-latex-graphs readme-github-pages.sh
 
 echo " "
 
@@ -17,14 +17,14 @@ else
     echo " "
 fi
 
-echo "The goal is to git clone /my-latex-pgfplots-graphs to /my-latex-pgfplots-graphs-updated"
+echo "The goal is to git clone /my-latex-graphs to /my-latex-graphs-updated"
 echo "Then script will edit the /docs/_includes/README.md for GITHUB WEBPAGES"
 echo "Finally push the changes in /docs/_includes/README.md to github"
 echo " "
 
 echo "At start, you should be in a /tmp/build/xxxxx directory with two folders:"
-echo "   /my-latex-pgfplots-graphs"
-echo "   /my-latex-pgfplots-graphs-updated (created in task-build-push.yml task file)"
+echo "   /my-latex-graphs"
+echo "   /my-latex-graphs-updated (created in task-build-push.yml task file)"
 echo " "
 
 echo "pwd is: $PWD"
@@ -34,12 +34,12 @@ echo "List whats in the current directory"
 ls -la
 echo " "
 
-echo "git clone my-latex-pgfplots-graphs to my-latex-pgfplots-graphs-updated"
-git clone my-latex-pgfplots-graphs my-latex-pgfplots-graphs-updated
+echo "git clone my-latex-graphs to my-latex-graphs-updated"
+git clone my-latex-graphs my-latex-graphs-updated
 echo " "
 
-echo "cd my-latex-pgfplots-graphs-updated"
-cd my-latex-pgfplots-graphs-updated
+echo "cd my-latex-graphs-updated"
+cd my-latex-graphs-updated
 echo " "
 
 echo "List whats in the current directory"

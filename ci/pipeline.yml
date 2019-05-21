@@ -1,38 +1,38 @@
-# my-latex-pgfplots-graphs pipeline.yml
+# my-latex-graphs pipeline.yml
 
 jobs:
 
 - name: job-readme-github-pages
   plan:
-  - get: my-latex-pgfplots-graphs
+  - get: my-latex-graphs
     trigger: true
   - put: resource-slack-alert
     params:
       channel: '#jeff-builds'
-      text: "From my-latex-pgfplots-graphs: STARTED job-readme-github-pages in concourse ci."
+      text: "From my-latex-graphs: STARTED job-readme-github-pages in concourse ci."
   - put: resource-repo-status
-    params: { state: "pending", description: "STARTED job-readme-github-pages in concourse ci.", commit: "my-latex-pgfplots-graphs" }
+    params: { state: "pending", description: "STARTED job-readme-github-pages in concourse ci.", commit: "my-latex-graphs" }
   - task: task-readme-github-pages
-    file: my-latex-pgfplots-graphs/ci/tasks/task-readme-github-pages.yml
+    file: my-latex-graphs/ci/tasks/task-readme-github-pages.yml
     on_success:
       do:
-      - put: my-latex-pgfplots-graphs
+      - put: my-latex-graphs
         params:
-          repository: my-latex-pgfplots-graphs-updated  
+          repository: my-latex-graphs-updated  
       - put: resource-slack-alert
         params:
           channel: '#jeff-builds'
-          text: "From my-latex-pgfplots-graphs: PASSED job-readme-github-pages in concourse ci."
+          text: "From my-latex-graphs: PASSED job-readme-github-pages in concourse ci."
       - put: resource-repo-status
-        params: { state: "success", description: "PASSED job-readme-github-pages in concourse ci", commit: "my-latex-pgfplots-graphs" }
+        params: { state: "success", description: "PASSED job-readme-github-pages in concourse ci", commit: "my-latex-graphs" }
     on_failure:
       do:
       - put: resource-slack-alert
         params:
           channel: '#jeff-builds'
-          text: "From my-latex-pgfplots-graphs: FAILED job-readme-github-pages in concourse ci."
+          text: "From my-latex-graphs: FAILED job-readme-github-pages in concourse ci."
       - put: resource-repo-status
-        params: { state: "failure", description: "FAILED job-readme-github-pages in concourse ci", commit: "my-latex-pgfplots-graphs" }
+        params: { state: "failure", description: "FAILED job-readme-github-pages in concourse ci", commit: "my-latex-graphs" }
 
 resource_types:
 
@@ -49,11 +49,11 @@ resource_types:
 
 resources:
 
-- name: my-latex-pgfplots-graphs
+- name: my-latex-graphs
   type: git
   source:
-    #uri: https://github.com/jeffdecola/my-latex-pgfplots-graphs
-    uri: git@github.com:jeffdecola/my-latex-pgfplots-graphs.git
+    #uri: https://github.com/jeffdecola/my-latex-graphs
+    uri: git@github.com:jeffdecola/my-latex-graphs.git
     branch: master
     private_key: {{git_private_key}}
 - name: resource-slack-alert
@@ -63,5 +63,5 @@ resources:
 - name: resource-repo-status 
   type: github-status
   source:
-    repository: jeffdecola/my-latex-pgfplots-graphs 
+    repository: jeffdecola/my-latex-graphs 
     access_token: {{repo_github_token}}

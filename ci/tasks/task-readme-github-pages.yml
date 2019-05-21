@@ -1,4 +1,4 @@
-# my-latex-pgfplots-graphs task-readme-github-pages.yml
+# my-latex-graphs task-readme-github-pages.yml
 
 platform: linux
 
@@ -9,11 +9,11 @@ image_resource:
     tag: 1.7.1
 
 inputs:
-- name: my-latex-pgfplots-graphs
+- name: my-latex-graphs
 
 outputs:
-- name: my-latex-pgfplots-graphs-updated
+- name: my-latex-graphs-updated
 
 run:
-  path: ./my-latex-pgfplots-graphs/ci/scripts/readme-github-pages.sh
+  path: ./my-latex-graphs/ci/scripts/readme-github-pages.sh
   # args: [-debug]
