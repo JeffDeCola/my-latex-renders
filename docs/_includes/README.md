@@ -12,15 +12,25 @@ _This is a massive work in progress as I update my mathematics cheat sheets._
 
 #### ELECTRICAL ENGINEERING
 
+coming soon...
+
 #### PHYSICS
+
+coming soon...
 
 ### PURE MATHEMATICS
 
 #### CHANGES
 
+coming soon...
+
 #### FOUNDATIONS
 
+coming soon...
+
 #### NUMBER SYSTEMS
+
+coming soon...
 
 #### SPACES
 
