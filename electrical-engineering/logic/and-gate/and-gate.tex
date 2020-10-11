@@ -1,0 +1,25 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows, shapes.gates.logic.US, shapes.gates.logic.IEC, calc}
+
+\begin{document}
+
+\resizebox{10cm}{5cm}{
+
+    \begin{tikzpicture}[node distance=.2cm, label distance=2mm, very thick]
+
+        %INPUTS
+        \node[] (x) at (0,.46) {\normalsize $x$};
+        \node[] (y) at (0,0)   {\normalsize $y$};
+
+        % AND (NOTE I'M USING 3 INPUTS)
+        \node[and gate US, draw, rotate=0, logic gate inputs=nnn] (AND) at ($(y) + (1.5,.23)$) {};
+        \draw (x) -- (AND.input 1);
+        \draw (y) -- (AND.input 3);
+        \draw (AND.output) -- node[above]{\normalsize $xy$} ([xshift=1.5cm]AND.output);
+        \node[above=of AND] {\normalsize AND GATE};
+
+    \end{tikzpicture}
+}
+
+\end{document} 
