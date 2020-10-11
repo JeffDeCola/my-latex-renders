@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2019.5.8)  10 OCT 2020 23:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2019.5.8)  11 OCT 2020 02:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**combinational-logic-example1.tex
-(./combinational-logic-example1.tex
+**and-gate.tex
+(./and-gate.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -357,6 +357,10 @@ zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 
@@ -384,8 +388,8 @@ raryshapes.gates.logic.IEC.code.tex))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
-) (./combinational-logic-example1.aux)
-\openout1 = `combinational-logic-example1.aux'.
+) (./and-gate.aux)
+\openout1 = `and-gate.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
@@ -399,22 +403,22 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
-
-ABD: EveryShipout initializing macros
+ ABD: EveryShipout initializing macros
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 72.
+(Font)              <7> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 72.
- [1
+(Font)              <5> on input line 23.
 
-] (./combinational-logic-example1.aux) ) 
+[1
+
+] (./and-gate.aux) ) 
 Here is how much of TeX's memory you used:
- 12213 strings out of 493030
- 262115 string characters out of 6136261
- 314868 words of memory out of 5000000
- 15559 multiletter control sequences out of 15000+600000
+ 11987 strings out of 493030
+ 258272 string characters out of 6136261
+ 290950 words of memory out of 5000000
+ 15330 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,5n,67p,485b,688s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,5n,59p,478b,648s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on combinational-logic-example1.dvi (1 page, 24240 bytes).
+Output written on and-gate.dvi (1 page, 6948 bytes).

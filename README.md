@@ -31,7 +31,11 @@ _This is a massive work in progress as I update my mathematics cheat sheets._
 
 #### ELECTRICAL ENGINEERING
 
-coming soon...
+* LOGIC
+
+  * [and-gate](https://github.com/JeffDeCola/my-latex-graphs/tree/master/electrical-engineering/logic/and-gate)
+  * [combinational-logic-example1](https://github.com/JeffDeCola/my-latex-graphs/tree/master/electrical-engineering/logic/combinational-logic-example1)
+  * [combinational-logic-example2](https://github.com/JeffDeCola/my-latex-graphs/tree/master/electrical-engineering/logic/combinational-logic-example2)
 
 #### PHYSICS
 
