@@ -12,13 +12,19 @@ for the LaTeX code.
 
 ## RUN
 
-This will crate the `.svg` image file from the `.tex` LaTeX code.
+Run
+[combinational-logic-example1.sh](combinational-logic-example1.sh)
+to create an
+[combinational-logic-example1.svg](combinational-logic-example1.svg)
+image file from the
+[combinational-logic-example1.tex](combinational-logic-example1.tex)
+LaTeX code.
 
 ```bash
 sh combinational-logic-example1.sh
 ```
 
-## RESULTING IMAGE
+## RESULTING .svg IMAGE
 
 <p align="center">
     <img src="combinational-logic-example1.svg"

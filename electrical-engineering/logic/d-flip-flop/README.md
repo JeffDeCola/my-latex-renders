@@ -12,13 +12,18 @@ for the LaTeX code.
 
 ## RUN
 
-This will crate the `.svg` image file from the `.tex` LaTeX code.
+Run
+[d-flip-flop.sh](d-flip-flop.sh)
+to create an
+[d-flip-flop.svg](d-flip-flop.svg)
+image file from the
+[d-flip-flop.tex](d-flip-flop.tex) LaTeX code.
 
 ```bash
 sh d-flip-flop.sh
 ```
 
-## RESULTING IMAGE
+## RESULTING .svg IMAGE
 
 <p align="center">
     <img src="d-flip-flop.svg"
