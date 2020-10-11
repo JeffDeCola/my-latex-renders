@@ -1,0 +1,75 @@
+\documentclass[border=3mm]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes.gates.logic.US,shapes.gates.logic.IEC,calc}
+
+\begin{document}
+
+\resizebox{22cm}{12cm}{
+
+    \thispagestyle{empty}
+    \tikzstyle{branch}=[fill,shape=circle,minimum size=3pt,inner sep=0pt]
+
+    \begin{tikzpicture}[label distance=2mm]
+
+        % INPUTS
+        \node[] (x3) at (0,0) {\normalsize $x_3$};
+        \node[] (x2) at (1.5,0) {\normalsize $x_2$};
+        \node[] (x1) at (3,0) {\normalsize $x_1$};
+        \node[] (x0) at (4.5,0) {\normalsize $x_0$};
+
+        % NOT0,1,2
+        \node[not gate US, draw, rotate=-90] (NOT2) at ($(x2)+(.7,-2)$) {\tiny $NOT_2$};
+        \node[not gate US, draw, rotate=-90] (NOT1) at ($(x1)+(.7,-2)$) {\tiny $NOT_1$};
+        \node[not gate US, draw, rotate=-90] (NOT0) at ($(x0)+(.7,-2)$) {\tiny $NOT_0$};
+        % WIRES TO NOT GATES
+        \foreach \i in {2,1,0}
+        {
+            \path (x\i) -- coordinate (punt\i) (x\i |- NOT\i.input);
+            \draw (punt\i) node[branch] {} -| (NOT\i.input);
+        }
+
+        % OR1
+        \node[or gate US, draw, logic gate inputs=nnn]  (OR1)  at ($(x0)+(3,-4)$)  {\tiny $OR_1$};
+        % Syntax |- is used in drawing perpendicular lines
+        \draw (x3 |- OR1.input 1) node[branch] {} -- (OR1.input 1);
+        \draw (x1 |- OR1.input 2) node[branch] {} -- (OR1.input 2);
+        \draw (NOT0.output |- OR1.input 3) node[branch] {} -- (OR1.input 3);
+
+        % OR2
+        \node[or gate US, draw, logic gate inputs=nnnn] (OR2)  at ($(OR1)+(0,-1)$) {\tiny $OR_2$};
+        \draw (x3) |- (OR2.input 1);
+        \draw (NOT2.output) |- (OR2.input 2);
+        \draw (NOT1.output |- OR2.input 3) node[branch] {} -- (OR2.input 3);
+        \draw (x0) |- (OR2.input 4);
+
+        % OR3
+        \node[or gate US, draw, logic gate inputs=nnn]  (OR3)  at ($(OR2)+(0,-1)$) {\tiny $OR_3$};
+        \draw (x2 |- OR3.input 1) node[branch] {} -- (OR3.input 1);
+        \draw (x1) |- (OR3.input 2);
+        \draw (NOT0.output) |- (OR3.input 3);
+
+        % XOR1
+        \node[xor gate US, draw, logic gate inputs=nn]  (XOR1) at ($(OR3)+(0,-1)$) {\tiny $XOR_1$};
+        \draw (x2) |- (XOR1.input 1);
+        \draw (NOT1.output) |- (XOR1.input 2);
+
+        % AND1
+        \node[and gate US, draw, logic gate inputs=nn, anchor=input 1] (AND1) at ($(OR3.output)+(1,0)$) {\tiny $AND_1$};
+        \draw (OR3.output) -- (AND1.input 1);
+        \draw (XOR1.output) -- ([xshift=0.5cm]XOR1.output) |- (AND1.input 2);
+
+        % NOR1
+        \node[nor gate US, draw, logic gate inputs=nn, anchor=input 1] (NOR1) at ($(OR2.output -| AND1.output)+(1,0)$) {\tiny $NOR_1$};
+        \draw (OR2.output) -- (NOR1.input 1);
+        \draw (AND1.output) -- ([xshift=0.5cm]AND1.output) |- (NOR1.input 2);
+
+        % AND2
+        \node[and gate US, draw, logic gate inputs=nn, anchor=input 1] (AND2) at ($(OR1.output -| NOR1.output)+(1,0)$) {\tiny $AND_2$};
+        \draw (OR1.output) -- (AND2.input 1);
+        \draw (NOR1.output) -- ([xshift=0.5cm]NOR1.output) |- (AND2.input 2); 
+        \draw (AND2.output) -- ([xshift=0.5cm]AND2.output) node[above] {$f_1$};
+
+    \end{tikzpicture}
+}
+
+\end{document} 
