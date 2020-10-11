@@ -12,13 +12,18 @@ for the LaTeX code.
 
 ## RUN
 
-This will crate the `.svg` image file from the `.tex` LaTeX code.
+Run
+[and-gate.sh](and-gate.sh)
+to create an
+[and-gate.svg](and-gate.svg)
+image file from the
+[and-gate.tex](and-gate.tex) LaTeX code.
 
 ```bash
 sh and-gate.sh
 ```
 
-## RESULTING IMAGE
+## RESULTING .svg IMAGE
 
 <p align="center">
     <img src="and-gate.svg"
