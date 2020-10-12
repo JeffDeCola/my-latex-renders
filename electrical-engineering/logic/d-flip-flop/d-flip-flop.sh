@@ -14,7 +14,7 @@ echo " "
 echo "Convert .dvi to .svg"
 echo "    -n no fonts"
 echo "    -a This option forces dvisvgm to vectorize everything"
-dvisvgm -n -a d-flip-flop.dvi
+dvisvgm -n -a -o d-flip-flop d-flip-flop.dvi
 echo " "
 
 echo "cp d-flip-flop.svg /mnt/c/Users/Jeff/home/jeff/systemverilog/my-systemverilog-examples/basic/d-flip-flop/svgs/."
