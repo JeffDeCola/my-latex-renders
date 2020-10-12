@@ -1,9 +1,9 @@
 #!/bin/bash -e
-# combinational-logic-example1.sh
+# run.sh
 
 echo " "
 echo "************************************************************************"
-echo "****************************** combinational-logic-example1.sh (START) *"
+echo "******************************************************* run.sh (START) *"
 echo " "
 
 echo "Create .dvi file"
@@ -17,6 +17,6 @@ echo "    -a This option forces dvisvgm to vectorize everything"
 dvisvgm -n -a -o combinational-logic-example1 combinational-logic-example1.dvi
 echo " "
 
-echo "******************************** combinational-logic-example1.sh (END) *"
+echo "********************************************************* run.sh (END) *"
 echo "************************************************************************"
 echo " "

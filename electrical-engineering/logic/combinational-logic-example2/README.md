@@ -13,7 +13,7 @@ for the LaTeX code.
 ## RUN
 
 Run
-[combinational-logic-example2.sh](combinational-logic-example2.sh)
+[run.sh](run.sh)
 to create an
 [combinational-logic-example2.svg](combinational-logic-example2.svg)
 image file from the
@@ -21,7 +21,7 @@ image file from the
 LaTeX code.
 
 ```bash
-sh combinational-logic-example2.sh
+sh run.sh
 ```
 
 ## RESULTING .svg IMAGE

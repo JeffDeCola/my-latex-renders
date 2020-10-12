@@ -13,14 +13,14 @@ for the LaTeX code.
 ## RUN
 
 Run
-[d-flip-flop.sh](d-flip-flop.sh)
+[run.sh](run.sh)
 to create an
 [d-flip-flop.svg](d-flip-flop.svg)
 image file from the
 [d-flip-flop.tex](d-flip-flop.tex) LaTeX code.
 
 ```bash
-sh d-flip-flop.sh
+sh run.sh
 ```
 
 ## RESULTING .svg IMAGE
