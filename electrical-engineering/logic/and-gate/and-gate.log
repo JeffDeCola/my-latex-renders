@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2020.10.12)  12 OCT 2020 07:13
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2019.5.8)  12 OCT 2020 05:04
+>>>>>>> fcedfd1760c24809a878a9a2540608160abcb8f7
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -435,6 +439,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ] (./and-gate.aux) ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  12655 strings out of 483184
  271895 string characters out of 5966317
  493938 words of memory out of 5000000
@@ -442,5 +447,14 @@ Here is how much of TeX's memory you used:
  532338 words of font info for 24 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,6n,60p,478b,688s stack positions out of 5000i,500n,10000p,200000b,80000s
+=======
+ 11988 strings out of 493030
+ 258285 string characters out of 6136261
+ 290950 words of memory out of 5000000
+ 15331 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,5n,59p,478b,648s stack positions out of 5000i,500n,10000p,200000b,80000s
+>>>>>>> fcedfd1760c24809a878a9a2540608160abcb8f7
 
 Output written on and-gate.dvi (2 pages, 11052 bytes).

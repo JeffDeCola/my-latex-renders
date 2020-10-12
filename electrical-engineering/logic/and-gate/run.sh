@@ -1,9 +1,9 @@
 #!/bin/bash -e
-# and-gate.sh
+# run.sh
 
 echo " "
 echo "************************************************************************"
-echo "************************************************** and-gate.sh (START) *"
+echo "******************************************************* run.sh (START) *"
 echo " "
 
 echo "Create .dvi file"
@@ -21,6 +21,6 @@ echo "cp and-gate.svg /mnt/c/Users/Jeff/home/jeff/systemverilog/my-systemverilog
 cp and-gate.svg /mnt/c/Users/Jeff/home/jeff/systemverilog/my-systemverilog-examples/basic/and-gate/svgs/.
 echo " "
 
-echo "**************************************************** and-gate.sh (END) *"
+echo "********************************************************* run.sh (END) *"
 echo "************************************************************************"
 echo " "

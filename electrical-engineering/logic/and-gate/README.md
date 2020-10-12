@@ -13,14 +13,14 @@ for the LaTeX code.
 ## RUN
 
 Run
-[and-gate.sh](and-gate.sh)
+[run.sh](run.sh)
 to create an
 [and-gate.svg](and-gate.svg)
 image file from the
 [and-gate.tex](and-gate.tex) LaTeX code.
 
 ```bash
-sh and-gate.sh
+sh run.sh
 ```
 
 ## RESULTING .svg IMAGE

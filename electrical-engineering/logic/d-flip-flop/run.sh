@@ -1,9 +1,9 @@
 #!/bin/bash -e
-# d-flip-flop.sh
+# run.sh
 
 echo " "
 echo "************************************************************************"
-echo "*********************************************** d-flip-flop.sh (START) *"
+echo "******************************************************* run.sh (START) *"
 echo " "
 
 echo "Create .dvi file"
@@ -21,6 +21,6 @@ echo "cp d-flip-flop.svg /mnt/c/Users/Jeff/home/jeff/systemverilog/my-systemveri
 cp d-flip-flop.svg /mnt/c/Users/Jeff/home/jeff/systemverilog/my-systemverilog-examples/basic/d-flip-flop/svgs/.
 echo " "
 
-echo "************************************************* d-flip-flop.sh (END) *"
+echo "********************************************************* run.sh (END) *"
 echo "************************************************************************"
 echo " "
