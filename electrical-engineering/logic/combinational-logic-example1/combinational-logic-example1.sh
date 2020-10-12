@@ -14,7 +14,7 @@ echo " "
 echo "Convert .dvi to .svg"
 echo "    -n no fonts"
 echo "    -a This option forces dvisvgm to vectorize everything"
-dvisvgm -n -a combinational-logic-example1.dvi
+dvisvgm -n -a -o combinational-logic-example1 combinational-logic-example1.dvi
 echo " "
 
 echo "******************************** combinational-logic-example1.sh (END) *"

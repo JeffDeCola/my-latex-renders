@@ -14,7 +14,7 @@ echo " "
 echo "Convert .dvi to .svg"
 echo "    -n no fonts"
 echo "    -a This option forces dvisvgm to vectorize everything"
-dvisvgm -n -a and-gate.dvi
+dvisvgm -n -a -o and-gate and-gate.dvi
 echo " "
 
 echo "cp and-gate.svg /mnt/c/Users/Jeff/home/jeff/systemverilog/my-systemverilog-examples/basic/and-gate/svgs/."
