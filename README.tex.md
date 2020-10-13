@@ -94,8 +94,8 @@ Documentation and reference,
 
 ### PHYSICS
 
-  * [example](https://github.com/JeffDeCola/my-latex-graphs/tree/master/science/physical-science/physics) -
-    _coming soon_
+* [example](https://github.com/JeffDeCola/my-latex-graphs/tree/master/science/physical-science/physics) -
+  _coming soon_
 
 ## UPDATE GITHUB WEBPAGE USING CONCOURSE (OPTIONAL)
 
