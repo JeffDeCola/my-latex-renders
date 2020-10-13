@@ -2,10 +2,10 @@
 .credentials.yml
 
 // FIND-LATEX-VERSION
-/find-latex-version/test.aux
-/find-latex-version/test.dvi
-/find-latex-version/test.log
-/find-latex-version/test.svg
+find-latex-version/test.aux
+find-latex-version/test.dvi
+find-latex-version/test.log
+find-latex-version/test.svg
 
 // Ignore .vagrant
 **/.vagrant
