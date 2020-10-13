@@ -1,11 +1,13 @@
 \documentclass{standalone}
 \usepackage{tikz}
-\usepackage{circuitikz}
+\usepackage[siunitx, RPvoltages]{circuitikz}
 
 \usetikzlibrary{positioning, arrows, shapes.gates.logic.US, shapes.gates.logic.IEC, calc}
 
 \begin{document}
 
-    \pgfcircversion
+    \begin{circuitikz}[scale=0.8, transform shape]
+        \draw (-3,0) node[flipflop D,external pins width=0](FF0){};
+     \end{circuitikz}
 
 \end{document} 
