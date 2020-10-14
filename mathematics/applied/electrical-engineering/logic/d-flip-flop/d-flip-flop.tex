@@ -6,8 +6,24 @@
 
 \begin{document}
 
+\resizebox{7cm}{5cm}{
+
     \begin{circuitikz}[scale=0.8, transform shape]
-        \draw (-3,0) node[flipflop D,external pins width=0](FF0){};
+
+        %INPUTS
+        \node[] (d) at (0,0) {\normalsize $d$};
+        \node[] (clk) at (0,-1.7) {\normalsize $clk$};
+
+        % AND (NOTE I'M USING 3 INPUTS)
+        \node[flipflop D, external pins width=0] (DFF) at ($(d) + (2,-.85)$) {\normalsize $dff_0$};
+        \draw (d) -- (DFF.pin 1);
+        \draw (clk) -- (DFF.pin 3);
+        \draw (DFF.pin 6) -- node[above]{\normalsize $q$} ([xshift=1.5cm]DFF.pin 6);
+        \draw (DFF.pin 4) -- node[above]{\normalsize $q\_bar$} ([xshift=1.5cm]DFF.pin 4);
+        \node[above=of DFF] {\normalsize D FLIP-FLOP};
+
      \end{circuitikz}
+
+}
 
 \end{document} 
