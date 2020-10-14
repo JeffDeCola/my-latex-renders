@@ -23,9 +23,8 @@ Table of Contents,
   
 Documentation and reference,
 
-* For more information on LaTeX refer to my
-  [LaTeX Math Mode cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md).
-* To find you LaTeX version and what packages you have installed use
+* [LaTeX cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
+* To find your LaTeX version and what packages you have installed use
   my script in
   [/find-latex-versions](https://github.com/JeffDeCola/my-latex-graphs/tree/master/find-latex-versions).
 
