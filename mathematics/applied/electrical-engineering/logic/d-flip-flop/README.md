@@ -1,10 +1,17 @@
 # d-flip-flop
 
-Using
+_Using
 [LaTeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/)
-to create a d-flip-flop.
+to create a d-flip-flop._
+
+Documentation and reference,
+
+* circuitikz
+  [online manual](http://circuitikz.github.io/circuitikz/circuitikzmanualgit.pdf)
 
 ## LATEX CODE
+
+Using LaTeX package `circuitikz`.
 
 Refer to
 [d-flip-flop.tex](d-flip-flop.tex)

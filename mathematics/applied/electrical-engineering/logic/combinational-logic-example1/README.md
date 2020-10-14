@@ -6,6 +6,8 @@ to create a combinational logic image.
 
 ## LATEX CODE
 
+Using LaTeX package `tikz`.
+
 Refer to
 [combinational-logic-example1.tex](combinational-logic-example1.tex)
 for the LaTeX code.
