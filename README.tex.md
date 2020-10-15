@@ -40,7 +40,7 @@ Documentation and reference,
   * [combinational-logic-example1](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/applied/electrical-engineering/logic/combinational-logic-example1)
   * [combinational-logic-example2](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/applied/electrical-engineering/logic/combinational-logic-example2)
   * [d-flip-flop](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/applied/electrical-engineering/logic/d-flip-flop)
-  * [priority-arbiter](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/applied/electrical-engineering/logic/priority-arbiter])
+  * [priority-arbiter](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/applied/electrical-engineering/logic/priority-arbiter)
 
 ## MATHEMATICS - PURE
 
