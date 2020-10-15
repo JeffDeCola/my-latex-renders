@@ -1,0 +1,35 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows, shapes.gates.logic.US, shapes.gates.logic.IEC, calc}
+
+\begin{document}
+
+\resizebox{10cm}{5cm}{
+
+    \begin{tikzpicture}[
+        % node distance=.2cm,
+        fulladder/.style={draw, minimum size=3cm,
+        label={[anchor=west]left:$c_\text{out}$},
+        label={[anchor=south]below:$s$},
+        label={[anchor=east]right:$c_\text{in}$},
+        label={[anchor=north]65:$b$},
+        label={[anchor=north]115:$a\vphantom{b}$},
+    }]
+
+        \node[fulladder] (a) {};
+        \node[fulladder, right=1cm of a] (b) {};
+
+        \draw[<-] (a.115) --++(90:0.5cm) node [above] {$a_1$};
+        \draw[<-] (a.65) --++(90:0.5cm) node [above] {$b_1$};
+        \draw[<-] (b.115) --++(90:0.5cm) node [above] {$a_0$};
+        \draw[<-] (b.65) --++(90:0.5cm) node [above] {$b_0$};
+        \draw[<-] (b.east) --++(0:0.5cm) node [right] {$0$};
+        \draw[<-] (a.east) -- (b.west);
+        \draw[->] (a.west) --++(180:0.5cm) node [left] {$c$};
+        \draw[->] (a.south) --++(-90:0.5cm) node [below] {$s_1$};
+        \draw[->] (b.south) --++(-90:0.5cm) node [below] {$s_0$};
+
+    \end{tikzpicture}
+}
+
+\end{document} 
