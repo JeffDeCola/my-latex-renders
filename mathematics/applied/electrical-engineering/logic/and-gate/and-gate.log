@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=latex 2020.10.12)  13 OCT 2020 02:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=latex 2020.10.12)  16 OCT 2020 01:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -397,12 +397,6 @@ gflibraryshapes.gates.logic.US.code.tex
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/p
 gflibraryshapes.gates.logic.code.tex)))
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibraryshapes.gates.logic.IEC.code.tex
-File: tikzlibraryshapes.gates.logic.IEC.code.tex 2020/10/01 v3.1.6a (3.1.6a)
-
-(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/p
-gflibraryshapes.gates.logic.IEC.code.tex))
-(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 )
@@ -419,36 +413,36 @@ File: l3backend-dvips.def 2020-09-24 L3 backend support: dvips
 (./and-gate.aux)
 \openout1 = `and-gate.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 23.
+(Font)              <7> on input line 34.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 23.
+(Font)              <5> on input line 34.
  [1
 
 ] [2
 
 ] (./and-gate.aux) ) 
 Here is how much of TeX's memory you used:
- 12862 strings out of 479918
- 280615 string characters out of 5882737
- 546041 words of memory out of 5000000
- 29232 multiletter control sequences out of 15000+600000
- 535088 words of font info for 29 fonts, out of 8000000 for 9000
+ 12645 strings out of 479918
+ 273076 string characters out of 5882737
+ 540674 words of memory out of 5000000
+ 29020 multiletter control sequences out of 15000+600000
+ 535396 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 96i,6n,99p,478b,688s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 96i,6n,99p,454b,674s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on and-gate.dvi (2 pages, 12844 bytes).
+Output written on and-gate.dvi (2 pages, 13016 bytes).

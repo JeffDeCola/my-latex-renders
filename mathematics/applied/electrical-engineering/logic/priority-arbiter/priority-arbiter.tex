@@ -26,29 +26,29 @@
 
         % DRAW NODES (I like to do them relative to each other)
         \node[priority-arbiter] (PA)   at (0,0)                  {};
-        \node[]                 (req0) at ($(PA)+(-3.0,1.0)$)    {\normalsize $req\_0$};
-        \node[]                 (req1) at ($(PA)+(-3.0,0.2)$)    {\normalsize $req\_1$};
-        \node[]                 (req2) at ($(PA)+(-3.0,-0.6)$)   {\normalsize $req\_2$};
-        \node[]                 (gnt0) at ($(PA)+(3.0,1.0)$)     {\normalsize $gnt\_0$};
-        \node[]                 (gnt1) at ($(PA)+(3.0,0.2)$)     {\normalsize $gnt\_1$};
-        \node[]                 (gnt2) at ($(PA)+(3.0,-0.6)$)    {\normalsize $gnt\_2$};
-        \node[]                 (clk)  at ($(PA)+(-0.5,-3.0)$)   {\normalsize $clk$};
-        \node[]                 (rst)  at ($(PA)+(0.5,-3.0)$)    {\normalsize $rst$};
-        \node[]                 (name) at ($(PA)+(0, 2.5)$)      {\normalsize PRIORITY ARBITER};
+        \node[]                 (REQ0) at ($(PA)+(-3.0,1.0)$)    {\normalsize $req\_0$};
+        \node[]                 (REQ1) at ($(PA)+(-3.0,0.2)$)    {\normalsize $req\_1$};
+        \node[]                 (REQ2) at ($(PA)+(-3.0,-0.6)$)   {\normalsize $req\_2$};
+        \node[]                 (GNT0) at ($(PA)+(3.0,1.0)$)     {\normalsize $gnt\_0$};
+        \node[]                 (GNT1) at ($(PA)+(3.0,0.2)$)     {\normalsize $gnt\_1$};
+        \node[]                 (GNT2) at ($(PA)+(3.0,-0.6)$)    {\normalsize $gnt\_2$};
+        \node[]                 (CLK)  at ($(PA)+(-0.5,-3.0)$)   {\normalsize $clk$};
+        \node[]                 (RST)  at ($(PA)+(0.5,-3.0)$)    {\normalsize $rst$};
+        \node[]                 (NAME) at ($(PA)+(0, 2.5)$)      {\Large \textbf {PRIORITY ARBITER}};
 
         % CONNECT INPUTS
-        \draw [very thick] (req0) -- ($(req0)+(1.5,0)$);
-        \draw [very thick] (req1) -- ($(req1)+(1.5,0)$);
-        \draw [very thick] (req2) -- ($(req2)+(1.5,0)$);
+        \draw [semithick] (REQ0) -- ($(REQ0)+(1.5,0)$);
+        \draw [semithick] (REQ1) -- ($(REQ1)+(1.5,0)$);
+        \draw [semithick] (REQ2) -- ($(REQ2)+(1.5,0)$);
 
         % CONNECT OUTPUTS
-        \draw [very thick] ($(gnt0)+(-1.5,0)$) -- (gnt0);
-        \draw [very thick] ($(gnt1)+(-1.5,0)$) -- (gnt1);
-        \draw [very thick] ($(gnt2)+(-1.5,0)$) -- (gnt2);
+        \draw [semithick] ($(GNT0)+(-1.5,0)$) -- (GNT0);
+        \draw [semithick] ($(GNT1)+(-1.5,0)$) -- (GNT1);
+        \draw [semithick] ($(GNT2)+(-1.5,0)$) -- (GNT2);
         
         % CONNECT CLK AND RST
-        \draw [very thick] ($(clk)+(0,1.5)$) -- (clk);
-        \draw [very thick] ($(rst)+(0,1.5)$) -- (rst);
+        \draw [semithick] ($(CLK)+(0,1.5)$) -- (CLK);
+        \draw [semithick] ($(RST)+(0,1.5)$) -- (RST);
 
     \end{tikzpicture}
 }

@@ -1,23 +1,34 @@
 \documentclass{standalone}
 \usepackage{tikz}
-\usetikzlibrary{positioning, arrows, shapes.gates.logic.US, shapes.gates.logic.IEC, calc}
+\usetikzlibrary{positioning, arrows, shapes.gates.logic.US, calc}
+
+% This is just an and gate from the shapes.gates.logic.US library
+% Note I'm using 3 inputs
+\tikzset{
+        my-and-gate/.style={
+            and gate US, draw, rotate=0, logic gate inputs=nnn, very thick
+        },
+}
 
 \begin{document}
 
-\resizebox{10cm}{5cm}{
+\resizebox{10cm}{6cm}{
 
-    \begin{tikzpicture}[node distance=.2cm, label distance=2mm, very thick]
+    \begin{tikzpicture}[node distance=.2cm]
 
-        %INPUTS
-        \node[] (x) at (0,.46) {\normalsize $x$};
-        \node[] (y) at (0,0)   {\normalsize $y$};
+        %DRAW NODES (I like to do them relative to each other, In this case the AND gate)
+        \node [my-and-gate]   (AND)  at (0,0)                  {};
+        \node []              (X)    at ($(AND)+(-2.0,.23)$)   {\normalsize $x$};
+        \node []              (Y)    at ($(AND)+(-2.0,-.23)$)  {\normalsize $y$};
+        \node []              (XY)   at ($(AND)+(2.0,0)$)      {\normalsize $xy$};
+        \node []              (NAME) at ($(AND)+(0,1.0)$)      {\normalsize \textbf {AND GATE}};
 
-        % AND (NOTE I'M USING 3 INPUTS)
-        \node[and gate US, draw, rotate=0, logic gate inputs=nnn] (AND) at ($(y) + (1.5,.23)$) {};
-        \draw (x) -- (AND.input 1);
-        \draw (y) -- (AND.input 3);
-        \draw (AND.output) -- node[above]{\normalsize $xy$} ([xshift=1.5cm]AND.output);
-        \node[above=of AND] {\normalsize AND GATE};
+        % CONNECT INPUTS
+        \draw [thick] (X) -- (AND.input 1);
+        \draw [thick] (Y) -- (AND.input 3);
+
+        % CONNECT OUTPUTS
+        \draw [thick] (AND.output) -- (XY);
 
     \end{tikzpicture}
 }
