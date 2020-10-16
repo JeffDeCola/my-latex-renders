@@ -2,7 +2,7 @@
 
 Using
 [LaTeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/)
-to create an AND logic gate.
+to create a priority arbiter.
 
 ## LATEX CODE
 
