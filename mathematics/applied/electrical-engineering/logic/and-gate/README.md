@@ -6,7 +6,7 @@ to create an AND logic gate.
 
 ## LATEX CODE
 
-Using LaTeX package `tikz`.
+Using LaTeX package `tikz` and library `shapes.gates.logic.US`.
 
 Refer to
 [and-gate.tex](and-gate.tex)
