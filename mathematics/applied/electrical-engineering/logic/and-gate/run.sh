@@ -17,8 +17,8 @@ echo "    -a This option forces dvisvgm to vectorize everything"
 dvisvgm -n -a -o and-gate and-gate.dvi
 echo " "
 
-echo "cp and-gate.svg /mnt/c/Users/Jeff/home/jeff/systemverilog/my-systemverilog-examples/basic/and-gate/svgs/."
-cp and-gate.svg /mnt/c/Users/Jeff/home/jeff/systemverilog/my-systemverilog-examples/basic/and-gate/svgs/.
+echo "cp and-gate.svg /mnt/c/Users/Jeff/home/jeff/systemverilog/my-systemverilog-examples/basic-code/combinational-logic/and-gate/svgs/."
+cp and-gate.svg /mnt/c/Users/Jeff/home/jeff/systemverilog/my-systemverilog-examples/basic-code/combinational-logic/and-gate/svgs/.
 echo " "
 
 echo "********************************************************* run.sh (END) *"
