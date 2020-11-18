@@ -1,6 +1,12 @@
 // CONCOURSE
 .credentials.yml
 
+// GO
+coverage.out
+
+// macOS
+.DS_Store
+
 // FIND-LATEX-VERSION
 find-latex-versions/test.aux
 find-latex-versions/test.dvi
