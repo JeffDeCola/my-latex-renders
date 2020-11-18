@@ -1,25 +1,25 @@
-// CONCOURSE
+# CONCOURSE
 .credentials.yml
 
-// GO
+# GO
 coverage.out
 
-// macOS
+# macOS
 .DS_Store
 
-// FIND-LATEX-VERSION
+# FIND-LATEX-VERSION
 find-latex-versions/test.aux
 find-latex-versions/test.dvi
 find-latex-versions/test.log
 find-latex-versions/test.svg
 
-// Ignore .vagrant
+# Ignore .vagrant
 **/.vagrant
 **/.log
 
 **/ubuntu-1604-virtualbox-vm/*.log
 
-// Ignore Packer
+# Ignore Packer
 **/packer_cache
 **/*.box
 **/*.iso
