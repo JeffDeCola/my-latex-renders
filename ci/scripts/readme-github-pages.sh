@@ -54,10 +54,13 @@ echo "Remove everything before the second heading in README.md.  Place in temp-R
 sed '0,/GitHub Webpage/d' README.md > temp-README.md
 # Change the first heading ## to #
 sed -i '0,/##/{s/##/#/}' temp-README.md
-# update the image links (remove docs/)
+# Update the image links (remove docs/)
 sed -i 's#IMAGE](docs/#IMAGE](#g' temp-README.md
-# Deal with the SVGS images - Add "../../" to "svgs/" 
-# sed -i 's/svgs\//..\/..\/svgs\//g' temp-README.md
+# Deal with the SVGS images
+# Add "https://raw.githubusercontent.com/JeffDeCola/my-latex-graphs/master/svgs/" to "svgs/" 
+# I would rather do a relative link but remember, github pages only "sees" the /docs directory
+# So it's impossible to get to the svgs diretory. Hence we add the full link
+sed -i 's/svgs\//https:\/\/raw.githubusercontent.com\/JeffDeCola\/my-latex-graphs\/master\/svgs\//g' temp-README.md
 echo " "
 
 commit="yes"
