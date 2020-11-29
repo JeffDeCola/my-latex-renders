@@ -57,7 +57,7 @@ sed -i '0,/##/{s/##/#/}' temp-README.md
 # update the image links (remove docs/)
 sed -i 's#IMAGE](docs/#IMAGE](#g' temp-README.md
 # Deal with the SVGS images - Add "../../" to "svgs/" 
-sed -i 's/svgs\//..\/..\/svgs\//g' temp-README.md
+# sed -i 's/svgs\//..\/..\/svgs\//g' temp-README.md
 echo " "
 
 commit="yes"
