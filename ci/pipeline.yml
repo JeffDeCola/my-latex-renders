@@ -51,6 +51,7 @@ resources:
 
 - name: my-latex-graphs
   type: git
+  icon: github
   source:
     #uri: https://github.com/jeffdecola/my-latex-graphs
     uri: git@github.com:jeffdecola/my-latex-graphs.git
@@ -58,10 +59,12 @@ resources:
     private_key: {{git_private_key}}
 - name: resource-slack-alert
   type: slack-notification
+  icon: slack
   source:
     url: {{slack_url}} 
 - name: resource-repo-status 
   type: github-status
+  icon: github
   source:
     repository: jeffdecola/my-latex-graphs 
     access_token: {{repo_github_token}}
