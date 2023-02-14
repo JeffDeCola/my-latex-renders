@@ -1,12 +1,14 @@
-# my-latex-graphs
+# MY LaTeX GRAPHS
 
+[![codeclimate Issue Count](https://codeclimate.com/github/JeffDeCola/my-go-packages/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-go-packages/issues)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
 
 _A place to keep all my figures, equations
  and graphs (`.tex` files) by using LaTeX.
-I use a lot of these figures in other repos._
+I use these figures in other repos._
 
-Table of Contents,
+Table of Contents
 
 * [MATHEMATICS - APPLIED](https://github.com/JeffDeCola/my-latex-graphs#mathematics---applied)
   * [ELECTRICAL ENGINEERING](https://github.com/JeffDeCola/my-latex-graphs#electrical-engineering)
@@ -21,16 +23,16 @@ Table of Contents,
 * [SCIENCE - PHYSICAL SCIENCE](https://github.com/JeffDeCola/my-latex-graphs#science---physical-science)
   * [PHYSICS](https://github.com/JeffDeCola/my-latex-graphs#physics)
   
-Documentation and reference,
+Documentation and Reference
 
 * [LaTeX cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
 * To find your LaTeX version and what packages you have installed use
   my script in
   [/find-latex-versions](https://github.com/JeffDeCola/my-latex-graphs/tree/master/find-latex-versions).
-
-[GitHub Webpage](https://jeffdecola.github.io/my-latex-graphs/)
-_built with
-[concourse ci](https://github.com/JeffDeCola/my-latex-graphs/blob/master/ci-README.md)_
+* This repos
+  [github webpage](https://jeffdecola.github.io/my-latex-graphs/)
+  _built with
+  [concourse](https://github.com/JeffDeCola/my-latex-graphs/blob/master/ci-README.md)_
 
 ## MATHEMATICS - APPLIED
 
