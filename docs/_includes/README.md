@@ -1,7 +1,9 @@
   _built with
   [concourse](https://github.com/JeffDeCola/my-latex-graphs/blob/master/ci-README.md)_
 
-# MATHEMATICS - APPLIED
+# MATHEMATICS - APPLIED - TESTING IMAGE
+
+<img align="center" height="30" src="https://user-images.githubusercontent.com/84743905/174507937-c8637dd7-5a10-4c12-bf23-945c7872ace2.png"
 
 ### ELECTRICAL ENGINEERING
 
