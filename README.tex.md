@@ -72,7 +72,7 @@ Documentation and Reference
 
 ### SPACES
 
-* GEOMETRY
+* GEOMETRY JEFF
 
   * [3d-coordinate-plane-on-a-sphere](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/spaces/geometry/3d-coordinate-plane-on-a-sphere)
     _3D Coordinate Plane on a Sphere_
