@@ -54,7 +54,9 @@
   * [f-of-x-equals-minus-1-over-3-times-x-minus-3](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-minus-1-over-3-times-x-minus-3) <img src="https://raw.githubusercontent.com/JeffDeCola/my-latex-graphs/master/svgs/03245464a2f5dfd20e1017d0c6a2d9f2.svg?invert_in_darkmode" align=middle width=114.90402495pt height=27.77565449999998pt/>
   * [f-of-x-equals-sqrt-x](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-sqrt-x)
   * 
-  * 
+  * THIS IS A PICTURE!!!!
+  * yeah
+
 <picture><img src="https://raw.githubusercontent.com/JeffDeCola/my-latex-graphs/master/svgs/ac95dfbba07837bc60d1bd101cd4a439.svg?invert_in_darkmode" align=middle width=77.00912505pt height=24.995338500000003pt/></picture>
 
 ## SCIENCE - EARTH & SPACE SCIENCE
