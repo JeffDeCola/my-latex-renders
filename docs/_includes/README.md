@@ -11,7 +11,7 @@
 
 2
 
-<img src="https://raw.githubusercontent.com/JeffDeCola/my-latex-graphs/master/svgs/ac95dfbba07837bc60d1bd101cd4a439.svg?invert_in_darkmode" align=middle width=77.00912505pt height=24.995338500000003pt>
+<img src="https://raw.githubusercontent.com/JeffDeCola/my-latex-graphs/master/svgs/ac95dfbba07837bc60d1bd101cd4a439.svg?invert_in_darkmode" align=middle width=77.00912505 height=24.995338500000003>
 
 3
 
