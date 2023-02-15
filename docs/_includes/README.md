@@ -17,7 +17,7 @@
 
 ### CHANGES
 
-* CALCULUS
+* CALCULUS JEFF
 
   * [diff-equation-basic](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/changes/calculus/diff-equation-basic)
     _Coming soon_
