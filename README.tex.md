@@ -83,14 +83,10 @@ Documentation and Reference
 
 * ALGEBRA
 
-  * [coordinate-plane](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/structures/algebra/coordinate-plane)
-    _The coordinate plane (2D Number plane) with plot_ $(3,2)$
-  * [f-of-x-equals-2x](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-2x)
-    $f(x) = 2x$
-  * [f-of-x-equals-minus-1-over-3-times-x-minus-3](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-minus-1-over-3-times-x-minus-3)
-    $f(x)=-\frac{1}{3}x-3$
-  * [f-of-x-equals-sqrt-x](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-sqrt-x)
-    $f(x) = \sqrt{x}$
+  * [coordinate-plane](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/structures/algebra/coordinate-plane) _The coordinate plane (2D Number plane) with plot_ $(3,2)$
+  * [f-of-x-equals-2x](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-2x) $f(x) = 2x$
+  * [f-of-x-equals-minus-1-over-3-times-x-minus-3](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-minus-1-over-3-times-x-minus-3 $f(x)=-\frac{1}{3}x-3$
+  * [f-of-x-equals-sqrt-x](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-sqrt-x) $f(x) = \sqrt{x}$
 
 ## SCIENCE - EARTH & SPACE SCIENCE
 
