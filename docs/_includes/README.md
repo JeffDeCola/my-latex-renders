@@ -5,6 +5,8 @@
 
 <img align="center" height="30" src="https://user-images.githubusercontent.com/84743905/174507937-c8637dd7-5a10-4c12-bf23-945c7872ace2.png"
 
+<img src="https://raw.githubusercontent.com/JeffDeCola/my-latex-graphs/master/svgs/ac95dfbba07837bc60d1bd101cd4a439.svg?invert_in_darkmode" align=middle width=77.00912505pt height=24.995338500000003pt/>
+     
 ### ELECTRICAL ENGINEERING
 
 * LOGIC
