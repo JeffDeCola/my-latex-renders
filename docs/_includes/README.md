@@ -1,33 +1,7 @@
   _built with
   [concourse](https://github.com/JeffDeCola/my-latex-graphs/blob/master/ci-README.md)_
 
-# MATHEMATICS - APPLIED - TESTING IMAGE
-
-<img align="center" height="30" src="https://user-images.githubusercontent.com/84743905/174507937-c8637dd7-5a10-4c12-bf23-945c7872ace2.png">
-
-1
-
-<img src="https://raw.githubusercontent.com/JeffDeCola/my-latex-graphs/master/svgs/ac95dfbba07837bc60d1bd101cd4a439.svg">
-
-2
-
-<img src="https://raw.githubusercontent.com/JeffDeCola/my-latex-graphs/master/svgs/ac95dfbba07837bc60d1bd101cd4a439.svg?invert_in_darkmode" align=middle width=77.00912505 height=24.995338500000003>
-
-3
-
-<img src="https://raw.githubusercontent.com/JeffDeCola/my-latex-graphs/master/svgs/ac95dfbba07837bc60d1bd101cd4a439.svg?invert_in_darkmode" align=middle width="77.00912505pt" height="24.995338500000003pt">
-
-4
-
-<img src="https://raw.githubusercontent.com/JeffDeCola/my-latex-graphs/master/svgs/ac95dfbba07837bc60d1bd101cd4a439.svg?invert_in_darkmode" align=middle width="77.00912505" height="24.995338500000003">
-
-5
-
-<img src="https://raw.githubusercontent.com/JeffDeCola/my-latex-graphs/master/svgs/ac95dfbba07837bc60d1bd101cd4a439.svg?invert_in_darkmode" align=middle>
-
-6
-
-<img src="https://raw.githubusercontent.com/JeffDeCola/my-latex-graphs/master/svgs/ac95dfbba07837bc60d1bd101cd4a439.svg?invert_in_darkmode">
+# MATHEMATICS - APPLIED
 
 ### ELECTRICAL ENGINEERING
 
@@ -78,12 +52,7 @@
   * [coordinate-plane](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/structures/algebra/coordinate-plane) _The coordinate plane (2D Number plane) with plot_ <img src="https://raw.githubusercontent.com/JeffDeCola/my-latex-graphs/master/svgs/c2b3cecb67a773c47721114a4b95184e.svg?invert_in_darkmode" align=middle width=36.52973609999999pt height=24.65753399999998pt/>
   * [f-of-x-equals-2x](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-2x) <img src="https://raw.githubusercontent.com/JeffDeCola/my-latex-graphs/master/svgs/1c9d6807786d5d3d1c49ccb5c3b6556f.svg?invert_in_darkmode" align=middle width=71.52966314999999pt height=24.65753399999998pt/>
   * [f-of-x-equals-minus-1-over-3-times-x-minus-3](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-minus-1-over-3-times-x-minus-3) <img src="https://raw.githubusercontent.com/JeffDeCola/my-latex-graphs/master/svgs/03245464a2f5dfd20e1017d0c6a2d9f2.svg?invert_in_darkmode" align=middle width=114.90402495pt height=27.77565449999998pt/>
-  * [f-of-x-equals-sqrt-x](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-sqrt-x)
-  * 
-  * THIS IS A PICTURE!!!!
-  * yeah
-
-<picture><img src="https://raw.githubusercontent.com/JeffDeCola/my-latex-graphs/master/svgs/ac95dfbba07837bc60d1bd101cd4a439.svg?invert_in_darkmode" align=middle width=77.00912505pt height=24.995338500000003pt/></picture>
+  * [f-of-x-equals-sqrt-x](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-sqrt-x) <img src="https://raw.githubusercontent.com/JeffDeCola/my-latex-graphs/master/svgs/ac95dfbba07837bc60d1bd101cd4a439.svg?invert_in_darkmode" align=middle width=77.00912505pt height=24.995338500000003pt/>
 
 ## SCIENCE - EARTH & SPACE SCIENCE
 
