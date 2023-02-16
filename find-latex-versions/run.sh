@@ -21,7 +21,7 @@ echo "dvisvgm -V1"
 dvisvgm -V1
 echo " "
 
-echo "cat test.log | grep version"
+echo "cat test.log | grep -E 'Package: |Version'"
 cat test.log | grep -E 'Package: |Version'
 echo " "
 
