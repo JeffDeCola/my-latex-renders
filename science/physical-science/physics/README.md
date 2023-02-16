@@ -1,3 +1,3 @@
 # example
 
-_coming soon_
+_Coming soon._
