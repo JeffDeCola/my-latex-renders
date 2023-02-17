@@ -6,10 +6,6 @@ to create an equation._
 
 ## TEX FILE
 
-$$
-    E=mc^2
-$$
-
 [e-equals-mc-squared.tex](e-equals-mc-squared.tex)
 
 Uses LaTeX package `amsmath` for math equations.
@@ -22,6 +18,15 @@ Uses LaTeX package `amsmath` for math equations.
 latex e-equals-mc-squared.tex
 dvisvgm -n -a -o e-equals-mc-squared e-equals-mc-squared.dvi
 ```
+
+$$
+    E=mc^2
+$$
+
+<p align="center">
+    <img src="111.svg"
+    align="middle"
+</p>
 
 <p align="center">
     <img src="e-equals-mc-squared.svg"

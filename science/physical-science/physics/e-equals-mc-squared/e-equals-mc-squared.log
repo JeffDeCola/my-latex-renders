@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2023.2.14)  16 FEB 2023 21:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2023.2.14)  16 FEB 2023 23:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -112,12 +112,12 @@ LaTeX Font Info:    ... okay on input line 5.
 
 ] (./e-equals-mc-squared.aux) ) 
 Here is how much of TeX's memory you used:
- 993 strings out of 481240
- 13474 string characters out of 5920403
+ 1006 strings out of 481240
+ 13647 string characters out of 5920403
  247093 words of memory out of 5000000
- 16326 multiletter control sequences out of 15000+600000
- 532792 words of font info for 26 fonts, out of 8000000 for 9000
+ 16335 multiletter control sequences out of 15000+600000
+ 535653 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,4n,25p,215b,101s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,4n,25p,215b,107s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on e-equals-mc-squared.dvi (1 page, 360 bytes).
+Output written on e-equals-mc-squared.dvi (1 page, 412 bytes).
