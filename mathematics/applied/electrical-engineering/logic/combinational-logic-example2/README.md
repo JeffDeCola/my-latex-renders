@@ -1,32 +1,23 @@
 # combinational-logic-example2
 
-Using
+_Using
 [LaTeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/)
-to create a combinational logic image.
+to create a combinational logic example._
 
-## LATEX CODE
+## TEX FILE
 
-Using LaTeX package `tikz`.
-
-Refer to
 [combinational-logic-example2.tex](combinational-logic-example2.tex)
-for the LaTeX code.
 
-## RUN
+Uses LaTeX package `tikz` for creating graphs.
 
-Run
+## CREATE
+
 [run.sh](run.sh)
-to create an
-[combinational-logic-example2.svg](combinational-logic-example2.svg)
-image file from the
-[combinational-logic-example2.tex](combinational-logic-example2.tex)
-LaTeX code.
 
 ```bash
-sh run.sh
+latex combinational-logic-example2.tex
+dvisvgm -n -a -o combinational-logic-example2 combinational-logic-example2.dvi
 ```
-
-## RESULTING .svg IMAGE
 
 <p align="center">
     <img src="combinational-logic-example2.svg"

@@ -17,8 +17,8 @@ echo "    -a This option forces dvisvgm to vectorize everything"
 dvisvgm -n -a -o priority-arbiter priority-arbiter.dvi
 echo " "
 
-echo "cp priority-arbiter.svg /mnt/c/Users/Jeff/home/jeff/systemverilog/my-systemverilog-examples/sequential-logic/arbiters/priority-arbiter/svgs/."
-cp priority-arbiter.svg /mnt/c/Users/Jeff/home/jeff/systemverilog/my-systemverilog-examples/sequential-logic/arbiters/priority-arbiter/svgs/.
+echo "cp priority-arbiter.svg ~verilog/my-verilog-examples/sequential-logic/arbiters/priority-arbiter/svgs/."
+cp priority-arbiter.svg ~verilog/my-verilog-examples/sequential-logic/arbiters/priority-arbiter/svgs/.
 echo " "
 
 echo "********************************************************* run.sh (END) *"

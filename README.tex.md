@@ -53,7 +53,7 @@ Documentation and Reference
 
 * CALCULUS
 
-  * [diff-equation-basic](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/changes/calculus/diff-equation-basic)
+  * [example](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/changes/calculus/diff-equation-basic)
     _Coming soon_
 
 ### FOUNDATIONS
@@ -99,5 +99,5 @@ Documentation and Reference
 
 ### PHYSICS
 
-* [example](https://github.com/JeffDeCola/my-latex-graphs/tree/master/science/physical-science/physics)
-  _Coming soon_
+* [e-equals-mc-squared](https://github.com/JeffDeCola/my-latex-graphs/tree/master/science/physical-science/physics) $E=mc^2$
+  _Einsteins famous equation_

@@ -4,19 +4,20 @@ _Using
 [LaTeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/)
 to create an AND logic gate._
 
-## RUN
+## TEX FILE
 
-Run
+[and-gate.tex](and-gate.tex)
+
+Uses LaTeX package `tikz` for creating graphs.
+
+## CREATE
+
 [run.sh](run.sh)
-to create an
-[and-gate.svg](and-gate.svg)
-image file from the
-[and-gate.tex](and-gate.tex) LaTeX code.
-
-Uses LaTeX package `tikz` and library `shapes.gates.logic.US`.
 
 ```bash
-sh run.sh
+latex and-gate.tex
+dvisvgm -n -a -o and-gate and-gate.dvi
+cp and-gate.svg ~/verilog/my-verilog-examples/basic-code/combinational-logic/and-gate/svgs/.
 ```
 
 <p align="center">
