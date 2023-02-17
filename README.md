@@ -53,7 +53,7 @@ Documentation and Reference
 
 * CALCULUS
 
-  * [example](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/changes/calculus/diff-equation-basic)
+  * [example](https://github.com/JeffDeCola/my-latex-graphs/tree/master/mathematics/pure/changes/calculus/example)
     _Coming soon_
 
 ### FOUNDATIONS

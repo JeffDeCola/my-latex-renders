@@ -19,17 +19,6 @@ latex e-equals-mc-squared.tex
 dvisvgm -n -a -o e-equals-mc-squared e-equals-mc-squared.dvi
 ```
 
-$$
-    E=mc^2
-$$
-
-<p align="center">
-    <img src="111.svg"
-    align="middle"
-    height="70"
-    width="70"
-</p>
-
 <p align="center">
     <img src="e-equals-mc-squared.svg"
     align="middle"
