@@ -26,6 +26,8 @@ $$
 <p align="center">
     <img src="111.svg"
     align="middle"
+    height="70"
+    width="70"
 </p>
 
 <p align="center">
