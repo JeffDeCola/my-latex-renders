@@ -1,4 +1,4 @@
-# diff-equation-basic
+# example
 
 _Coming soon._
 
