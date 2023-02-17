@@ -99,5 +99,4 @@ Documentation and Reference
 
 ### PHYSICS
 
-* [e-equals-mc-squared](https://github.com/JeffDeCola/my-latex-graphs/tree/master/science/physical-science/physics) $E=mc^2$
-  _Einsteins famous equation_
+* [e-equals-mc-squared](https://github.com/JeffDeCola/my-latex-graphs/tree/master/science/physical-science/physics/e-equals-mc-squared) $E=mc^2$
