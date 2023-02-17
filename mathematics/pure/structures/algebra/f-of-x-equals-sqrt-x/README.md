@@ -18,7 +18,7 @@ and `pgfplots` for scientific graphs.
 ```bash
 latex f-of-x-equals-sqrt-x.tex
 dvisvgm -n -a -o f-of-x-equals-sqrt-x f-of-x-equals-sqrt-x.dvi
-cp f-of-x-equals-sqrt-x.svg ~cheatsheets/my-cheat-sheets/other/mathematics/pure/structures/algebra-cheat-sheet/pgfplots-pics/.
+cp f-of-x-equals-sqrt-x.svg ~/cheatsheets/my-cheat-sheets/other/mathematics/pure/structures/algebra-cheat-sheet/pgfplots-pics/.
 ```
 
 <p align="center">

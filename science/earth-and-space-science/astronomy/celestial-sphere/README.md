@@ -21,7 +21,7 @@ and `pgfplots` for scientific graphs.
 ```bash
 latex celestial-sphere.tex
 dvisvgm -n -a -o celestial-sphere celestial-sphere.dvi
-cp celestial-sphere.svg ~cheatsheets/my-cheat-sheets/other/science/earth-and-space-science/astronomy-cheat-sheet/pgfplots-pics/.
+cp celestial-sphere.svg ~/cheatsheets/my-cheat-sheets/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/pgfplots-pics/.
 ```
 
 <p align="center">

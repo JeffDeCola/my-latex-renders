@@ -18,7 +18,7 @@ and `pgfplots` for scientific graphs.
 ```bash
 latex f-of-x-equals-minus-1-over-3-times-x-minus-3.tex
 dvisvgm -n -a -o f-of-x-equals-minus-1-over-3-times-x-minus-3 f-of-x-equals-minus-1-over-3-times-x-minus-3.dvi
-cp f-of-x-equals-minus-1-over-3-times-x-minus-3.svg ~cheatsheets/my-cheat-sheets/other/mathematics/pure/structures/algebra-cheat-sheet/pgfplots-pics/.
+cp f-of-x-equals-minus-1-over-3-times-x-minus-3.svg ~/cheatsheets/my-cheat-sheets/other/mathematics/pure/structures/algebra-cheat-sheet/pgfplots-pics/.
 ```
 
 <p align="center">

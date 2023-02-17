@@ -18,7 +18,7 @@ dvisvgm -n -a coordinate-plane.dvi
 echo " "
 
 echo "cp coordinate-plane.svg ~cheatsheets/my-cheat-sheets/other/stem/math/pure/structures/algebra-cheat-sheet/pgfplots-pics/."
-cp coordinate-plane.svg ~cheatsheets/my-cheat-sheets/other/stem/math/pure/structures/algebra-cheat-sheet/pgfplots-pics/.
+cp coordinate-plane.svg ~/cheatsheets/my-cheat-sheets/other/stem/math/pure/structures/algebra-cheat-sheet/pgfplots-pics/.
 echo " "
 
 echo "********************************************************* run.sh (END) *"
