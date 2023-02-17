@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2023.2.14)  17 FEB 2023 00:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2023.2.14)  17 FEB 2023 09:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -474,10 +474,10 @@ LaTeX Font Info:    ... okay on input line 21.
 ]
 (./priority-arbiter.aux) ) 
 Here is how much of TeX's memory you used:
- 12830 strings out of 481240
- 262087 string characters out of 5920403
- 508309 words of memory out of 5000000
- 27883 multiletter control sequences out of 15000+600000
+ 12829 strings out of 481240
+ 262074 string characters out of 5920403
+ 508308 words of memory out of 5000000
+ 27882 multiletter control sequences out of 15000+600000
  533397 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,9n,67p,417b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
