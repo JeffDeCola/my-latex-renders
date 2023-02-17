@@ -14,7 +14,7 @@ echo " "
 echo "Convert .dvi to .svg"
 echo "    -n no fonts"
 echo "    -a This option forces dvisvgm to vectorize everything"
-dvisvgm -n -a celestial-sphere.dvi
+dvisvgm -n -a -o celestial-sphere celestial-sphere.dvi
 echo " "
 
 echo "cp celestial-sphere.svg ~/cheatsheets/my-cheat-sheets/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/pgfplots-pics/."

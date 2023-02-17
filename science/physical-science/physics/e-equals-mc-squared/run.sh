@@ -14,7 +14,7 @@ echo " "
 echo "Convert .dvi to .svg"
 echo "    -n no fonts"
 echo "    -a This option forces dvisvgm to vectorize everything"
-dvisvgm -n -a e-equals-mc-squared.dvi
+dvisvgm -n -a -o e-equals-mc-squared e-equals-mc-squared.dvi
 echo " "
 
 echo "********************************************************* run.sh (END) *"

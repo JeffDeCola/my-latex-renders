@@ -14,7 +14,7 @@ echo " "
 echo "Convert .dvi to .svg"
 echo "    -n no fonts"
 echo "    -a This option forces dvisvgm to vectorize everything"
-dvisvgm -n -a f-of-x-equals-2x.dvi
+dvisvgm -n -a -o f-of-x-equals-2x f-of-x-equals-2x.dvi
 echo " "
 
 echo "cp f-of-x-equals-2x.svg ~/cheatsheets/my-cheat-sheets/other/mathematics/pure/structures/algebra-cheat-sheet/pgfplots-pics/."
