@@ -1,8 +1,25 @@
 # f-of-x-equals-minus-1-over-3-times-x-minus-3
 
-Refer to
+_Using
+[LaTeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/)
+to graph a function._
+
+## TEX FILE
+
 [f-of-x-equals-minus-1-over-3-times-x-minus-3.tex](f-of-x-equals-minus-1-over-3-times-x-minus-3.tex)
-for the LaTeX code.
+
+Uses LaTeX package `tikz` for creating graphs
+and `pgfplots` for scientific graphs.
+
+## CREATE
+
+[run.sh](run.sh)
+
+```bash
+latex f-of-x-equals-minus-1-over-3-times-x-minus-3.tex
+dvisvgm -n -a -o f-of-x-equals-minus-1-over-3-times-x-minus-3 f-of-x-equals-minus-1-over-3-times-x-minus-3.dvi
+cp f-of-x-equals-minus-1-over-3-times-x-minus-3.svg ~cheatsheets/my-cheat-sheets/other/mathematics/pure/structures/algebra-cheat-sheet/pgfplots-pics/.
+```
 
 <p align="center">
     <img src="f-of-x-equals-minus-1-over-3-times-x-minus-3.svg"

@@ -2,19 +2,23 @@
 
 _Using
 [LaTeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/)
-to create a function._
+to graph a function._
 
-## RUN
+## TEX FILE
 
-Run
+[f-of-x-equals-sqrt-x.tex](f-of-x-equals-sqrt-x.tex)
+
+Uses LaTeX package `tikz` for creating graphs
+and `pgfplots` for scientific graphs.
+
+## CREATE
+
 [run.sh](run.sh)
-to create an
-[f-of-x-equals-sqrt-x.svg](f-of-x-equals-sqrt-x.svg)
-image file from the
-[f-of-x-equals-sqrt-x.tex](f-of-x-equals-sqrt-x.tex) LaTeX code.
 
 ```bash
-sh run.sh
+latex f-of-x-equals-sqrt-x.tex
+dvisvgm -n -a -o f-of-x-equals-sqrt-x f-of-x-equals-sqrt-x.dvi
+cp f-of-x-equals-sqrt-x.svg ~cheatsheets/my-cheat-sheets/other/mathematics/pure/structures/algebra-cheat-sheet/pgfplots-pics/.
 ```
 
 <p align="center">

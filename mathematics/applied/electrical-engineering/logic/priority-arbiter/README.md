@@ -1,31 +1,25 @@
 # priority-arbiter
 
-Using
+_Using
 [LaTeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/)
-to create a priority arbiter.
+to create a priority arbiter._
 
-## LATEX CODE
+## TEX FILE
 
-Using LaTeX package `tikz`.
-
-Refer to
 [priority-arbiter.tex](priority-arbiter.tex)
-for the LaTeX code.
 
-## RUN
+Uses LaTeX package `tikz` for creating graphs
+and `amsmath` for displaying equations.
 
-Run
+## CREATE
+
 [run.sh](run.sh)
-to create an
-[priority-arbiter.svg](priority-arbiter.svg)
-image file from the
-[priority-arbiter.tex](priority-arbiter.tex) LaTeX code.
 
 ```bash
-sh run.sh
+latex priority-arbiter.tex
+dvisvgm -n -a -o priority-arbiter priority-arbiter.dvi
+cp priority-arbiter.svg ~verilog/my-verilog-examples/sequential-logic/arbiters/priority-arbiter/svgs/.
 ```
-
-## RESULTING .svg IMAGE
 
 <p align="center">
     <img src="priority-arbiter.svg"
