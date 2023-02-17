@@ -18,7 +18,7 @@ and `amsmath` for displaying equations.
 ```bash
 latex priority-arbiter.tex
 dvisvgm -n -a -o priority-arbiter priority-arbiter.dvi
-cp priority-arbiter.svg ~verilog/my-verilog-examples/sequential-logic/arbiters/priority-arbiter/svgs/.
+cp priority-arbiter.svg ~/verilog/my-verilog-examples/sequential-logic/arbiters/priority-arbiter/svgs/.
 ```
 
 <p align="center">

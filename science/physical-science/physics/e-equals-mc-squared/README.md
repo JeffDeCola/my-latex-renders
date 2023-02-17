@@ -6,9 +6,13 @@ to create an equation._
 
 ## TEX FILE
 
+$$
+    E=mc^2
+$$
+
 [e-equals-mc-squared.tex](e-equals-mc-squared.tex)
 
-Uses LaTeX package ????????
+Uses LaTeX package `amsmath` for math equations.
 
 ## CREATE
 
