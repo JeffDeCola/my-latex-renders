@@ -1,5 +1,5 @@
 #!/bin/sh
-# my-latex-graphs readme-github-pages.sh
+# my-latex-renders readme-github-pages.sh
 
 echo " "
 
@@ -20,7 +20,7 @@ fi
 echo "GOAL ----------------------------------------------------------------------------------"
 echo " "
 
-echo "The goal is to git clone /my-latex-graphs to /my-latex-graphs-updated"
+echo "The goal is to git clone /my-latex-renders to /my-latex-renders-updated"
 echo "Then script will edit the /docs/_includes/README.md for GITHUB WEBPAGES"
 echo "Finally push the changes in /docs/_includes/README.md to github"
 echo " "
@@ -29,8 +29,8 @@ echo "CHECK THINGS -------------------------------------------------------------
 echo " "
 
 echo "At start, you should be in a /tmp/build/xxxxx directory with two folders:"
-echo "   /my-latex-graphs"
-echo "   /my-latex-graphs-updated (created in task-build-push.yml task file)"
+echo "   /my-latex-renders"
+echo "   /my-latex-renders-updated (created in task-build-push.yml task file)"
 echo " "
 
 echo "pwd is: $PWD"
@@ -43,12 +43,12 @@ echo " "
 echo "GIT CLONE -----------------------------------------------------------------------------"
 echo " "
 
-echo "git clone my-latex-graphs to my-latex-graphs-updated"
-git clone my-latex-graphs my-latex-graphs-updated
+echo "git clone my-latex-renders to my-latex-renders-updated"
+git clone my-latex-renders my-latex-renders-updated
 echo " "
 
-echo "cd my-latex-graphs-updated"
-cd my-latex-graphs-updated
+echo "cd my-latex-renders-updated"
+cd my-latex-renders-updated
 echo " "
 
 echo "List whats in the current directory"
@@ -70,8 +70,8 @@ echo "    sed -i 's#IMAGE](docs/#IMAGE](#g' temp-README.md"
 sed -i 's#IMAGE](docs/#IMAGE](#g' temp-README.md
 echo "    Update the image links for svgs (if you have them)"
 echo "    Add \"https://raw.githubusercontent.com/JeffDeCola/REPONAME/master/svgs/\" to \"svgs/\""
-echo "    sed -i 's/svgs\//https:\/\/raw.githubusercontent.com\/JeffDeCola\/my-latex-graphs\/master\/svgs\//g' temp-README.md"
-sed -i 's/svgs\//https:\/\/raw.githubusercontent.com\/JeffDeCola\/my-latex-graphs\/master\/svgs\//g' temp-README.md
+echo "    sed -i 's/svgs\//https:\/\/raw.githubusercontent.com\/JeffDeCola\/my-latex-renders\/master\/svgs\//g' temp-README.md"
+sed -i 's/svgs\//https:\/\/raw.githubusercontent.com\/JeffDeCola\/my-latex-renders\/master\/svgs\//g' temp-README.md
 echo " "
 
 echo "GIT COMMIT OR NOT ---------------------------------------------------------------------"

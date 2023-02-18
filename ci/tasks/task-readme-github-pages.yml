@@ -1,4 +1,4 @@
-# my-latex-graphs task-readme-github-pages.yml
+# my-latex-renders task-readme-github-pages.yml
 
 platform: linux
 
@@ -9,11 +9,11 @@ image_resource:
     tag: 1.20.1
 
 inputs:
-- name: my-latex-graphs
+- name: my-latex-renders
 
 outputs:
-- name: my-latex-graphs-updated
+- name: my-latex-renders-updated
 
 run:
-  path: ./my-latex-graphs/ci/scripts/readme-github-pages.sh
+  path: ./my-latex-renders/ci/scripts/readme-github-pages.sh
   # args: [-debug]
