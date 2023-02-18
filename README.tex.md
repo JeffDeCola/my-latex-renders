@@ -5,7 +5,7 @@
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
 
 _A place to keep all my figures, equations
- and graphs in LaTex `.tex` files.
+and graphs in LaTex `.tex` files.
 I use these figures in other repos._
 
 Table of Contents
