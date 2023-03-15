@@ -9,10 +9,10 @@ image_resource:
     tag: 1.20.1
 
 inputs:
-- name: my-latex-renders
+  - name: my-latex-renders
 
 outputs:
-- name: my-latex-renders-updated
+  - name: my-latex-renders-updated
 
 run:
   path: ./my-latex-renders/ci/scripts/readme-github-pages.sh
