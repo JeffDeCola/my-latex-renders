@@ -10,7 +10,7 @@ I use concourse to automate,
 
 The concourse
 [pipeline.yml](https://github.com/JeffDeCola/my-latex-renders/blob/master/ci/pipeline.yml)
-shows the entire ci flow. Visually, it looks like,
+shows the entire ci flow,
 
 ![IMAGE - my-latex-renders concourse ci pipeline - IMAGE](docs/pics/my-latex-renders-pipeline.jpg)
 
