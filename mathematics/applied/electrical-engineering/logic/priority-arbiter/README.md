@@ -1,4 +1,4 @@
-# priority-arbiter
+# PRIORITY ADDER
 
 [![MIT License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
@@ -21,7 +21,7 @@ and `amsmath` for displaying equations.
 ```bash
 latex priority-arbiter.tex
 dvisvgm -n -a -o priority-arbiter priority-arbiter.dvi
-cp priority-arbiter.svg ~/verilog/my-verilog-examples/sequential-logic/arbiters/priority-arbiter/svgs/.
+cp priority-arbiter.svg ~/verilog/my-verilog-examples/sequential-logic/arbiters/priority_arbiter/svgs/.
 ```
 
 <p align="center">
