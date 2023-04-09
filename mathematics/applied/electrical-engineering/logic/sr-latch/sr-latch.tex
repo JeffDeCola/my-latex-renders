@@ -1,0 +1,44 @@
+\documentclass[border=3mm]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{arrows, shapes.gates.logic.US, shapes.gates.logic.IEC, calc}
+
+\begin{document}
+
+\resizebox{22cm}{12cm}{
+
+    \tikzstyle{branch}=[fill,shape=circle,minimum size=3pt,inner sep=0pt]
+
+    \begin{tikzpicture}[label distance=2mm]
+
+        % INPUTS
+        \node[] (s) at (0,4) {\normalsize $s$};
+        \node[] (r) at (0,0) {\normalsize $r$};
+
+        % OUTPUTS
+        \node[] (q) at (8,3.8) {\normalsize $r$};
+        \node[] (qbar) at (8,.2) {\normalsize $\bar{q}$};
+
+        % NAND1
+        \node[nand gate US, draw, rotate=0, logic gate inputs=nn] (NAND1) at ($(s) + (4, -.2)$) {\normalsize $nand1$};
+        \node[branch] (NAND1OUT) at ($(NAND1) + (2, 0)$) {};
+
+        % NAND2
+        \node[nand gate US, draw, rotate=0, logic gate inputs=nn] (NAND2) at ($(r) + (4, .2)$) {\normalsize $nand2$};
+        \node[branch] (NAND2OUT) at ($(NAND2) + (2, 0)$) {};
+
+        % INPUT WIRES
+        \draw (s) -- (NAND1.input 1);
+        \draw (r) -- (NAND2.input 2);
+        
+        % OUTPUT WIRES
+        \draw (NAND1.output) -- (q);
+        \draw (NAND2.output) -- (qbar);
+
+        % NAND GATE WIRES
+        \draw (NAND1OUT) -- ++(0,-0.5) -- ($(NAND2.input 1) +(-1,0.5)$)  -- ++(0,-0.5) -- (NAND2.input 1);
+        \draw (NAND2OUT) -- ++(0,0.5)  -- ($(NAND1.input 2) +(-1,-0.5)$) -- ++(0,0.5)  -- (NAND1.input 2);
+
+    \end{tikzpicture}
+}
+
+\end{document} 

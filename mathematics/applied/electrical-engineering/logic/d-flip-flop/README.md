@@ -1,4 +1,4 @@
-# d-flip-flop
+# D FLIP FLOP
 
 [![MIT License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
@@ -21,7 +21,8 @@ and `circuitikz` for electronic circuits.
 ```bash
 latex d-flip-flop.tex
 dvisvgm -n -a -o d-flip-flop d-flip-flop.dvi
-cp d-flip-flop.svg ~/verilog/my-verilog-examples/basic-code/sequential-logic/d-flip-flop/svgs/.
+cp d-flip-flop.svg ~/verilog/my-verilog-examples/basic-code/sequential-logic/d_flip_flop/svgs/.
+cp d-flip-flop.svg ~/verilog/my-verilog-examples/basic-code/sequential-logic/d_flip_flops/svgs/.
 ```
 
 <p align="center">
