@@ -17,8 +17,8 @@ echo "    -a This option forces dvisvgm to vectorize everything"
 dvisvgm -n -a -o d-flip-flop d-flip-flop.dvi
 echo " "
 
-echo "cp d-flip-flop.svg ~/verilog/my-verilog-examples/basic-code/sequential-logic/d-flip-flop/svgs/."
-cp d-flip-flop.svg ~/verilog/my-verilog-examples/basic-code/sequential-logic/d-flip-flop/svgs/.
+echo "cp d-flip-flop.svg ~/verilog/my-verilog-examples/basic-code/sequential-logic/d_flip_flop/svgs/."
+cp d-flip-flop.svg ~/verilog/my-verilog-examples/basic-code/sequential-logic/d_flip_flop/svgs/.
 echo " "
 
 echo "********************************************************* run.sh (END) *"

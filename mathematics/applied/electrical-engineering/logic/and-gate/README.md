@@ -9,13 +9,13 @@ to create an AND logic gate._
 
 ## TEX FILE
 
-[and-gate.tex](and-gate.tex)
+[and-gate.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/logic/and-gate/and-gate.tex)
 
 Uses LaTeX package `tikz` for creating graphs.
 
 ## CREATE
 
-[run.sh](run.sh)
+[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/logic/and-gate/run.sh)
 
 ```bash
 latex and-gate.tex

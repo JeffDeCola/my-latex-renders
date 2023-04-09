@@ -9,14 +9,14 @@ to create a priority arbiter._
 
 ## TEX FILE
 
-[priority-arbiter.tex](priority-arbiter.tex)
+[priority-arbiter.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/logic/priority-arbiter/priority-arbiter.tex)
 
 Uses LaTeX package `tikz` for creating graphs
 and `amsmath` for displaying equations.
 
 ## CREATE
 
-[run.sh](run.sh)
+[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/logic/priority-arbiter/run.sh)
 
 ```bash
 latex priority-arbiter.tex

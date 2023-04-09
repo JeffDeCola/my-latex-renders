@@ -1,4 +1,4 @@
-# D FLIP FLOP
+# D FLIP-FLOP
 
 [![MIT License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
@@ -9,20 +9,18 @@ to create a d flip-flop._
 
 ## TEX FILE
 
-[d-flip-flop.tex](d-flip-flop.tex)
+[d-flip-flop.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/logic/d-flip-flop/d-flip-flop.tex)
 
-Uses LaTeX package `tikz` for creating graphs
-and `circuitikz` for electronic circuits.
+Uses LaTeX package `tikz` for creating graphs.
 
 ## CREATE
 
-[run.sh](run.sh)
+[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/logic/d-flip-flop/run.sh)
 
 ```bash
 latex d-flip-flop.tex
 dvisvgm -n -a -o d-flip-flop d-flip-flop.dvi
 cp d-flip-flop.svg ~/verilog/my-verilog-examples/basic-code/sequential-logic/d_flip_flop/svgs/.
-cp d-flip-flop.svg ~/verilog/my-verilog-examples/basic-code/sequential-logic/d_flip_flops/svgs/.
 ```
 
 <p align="center">
