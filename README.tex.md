@@ -45,7 +45,14 @@ Documentation and Reference
   * [combinational-logic-example1](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/logic/combinational-logic-example1)
   * [combinational-logic-example2](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/logic/combinational-logic-example2)
   * [d-flip-flop](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/logic/d-flip-flop)
+  * [d-flip-flop-pos-edge](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/logic/d-flip-flop-pos-edge)
+  * [d-flip-flop-pos-edge-sync-en](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/logic/d-flip-flop-pos-edge-sync-en)
+  * [jk-flip-flop](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/logic/jk-flip-flop)
+  * [jk-flip-flop-sync-clear](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/logic/jk-flip-flop-sync-clear)
   * [priority-arbiter](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/logic/priority-arbiter)
+  * [sr-flip-flop](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/logic/sr-flip-flop)
+  * [sr-latch](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/logic/sr-latch)
+  * [t-flip-flop](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/logic/t-flip-flop)
 
 ## MATHEMATICS - PURE
 

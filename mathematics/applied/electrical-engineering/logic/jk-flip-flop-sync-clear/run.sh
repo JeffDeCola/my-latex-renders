@@ -7,20 +7,18 @@ echo "******************************************************* run.sh (START) *"
 echo " "
 
 echo "Create .dvi file"
-echo "latex and-gate.tex"
-latex and-gate.tex
+echo "latex jk-flip-flop-sync-clear.tex"
+latex jk-flip-flop-sync-clear.tex
 echo " "
 
 echo "Convert .dvi to .svg"
 echo "    -n no fonts"
 echo "    -a This option forces dvisvgm to vectorize everything"
-dvisvgm -n -a -o and-gate and-gate.dvi
+dvisvgm -n -a -o jk-flip-flop-sync-clear jk-flip-flop-sync-clear.dvi
 echo " "
 
-echo "cp and-gate.svg ~/verilog/my-verilog-examples/basic-code/combinational-logic/and_gates/svgs/."
-cp and-gate.svg ~/verilog/my-verilog-examples/basic-code/combinational-logic/and_gates/svgs/.
-echo "cp and-gate.svg ~/verilog/my-verilog-examples/basic-code/combinational-logic/and2/svgs/."
-cp and-gate.svg ~/verilog/my-verilog-examples/basic-code/combinational-logic/and2/svgs/.
+echo "cp jk-flip-flop-sync-clear.svg ~/verilog/my-verilog-examples/basic-code/sequential-logic/jk_flip_flop_sync_clear/svgs/."
+cp jk-flip-flop-sync-clear.svg ~/verilog/my-verilog-examples/basic-code/sequential-logic/jk_flip_flop_sync_clear/svgs/.
 echo " "
 
 echo "********************************************************* run.sh (END) *"
