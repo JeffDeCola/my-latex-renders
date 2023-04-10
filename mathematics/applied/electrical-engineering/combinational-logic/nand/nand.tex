@@ -1,0 +1,43 @@
+\documentclass[border=10mm]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{arrows, shapes.gates.logic.US, shapes.gates.logic.IEC, calc}
+
+\tikzset{
+    my-nand-gate/.style={
+        nand gate US, draw, rotate=0, logic gate inputs=nn
+    },
+}
+
+\begin{document}
+
+\resizebox{10cm}{!}{
+
+    \begin{tikzpicture}[label distance=2mm]
+
+        % INPUTS
+        \node[] (A)    at (0,.34)  {\normalsize $a$};
+        \node[] (B)    at (0,0)    {\normalsize $b$};
+
+        % OUTPUTS
+        \node[] (Y)    at (3,.17)  {\normalsize $y$};
+        
+        % NAND, WIRES AND CONNECTOR POINTS
+        \node[my-nand-gate] (NAND)    at ($(B) + (1.5, .17)$)          {\normalsize $nand$};
+        \coordinate[]       (NANDIN1) at ($(NAND.input 1) + (-.5, 0)$) {};
+        \coordinate[]       (NANDIN2) at ($(NAND.input 2) + (-.5, 0)$) {};
+        \coordinate[]       (NANDOUT) at ($(NAND.output)  + (.5, 0)$)  {};
+        \draw (NAND.input 1) -- (NANDIN1);
+        \draw (NAND.input 2) -- (NANDIN2);
+        \draw (NAND.output)  -- (NANDOUT);
+
+        % INPUT CONNECTIONS
+        \draw (A) -- (NANDIN1);
+        \draw (B) -- (NANDIN2);
+        
+        % OUTPUT CONNECTIONS
+        \draw (NANDOUT) -- (Y);
+
+    \end{tikzpicture}
+}
+
+\end{document} 

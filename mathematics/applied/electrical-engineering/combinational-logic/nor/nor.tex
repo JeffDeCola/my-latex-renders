@@ -1,0 +1,43 @@
+\documentclass[border=10mm]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{arrows, shapes.gates.logic.US, shapes.gates.logic.IEC, calc}
+
+\tikzset{
+    my-nor-gate/.style={
+        nor gate US, draw, rotate=0, logic gate inputs=nn
+    },
+}
+
+\begin{document}
+
+\resizebox{10cm}{!}{
+
+    \begin{tikzpicture}[label distance=2mm]
+
+        % INPUTS
+        \node[] (A)    at (0,.28)  {\normalsize $a$};
+        \node[] (B)    at (0,0)    {\normalsize $b$};
+
+        % OUTPUTS
+        \node[] (Y)    at (3,.14)  {\normalsize $y$};
+        
+        % NOR, WIRES NOR CONNECTOR POINTS
+        \node[my-nor-gate]  (NOR)    at ($(B) + (1.5, .14)$)         {\normalsize $nor$};
+        \coordinate[]       (NORIN1) at ($(NOR.input 1) + (-.5, 0)$) {};
+        \coordinate[]       (NORIN2) at ($(NOR.input 2) + (-.5, 0)$) {};
+        \coordinate[]       (NOROUT) at ($(NOR.output)  + (.5, 0)$)  {};
+        \draw (NOR.input 1) -- (NORIN1);
+        \draw (NOR.input 2) -- (NORIN2);
+        \draw (NOR.output)  -- (NOROUT);
+
+        % INPUT CONNECTIONS
+        \draw (A) -- (NORIN1);
+        \draw (B) -- (NORIN2);
+        
+        % OUTPUT CONNECTIONS
+        \draw (NOROUT) -- (Y);
+
+    \end{tikzpicture}
+}
+
+\end{document} 
