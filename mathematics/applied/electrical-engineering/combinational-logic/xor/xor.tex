@@ -1,0 +1,43 @@
+\documentclass[border=10mm]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{arrows, shapes.gates.logic.US, shapes.gates.logic.IEC, calc}
+
+\tikzset{
+    my-xor-gate/.style={
+        xor gate US, draw, rotate=0, logic gate inputs=nn
+    },
+}
+
+\begin{document}
+
+\resizebox{10cm}{!}{
+
+    \begin{tikzpicture}[label distance=2mm]
+
+        % INPUTS
+        \node[] (A)    at (0,.28)  {\normalsize $a$};
+        \node[] (B)    at (0,0)    {\normalsize $b$};
+
+        % OUTPUTS
+        \node[] (Y)    at (3,.14)  {\normalsize $y$};
+        
+        % XOR, WIRES XOR CONNECTOR POINTS
+        \node[my-xor-gate]  (XOR)    at ($(B) + (1.5, .14)$)         {\normalsize $xor$};
+        \coordinate[]       (XORIN1) at ($(XOR.input 1) + (-.5, 0)$) {};
+        \coordinate[]       (XORIN2) at ($(XOR.input 2) + (-.5, 0)$) {};
+        \coordinate[]       (XOROUT) at ($(XOR.output)  + (.5, 0)$)  {};
+        \draw (XOR.input 1) -- (XORIN1);
+        \draw (XOR.input 2) -- (XORIN2);
+        \draw (XOR.output)  -- (XOROUT);
+
+        % INPUT CONNECTIONS
+        \draw (A) -- (XORIN1);
+        \draw (B) -- (XORIN2);
+        
+        % OUTPUT CONNECTIONS
+        \draw (XOROUT) -- (Y);
+
+    \end{tikzpicture}
+}
+
+\end{document} 
