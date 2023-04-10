@@ -9,13 +9,13 @@ to create a sr latch._
 
 ## TEX FILE
 
-[d-flip-flop-pos-edge-syn-en.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/logic/d-flip-flop-pos-edge-syn-en/d-flip-flop-pos-edge-syn-en.tex)
+[d-flip-flop-pos-edge-syn-en.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/sequencial-logic/d-flip-flop-pos-edge-syn-en/d-flip-flop-pos-edge-syn-en.tex)
 
 Uses LaTeX package `tikz` for creating graphs.
 
 ## CREATE
 
-[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/logic/d-flip-flop-pos-edge-syn-en/run.sh)
+[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/sequencial-logic/d-flip-flop-pos-edge-syn-en/run.sh)
 
 ```bash
 latex d-flip-flop-pos-edge-syn-en.tex
