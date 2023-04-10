@@ -9,13 +9,13 @@ to create a sr latch._
 
 ## TEX FILE
 
-[jk-flip-flop.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/logic/jk-flip-flop/jk-flip-flop.tex)
+[jk-flip-flop.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/sequential-logic/jk-flip-flop/jk-flip-flop.tex)
 
 Uses LaTeX package `tikz` for creating graphs.
 
 ## CREATE
 
-[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/logic/jk-flip-flop/run.sh)
+[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/sequential-logic/jk-flip-flop/run.sh)
 
 ```bash
 latex jk-flip-flop.tex

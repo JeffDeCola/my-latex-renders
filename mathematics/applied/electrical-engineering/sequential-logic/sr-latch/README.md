@@ -9,13 +9,13 @@ to create a sr latch._
 
 ## TEX FILE
 
-[sr-latch.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/logic/sr-latch/sr-latch.tex)
+[sr-latch.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/sequential-logic/sr-latch/sr-latch.tex)
 
 Uses LaTeX package `tikz` for creating graphs.
 
 ## CREATE
 
-[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/logic/sr-latch/run.sh)
+[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/sequential-logic/sr-latch/run.sh)
 
 ```bash
 latex sr-latch.tex

@@ -9,13 +9,13 @@ to create a combinational logic example._
 
 ## TEX FILE
 
-[combinational-logic-example2.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/logic/combinational-logic-example2/combinational-logic-example2.tex)
+[combinational-logic-example2.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/combinational-logic/combinational-logic-example2/combinational-logic-example2.tex)
 
 Uses LaTeX package `tikz` for creating graphs.
 
 ## CREATE
 
-[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/logic/combinational-logic-example2/run.sh)
+[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/combinational-logic/combinational-logic-example2/run.sh)
 
 ```bash
 latex combinational-logic-example2.tex
