@@ -20,7 +20,6 @@ Uses LaTeX package `tikz` for creating graphs.
 ```bash
 latex and.tex
 dvisvgm -n -a -o and and.dvi
-cp and.svg ~/verilog/my-verilog-examples/basic-code/combinational-logic/and_gates/svgs/.
 cp and.svg ~/verilog/my-verilog-examples/basic-code/combinational-logic/and2/svgs/.
 
 ```
