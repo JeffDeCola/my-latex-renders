@@ -18,12 +18,8 @@
     \begin{tikzpicture}[label distance=2mm]
 
         % INPUTS
-        \node[] (S)    at (0,4)   {\normalsize $s$};
-        \node[] (R)    at (0,0)   {\normalsize $r$};
-
-        % OUTPUTS
-        \node[] (Q)    at (8,3.8) {\normalsize $q$};
-        \node[] (QBAR) at (8,.2)  {\normalsize $\bar{q}$};
+        \node[] (S) at (0,4) {\normalsize $s$};
+        \node[] (R) at (0,0) {\normalsize $r$};
 
         % NAND1, WIRES AND CONNECTOR POINTS
         \node[my-nand-gate] (NAND1)    at ($(S) + (4, -.2)$)            {\normalsize $nand1$};
@@ -43,6 +39,10 @@
         \draw (NAND2.input 2) -- (NAND2IN2);
         \draw (NAND2.output)  -- (NAND2OUT);
 
+        % OUTPUTS
+        \node[] (Q)    at ($(NAND1OUT) + (2, 0)$) {\normalsize $q$};
+        \node[] (QBAR) at ($(NAND2OUT) + (2, 0)$) {\normalsize $\bar{q}$};
+                
         % INPUT CONNECTIONS
         \draw (S) -- (NAND1IN1);
         \draw (R) -- (NAND2IN2);

@@ -5,7 +5,7 @@
 
 _Using
 [LaTeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/)
-to create a sr latch._
+to create a jk flip-flop with synchronous clear._
 
 ## TEX FILE
 

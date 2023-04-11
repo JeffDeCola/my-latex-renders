@@ -17,8 +17,6 @@ echo "    -a This option forces dvisvgm to vectorize everything"
 dvisvgm -n -a -o and and.dvi
 echo " "
 
-echo "cp and.svg ~/verilog/my-verilog-examples/basic-code/combinational-logic/and_gates/svgs/."
-cp and.svg ~/verilog/my-verilog-examples/basic-code/combinational-logic/and_gates/svgs/.
 echo "cp and.svg ~/verilog/my-verilog-examples/basic-code/combinational-logic/and2/svgs/."
 cp and.svg ~/verilog/my-verilog-examples/basic-code/combinational-logic/and2/svgs/.
 echo " "
