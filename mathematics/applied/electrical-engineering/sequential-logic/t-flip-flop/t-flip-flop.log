@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2023.2.14)  13 APR 2023 00:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2023.2.14)  13 APR 2023 00:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**d-flip-flop.tex
-(./d-flip-flop.tex
+**t-flip-flop.tex
+(./t-flip-flop.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -403,8 +403,8 @@ File: l3backend-dvips.def 2020-02-03 L3 backend support: dvips
 \g__pdf_backend_link_int=\count268
 \g__pdf_backend_link_sf_int=\count269
 )
-(./d-flip-flop.aux)
-\openout1 = `d-flip-flop.aux'.
+(./t-flip-flop.aux)
+\openout1 = `t-flip-flop.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
@@ -422,22 +422,22 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
  ABD: EveryShipout initializing macros
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 112.
+(Font)              <7> on input line 117.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 112.
+(Font)              <5> on input line 117.
  [1
 
 ] [2
 
 ]
-(./d-flip-flop.aux) ) 
+(./t-flip-flop.aux) ) 
 Here is how much of TeX's memory you used:
- 12852 strings out of 481240
- 275040 string characters out of 5920403
- 504376 words of memory out of 5000000
- 27912 multiletter control sequences out of 15000+600000
+ 12853 strings out of 481240
+ 275135 string characters out of 5920403
+ 505372 words of memory out of 5000000
+ 27913 multiletter control sequences out of 15000+600000
  532338 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,6n,65p,468b,682s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on d-flip-flop.dvi (2 pages, 21780 bytes).
+Output written on t-flip-flop.dvi (2 pages, 22340 bytes).

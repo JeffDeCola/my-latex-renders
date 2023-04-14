@@ -1,40 +1,114 @@
-\documentclass{standalone}
+\documentclass[border=3mm]{standalone}
 \usepackage{tikz}
-\usepackage[siunitx, RPvoltages]{circuitikz}
+\usetikzlibrary{arrows, shapes.gates.logic.US, shapes.gates.logic.IEC, calc}
 
-\usetikzlibrary{positioning, arrows, shapes.gates.logic.US, shapes.gates.logic.IEC, calc}
-
-% This is the d flip=flop from the circuitikz package
 \tikzset{
-        my-d-flip-flop/.style={
-            flipflop D, external pins width=0, thick
-        },
+    my-nand-gate/.style={
+        nand gate US, draw, rotate=0, logic gate inputs=nn
+    },
+    my-branch/.style={
+        fill, shape=circle, minimum size=3pt, inner sep=0pt
+    },
+    my-not-gate/.style={
+        not gate US, draw, rotate=-90, logic gate inputs=nn
+    },
 }
 
 \begin{document}
 
-\resizebox{7cm}{5cm}{
+\resizebox{16cm}{!}{
 
-    \begin{circuitikz}[scale=1.0, transform shape]
+    \begin{tikzpicture}[label distance=2mm]
 
-        % DRAW NODES (I like to do them relative to each other)
-        \node [my-d-flip-flop]  (DFF)  at (0,0)                    {\normalsize $dff_0$};
-        \node []                (D)    at ($(DFF)+(-2.0,.85)$)     {\normalsize $d$};
-        \node []                (CLK)  at ($(DFF)+(-2.2,-.85)$)    {\normalsize $clk$};
-        \node []                (Q)    at ($(DFF)+(2.0,.85)$)      {\normalsize $q$};
-        \node []                (QBAR) at ($(DFF)+(2.4,-.85)$)     {\normalsize $q\_bar$};
-        \node []                (NAME) at ($(DFF)+(0, 2.0)$)       {\Large \textbf {D FLIP-FLOP}};
+        % INPUTS
+        \node[] (D)   at (0, 0)            {\normalsize $d$};
+        \node[] (CLK) at ($(D) + (0, -2)$) {\normalsize $clk/en$};
 
-        % CONNECT INPUTS
-        \draw [semithick] (D) -- (DFF.pin 1);
-        \draw [semithick] (CLK) -- (DFF.pin 3);
+        % INPUT COORDINATES
+        \node[my-branch] (S) at ($(D) + (1.5, 0)$) {};
+        \coordinate[]    (R) at ($(D) + (1.5, -4)$) {};
 
-        % CONNECT OUTPUTS
-        \draw [semithick] (DFF.pin 6) -- (Q);
-        \draw [semithick] (DFF.pin 4) -- (QBAR);
+        % NAND3, WIRES AND CONNECTOR POINTS
+        \node[my-nand-gate] (NAND3)    at ($(S) + (3.5, -.2)$)            {\normalsize $nand3$};
+        \coordinate[]       (NAND3IN1) at ($(NAND3.input 1) + (-1, 0)$) {};
+        \coordinate[]       (NAND3IN2) at ($(NAND3.input 2) + (-1, 0)$) {};
+        \coordinate[]       (NAND3OUT) at ($(NAND3.output)  + (1, 0)$)  {};
+        \draw (NAND3.input 1) -- (NAND3IN1);
+        \draw (NAND3.input 2) -- (NAND3IN2);
+        \draw (NAND3.output)  -- (NAND3OUT);
+        
+        % NAND4, WIRES AND CONNECTOR POINTS
+        \node[my-nand-gate] (NAND4)    at ($(R) + (3.5, .2)$)             {\normalsize $nand4$};
+        \coordinate[]       (NAND4IN1) at ($(NAND4.input 1) + (-1, 0)$) {};
+        \coordinate[]       (NAND4IN2) at ($(NAND4.input 2) + (-1, 0)$) {};
+        \coordinate[]       (NAND4OUT) at ($(NAND4.output)  + (1, 0)$)  {};
+        \draw (NAND4.input 1) -- (NAND4IN1);
+        \draw (NAND4.input 2) -- (NAND4IN2);
+        \draw (NAND4.output)  -- (NAND4OUT);
 
-     \end{circuitikz}
+        % NAND1, WIRES AND CONNECTOR POINTS
+        \node[my-nand-gate] (NAND1)    at ($(NAND3OUT) + (3, -.2)$)     {\normalsize $nand1$};
+        \coordinate[]       (NAND1IN1) at ($(NAND1.input 1) + (-1, 0)$) {};
+        \coordinate[]       (NAND1IN2) at ($(NAND1.input 2) + (-1, 0)$) {};
+        \node[my-branch]    (NAND1OUT) at ($(NAND1.output)  + (1, 0)$)  {};
+        \draw (NAND1.input 1) -- (NAND1IN1);
+        \draw (NAND1.input 2) -- (NAND1IN2);
+        \draw (NAND1.output)  -- (NAND1OUT);
+        
+        % NAND2, WIRES AND CONNECTOR POINTS
+        \node[my-nand-gate] (NAND2)    at ($(NAND4OUT) + (3, .2)$)      {\normalsize $nand2$};
+        \coordinate[]       (NAND2IN1) at ($(NAND2.input 1) + (-1, 0)$) {};
+        \coordinate[]       (NAND2IN2) at ($(NAND2.input 2) + (-1, 0)$) {};
+        \node[my-branch]    (NAND2OUT) at ($(NAND2.output)  + (1, 0)$)  {};
+        \draw (NAND2.input 1) -- (NAND2IN1);
+        \draw (NAND2.input 2) -- (NAND2IN2);
+        \draw (NAND2.output)  -- (NAND2OUT);
 
+        % NOT1
+        \node[my-not-gate]  (NOT1)    at ($(S) + (0, -2.75)$)          {\normalsize $not1$};
+        \coordinate[]       (NOT1IN1) at ($(NOT1.input)  + (0, .25)$)  {};
+        \coordinate[]       (NOT1OUT) at ($(NOT1.output) + (0, -.25)$) {};
+        \draw (NOT1.input)  -- (NOT1IN1);
+        \draw (NOT1.output) -- (NOT1OUT);
+
+        % OUTPUTS
+        \node[] (Q)    at ($(NAND1OUT) + (2.5, 0)$) {\normalsize $q$};
+        \node[] (QBAR) at ($(NAND2OUT) + (2.5, 0)$) {\normalsize $\bar{q}$};
+                
+        % INPUT CONNECTIONS
+        \draw (D) -- (S);
+        \draw (S) -- (NOT1IN1);
+        \draw (NOT1OUT) -- (R);
+        \node at ($(S) + (.8, .3)$) {\normalsize $s$};
+        \draw (S) -- (NAND3IN1);
+        \draw (R) -- (NAND4IN2);
+        \node at ($(R) + (.8, .3)$) {\normalsize $r$};
+        
+        % OUTPUT CONNECTIONS
+        \draw (NAND1OUT) -- (Q);
+        \draw (NAND2OUT) -- (QBAR);
+
+        % INTERNAL WIRES - NAND GATES
+        \draw (NAND3OUT) -- (NAND1IN1) node[pos=0] (S1) {};
+        \node at ($(S1) + (-.2, .3)$) {\normalsize $s1$};
+        \draw (NAND4OUT) -- (NAND2IN2) node[pos=0] (R1) {};
+        \node at ($(R1) + (-.2, .3)$) {\normalsize $r1$};
+        \draw (NAND1OUT) -- ++(0,-0.5) -- ($(NAND2IN1) + (0,0.5)$)  -- (NAND2IN1);
+        \draw (NAND2OUT) -- ++(0,0.5)  -- ($(NAND1IN2) + (0,-0.5)$) -- (NAND1IN2);
+
+        % INTERNAL WIRES - CLOCK
+        \draw (NAND3IN2) -- (NAND4IN1) node[my-branch, pos=1/2] (CLKBRANCH) {};
+        \draw (CLK) -- (CLKBRANCH);
+
+        % DRAW DOTTED LINE BOX AROUND SR LATCH
+        \draw[thick, dashed, green] ($(NAND1IN1) + (-.75, .8)$) rectangle ($(NAND2OUT) + (1, -1)$);
+        \node[green] at ($(NAND1) + (1.8, .6)$) {\normalsize SR LATCH};
+
+        % DRAW DOTTED LINE BOX AROUND SR FLIP-FLOP
+        \draw[thick, dashed, red] ($(NAND3IN1) + (-.5, 1.3)$) rectangle ($(NAND2OUT) + (1.7, -1.7)$);
+        \node[red] at ($(NAND1) + (2.1, 1.3)$) {\normalsize SR FLIP-FLOP};
+
+    \end{tikzpicture}
 }
 
 \end{document} 
