@@ -18,8 +18,8 @@
     \begin{tikzpicture}[label distance=2mm]
 
         % INPUTS
-        \node[] (S) at (0,4) {\normalsize $s$};
-        \node[] (R) at (0,0) {\normalsize $r$};
+        \node[] (S) at (0, 0)            {\normalsize $s$};
+        \node[] (R) at ($(S) + (0, -4)$) {\normalsize $r$};
 
         % NAND1, WIRES AND CONNECTOR POINTS
         \node[my-nand-gate] (NAND1)    at ($(S) + (4, -.2)$)            {\normalsize $nand1$};
@@ -54,6 +54,10 @@
         % INTERNAL WIRES - NAND GATE
         \draw (NAND1OUT) -- ++(0,-0.5) -- ($(NAND2IN1) +(0,0.5)$)  -- (NAND2IN1);
         \draw (NAND2OUT) -- ++(0,0.5)  -- ($(NAND1IN2) +(0,-0.5)$) -- (NAND1IN2);
+
+        % DRAW DOTTED LINE BOX AROUND SR LATCH
+        \draw[thick, dashed, green] ($(NAND1IN1) + (-.75, .8)$) rectangle ($(NAND2OUT) + (1, -1)$);
+        \node[green] at ($(NAND1) + (1.8, .6)$) {\normalsize SR LATCH};
 
     \end{tikzpicture}
 }

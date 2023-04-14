@@ -1,0 +1,40 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage[siunitx, RPvoltages]{circuitikz}
+
+\usetikzlibrary{positioning, arrows, shapes.gates.logic.US, shapes.gates.logic.IEC, calc}
+
+% This is the d flip=flop from the circuitikz package
+\tikzset{
+        my-d-flip-flop/.style={
+            flipflop D, external pins width=0, thick
+        },
+}
+
+\begin{document}
+
+\resizebox{7cm}{5cm}{
+
+    \begin{circuitikz}[scale=1.0, transform shape]
+
+        % DRAW NODES (I like to do them relative to each other)
+        \node [my-d-flip-flop]  (DFF)  at (0,0)                    {\normalsize $dff_0$};
+        \node []                (D)    at ($(DFF)+(-2.0,.85)$)     {\normalsize $d$};
+        \node []                (CLK)  at ($(DFF)+(-2.2,-.85)$)    {\normalsize $clk$};
+        \node []                (Q)    at ($(DFF)+(2.0,.85)$)      {\normalsize $q$};
+        \node []                (QBAR) at ($(DFF)+(2.4,-.85)$)     {\normalsize $q\_bar$};
+        \node []                (NAME) at ($(DFF)+(0, 2.0)$)       {\Large \textbf {D FLIP-FLOP}};
+
+        % CONNECT INPUTS
+        \draw [semithick] (D) -- (DFF.pin 1);
+        \draw [semithick] (CLK) -- (DFF.pin 3);
+
+        % CONNECT OUTPUTS
+        \draw [semithick] (DFF.pin 6) -- (Q);
+        \draw [semithick] (DFF.pin 4) -- (QBAR);
+
+     \end{circuitikz}
+
+}
+
+\end{document} 

@@ -58,6 +58,7 @@ Documentation and Reference
   * [jk-flip-flop-sync-clear](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/sequential-logic/jk-flip-flop-sync-clear)
   * [t-flip-flop](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/sequential-logic/t-flip-flop)
   * [d-flip-flop](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/sequential-ogic/d-flip-flop)
+  * [d-flip-flop-box](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/sequential-ogic/d-flip-flop-box)
   * [d-flip-flop-pos-edge](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/sequential-logic/d-flip-flop-pos-edge)
   * [d-flip-flop-pos-edge-sync-en](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/sequential-logic/d-flip-flop-pos-edge-sync-en)
   * [priority-arbiter](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/sequential-logic/priority-arbiter)

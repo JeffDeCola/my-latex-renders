@@ -18,9 +18,9 @@
     \begin{tikzpicture}[label distance=2mm]
 
         % INPUTS
-        \node[] (S)   at (0,4) {\normalsize $s$};
-        \node[] (CLK) at (0,2) {\normalsize $clk$};
-        \node[] (R)   at (0,0) {\normalsize $r$};
+        \node[] (S)   at (0, 0)            {\normalsize $s$};
+        \node[] (CLK) at ($(S) + (0, -2)$) {\normalsize $clk/en$};
+        \node[] (R)   at ($(S) + (0, -4)$) {\normalsize $r$};
 
         % NAND3, WIRES AND CONNECTOR POINTS
         \node[my-nand-gate] (NAND3)    at ($(S) + (3, -.2)$)            {\normalsize $nand3$};
@@ -41,7 +41,7 @@
         \draw (NAND4.output)  -- (NAND4OUT);
 
         % NAND1, WIRES AND CONNECTOR POINTS
-        \node[my-nand-gate] (NAND1)    at ($(NAND3OUT) + (3, -.2)$)            {\normalsize $nand1$};
+        \node[my-nand-gate] (NAND1)    at ($(NAND3OUT) + (3, -.2)$)     {\normalsize $nand1$};
         \coordinate[]       (NAND1IN1) at ($(NAND1.input 1) + (-1, 0)$) {};
         \coordinate[]       (NAND1IN2) at ($(NAND1.input 2) + (-1, 0)$) {};
         \node[my-branch]    (NAND1OUT) at ($(NAND1.output)  + (1, 0)$)  {};
@@ -50,7 +50,7 @@
         \draw (NAND1.output)  -- (NAND1OUT);
         
         % NAND2, WIRES AND CONNECTOR POINTS
-        \node[my-nand-gate] (NAND2)    at ($(NAND4OUT) + (3, .2)$)             {\normalsize $nand2$};
+        \node[my-nand-gate] (NAND2)    at ($(NAND4OUT) + (3, .2)$)      {\normalsize $nand2$};
         \coordinate[]       (NAND2IN1) at ($(NAND2.input 1) + (-1, 0)$) {};
         \coordinate[]       (NAND2IN2) at ($(NAND2.input 2) + (-1, 0)$) {};
         \node[my-branch]    (NAND2OUT) at ($(NAND2.output)  + (1, 0)$)  {};
@@ -71,18 +71,24 @@
         \draw (NAND2OUT) -- (QBAR);
 
         % INTERNAL WIRES - NAND GATES
-        \draw (NAND3OUT) -- (NAND1IN1);
-        \draw (NAND4OUT) -- (NAND2IN2);
-        \draw (NAND1OUT) -- ++(0,-0.5) -- ($(NAND2IN1) +(0,0.5)$)  -- (NAND2IN1);
-        \draw (NAND2OUT) -- ++(0,0.5)  -- ($(NAND1IN2) +(0,-0.5)$) -- (NAND1IN2);
+        \draw (NAND3OUT) -- (NAND1IN1) node[pos=0] (S1) {};
+        \node at ($(S1) + (-.2, .3)$) {\normalsize $s1$};
+        \draw (NAND4OUT) -- (NAND2IN2) node[pos=0] (R1) {};
+        \node at ($(R1) + (-.2, .3)$) {\normalsize $r1$};
+        \draw (NAND1OUT) -- ++(0,-0.5) -- ($(NAND2IN1) + (0,0.5)$)  -- (NAND2IN1);
+        \draw (NAND2OUT) -- ++(0,0.5)  -- ($(NAND1IN2) + (0,-0.5)$) -- (NAND1IN2);
 
         % INTERNAL WIRES - CLOCK
         \draw (NAND3IN2) -- (NAND4IN1) node[my-branch, pos=1/2] (CLKBRANCH) {};
         \draw (CLK) -- (CLKBRANCH);
 
         % DRAW DOTTED LINE BOX AROUND SR LATCH
-        \draw[thick, dashed] ($(NAND1IN1) + (-1, .8)$) rectangle ($(NAND2OUT) + (1, -1)$);
-        \node[] at ($(NAND1) + (0, 1.5)$) {\normalsize SR LATCH};
+        \draw[thick, dashed, green] ($(NAND1IN1) + (-.75, .8)$) rectangle ($(NAND2OUT) + (1, -1)$);
+        \node[green] at ($(NAND1) + (1.8, .6)$) {\normalsize SR LATCH};
+
+        % DRAW DOTTED LINE BOX AROUND SR FLIP-FLOP
+        \draw[thick, dashed, yellow] ($(NAND1IN1) + (-.75, .8)$) rectangle ($(NAND2OUT) + (1, -1)$);
+        \node[yellow] at ($(NAND1) + (1.8, .6)$) {\normalsize SR LATCH};
 
     \end{tikzpicture}
 }
