@@ -13,11 +13,13 @@
 
 \begin{document}
 
-\resizebox{16cm}{!}{
+\resizebox{14cm}{!}{
 
     \begin{tikzpicture}[label distance=2mm]
 
-        % INPUTS
+        % SR LATCH ------------------------------------------------------------------------------------
+
+        % INPUTS - SR LATCH
         \node[] (S) at (0, 0)            {\normalsize $s$};
         \node[] (R) at ($(S) + (0, -4)$) {\normalsize $r$};
 
@@ -39,19 +41,19 @@
         \draw (NAND2.input 2) -- (NAND2IN2);
         \draw (NAND2.output)  -- (NAND2OUT);
 
-        % OUTPUTS
+        % OUTPUTS - SR LATCH
         \node[] (Q)    at ($(NAND1OUT) + (2, 0)$) {\normalsize $q$};
         \node[] (QBAR) at ($(NAND2OUT) + (2, 0)$) {\normalsize $\bar{q}$};
                 
-        % INPUT CONNECTIONS
+        % INPUT WIRE CONNECTIONS
         \draw (S) -- (NAND1IN1);
         \draw (R) -- (NAND2IN2);
         
-        % OUTPUT CONNECTIONS
+        % OUTPUT WIRE CONNECTIONS
         \draw (NAND1OUT) -- (Q);
         \draw (NAND2OUT) -- (QBAR);
 
-        % INTERNAL WIRES - NAND GATE
+        % INTERNAL WIRE CONNECTIONS
         \draw (NAND1OUT) -- ++(0,-0.5) -- ($(NAND2IN1) +(0,0.5)$)  -- (NAND2IN1);
         \draw (NAND2OUT) -- ++(0,0.5)  -- ($(NAND1IN2) +(0,-0.5)$) -- (NAND1IN2);
 
