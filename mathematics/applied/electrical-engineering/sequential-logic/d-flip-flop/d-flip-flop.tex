@@ -16,20 +16,26 @@
 
 \begin{document}
 
-\resizebox{16cm}{!}{
+\resizebox{20cm}{!}{
 
     \begin{tikzpicture}[label distance=2mm]
+
+        % D FLIP-FLOP ---------------------------------------------------------------------------------
 
         % INPUTS
         \node[] (D)   at (0, 0)            {\normalsize $d$};
         \node[] (CLK) at ($(D) + (0, -2)$) {\normalsize $clk/en$};
 
-        % INPUT COORDINATES
-        \node[my-branch] (S) at ($(D) + (1.5, 0)$) {};
-        \coordinate[]    (R) at ($(D) + (1.5, -4)$) {};
+        % SR FLIP-FLOP --------------------------------------------------------------------------------
+        % POSITION, COORDINATE, CHANGE CLK NAME AND ADJUST SPACING IF NEEDED
+
+        % INPUTS - SR FLIP-FLOP
+        \node[my-branch] (S) at ($(D) + (2, 0)$)  {}; % *****POSITION*****
+        \coordinate[] (CLK1) at ($(S) + (0, -2)$) {}; % *****POSITION, COORDINATE AND CHANGE NAME*****
+        \coordinate[] (R)    at ($(S) + (0, -4)$) {}; % *****POSITION and COORDINATE*****
 
         % NAND3, WIRES AND CONNECTOR POINTS
-        \node[my-nand-gate] (NAND3)    at ($(S) + (3.5, -.2)$)            {\normalsize $nand3$};
+        \node[my-nand-gate] (NAND3)    at ($(S) + (3.5, -.2)$)          {\normalsize $nand3$};
         \coordinate[]       (NAND3IN1) at ($(NAND3.input 1) + (-1, 0)$) {};
         \coordinate[]       (NAND3IN2) at ($(NAND3.input 2) + (-1, 0)$) {};
         \coordinate[]       (NAND3OUT) at ($(NAND3.output)  + (1, 0)$)  {};
@@ -38,7 +44,7 @@
         \draw (NAND3.output)  -- (NAND3OUT);
         
         % NAND4, WIRES AND CONNECTOR POINTS
-        \node[my-nand-gate] (NAND4)    at ($(R) + (3.5, .2)$)             {\normalsize $nand4$};
+        \node[my-nand-gate] (NAND4)    at ($(R) + (3.5, .2)$)           {\normalsize $nand4$};
         \coordinate[]       (NAND4IN1) at ($(NAND4.input 1) + (-1, 0)$) {};
         \coordinate[]       (NAND4IN2) at ($(NAND4.input 2) + (-1, 0)$) {};
         \coordinate[]       (NAND4OUT) at ($(NAND4.output)  + (1, 0)$)  {};
@@ -46,8 +52,23 @@
         \draw (NAND4.input 2) -- (NAND4IN2);
         \draw (NAND4.output)  -- (NAND4OUT);
 
-        % NAND1, WIRES AND CONNECTOR POINTS
-        \node[my-nand-gate] (NAND1)    at ($(NAND3OUT) + (3, -.2)$)     {\normalsize $nand1$};
+        % INPUT WIRE CONNECTIONS
+        \draw (S) -- (NAND3IN1);
+        \draw (R) -- (NAND4IN2);
+
+        % INTERNAL WIRES - CLOCK
+        \draw (NAND3IN2) -- (NAND4IN1) node[my-branch, pos=1/2] (CLKBRANCH) {};
+        \draw (CLK1) -- (CLKBRANCH);
+
+        % SR LATCH ------------------------------------------------------------------------------------
+        % POSITION, CHANGE INPUT NAMES AND ADJUST SPACING IF NEEDED
+
+        % INPUTS - SR LATCH
+        \node[] (S1) at ($(NAND3OUT) + (0, 0)$) {}; % *****POSITION AND CHANGE INPUT NAME*****
+        \node[] (R1) at ($(NAND4OUT) + (0, 0)$) {}; % *****POSITION AND CHANGE INPUT NAME*****
+
+        % NAND1, WIRES AND CONNECTOR POINTS *****ADJUSTED SPACING *****
+        \node[my-nand-gate] (NAND1)    at ($(S1) + (3, -.2)$)           {\normalsize $nand1$};
         \coordinate[]       (NAND1IN1) at ($(NAND1.input 1) + (-1, 0)$) {};
         \coordinate[]       (NAND1IN2) at ($(NAND1.input 2) + (-1, 0)$) {};
         \node[my-branch]    (NAND1OUT) at ($(NAND1.output)  + (1, 0)$)  {};
@@ -55,8 +76,8 @@
         \draw (NAND1.input 2) -- (NAND1IN2);
         \draw (NAND1.output)  -- (NAND1OUT);
         
-        % NAND2, WIRES AND CONNECTOR POINTS
-        \node[my-nand-gate] (NAND2)    at ($(NAND4OUT) + (3, .2)$)      {\normalsize $nand2$};
+        % NAND2, WIRES AND CONNECTOR POINTS *****ADJUSTED SPACING *****
+        \node[my-nand-gate] (NAND2)    at ($(R1) + (3, .2)$)            {\normalsize $nand2$};
         \coordinate[]       (NAND2IN1) at ($(NAND2.input 1) + (-1, 0)$) {};
         \coordinate[]       (NAND2IN2) at ($(NAND2.input 2) + (-1, 0)$) {};
         \node[my-branch]    (NAND2OUT) at ($(NAND2.output)  + (1, 0)$)  {};
@@ -64,6 +85,40 @@
         \draw (NAND2.input 2) -- (NAND2IN2);
         \draw (NAND2.output)  -- (NAND2OUT);
 
+        % OUTPUTS - SR LATCH *****POSITION*****
+        \node[] (Q)    at ($(NAND1OUT) + (3.5, 0)$) {\normalsize $q$};
+        \node[] (QBAR) at ($(NAND2OUT) + (3.5, 0)$) {\normalsize $\bar{q}$};
+                
+        % INPUT WIRE CONNECTIONS
+        \draw (S1) -- (NAND1IN1);
+        \draw (R1) -- (NAND2IN2);
+        
+        % OUTPUT WIRE CONNECTIONS
+        \draw (NAND1OUT) -- (Q);
+        \draw (NAND2OUT) -- (QBAR);
+
+        % INTERNAL WIRE CONNECTIONS
+        \draw (NAND1OUT) -- ++(0,-0.5) -- ($(NAND2IN1) +(0,0.5)$)  -- (NAND2IN1);
+        \draw (NAND2OUT) -- ++(0,0.5)  -- ($(NAND1IN2) +(0,-0.5)$) -- (NAND1IN2);
+
+        % DRAW DOTTED LINE BOX AROUND SR LATCH
+        \draw[thick, dashed, green] ($(NAND1IN1) + (-.75, .8)$) rectangle ($(NAND2OUT) + (1, -1)$);
+        \node[green] at ($(NAND1) + (1.8, .6)$) {\normalsize SR LATCH};
+
+        % SR FLIP-FLOP (CONTINUED) --------------------------------------------------------------------
+
+        % INTERNAL WIRES
+        \draw (NAND3OUT) -- (S1);
+        \node at ($(S1) + (-.2, .3)$) {\normalsize $s1$};
+        \draw (NAND4OUT) -- (R1);
+        \node at ($(R1) + (-.2, .3)$) {\normalsize $r1$};
+
+        % DRAW DOTTED LINE BOX AROUND SR FLIP-FLOP
+        \draw[thick, dashed, red] ($(NAND3IN1) + (-.75, 1.3)$) rectangle ($(NAND2OUT) + (1.7, -1.7)$);
+        \node[red] at ($(NAND1) + (2.1, 1.3)$) {\normalsize SR FLIP-FLOP};
+
+        % D FLIP-FLOP (CONTINUED) --------------------------------------------------------------------
+        
         % NOT1
         \node[my-not-gate]  (NOT1)    at ($(S) + (0, -2.75)$)          {\normalsize $not1$};
         \coordinate[]       (NOT1IN1) at ($(NOT1.input)  + (0, .25)$)  {};
@@ -71,42 +126,19 @@
         \draw (NOT1.input)  -- (NOT1IN1);
         \draw (NOT1.output) -- (NOT1OUT);
 
-        % OUTPUTS
-        \node[] (Q)    at ($(NAND1OUT) + (2.5, 0)$) {\normalsize $q$};
-        \node[] (QBAR) at ($(NAND2OUT) + (2.5, 0)$) {\normalsize $\bar{q}$};
-                
         % INPUT CONNECTIONS
         \draw (D) -- (S);
         \draw (S) -- (NOT1IN1);
         \draw (NOT1OUT) -- (R);
-        \node at ($(S) + (.8, .3)$) {\normalsize $s$};
+        \node at ($(S) + (.6, .3)$) {\normalsize $s$};
         \draw (S) -- (NAND3IN1);
         \draw (R) -- (NAND4IN2);
-        \node at ($(R) + (.8, .3)$) {\normalsize $r$};
-        
-        % OUTPUT CONNECTIONS
-        \draw (NAND1OUT) -- (Q);
-        \draw (NAND2OUT) -- (QBAR);
+        \node at ($(R) + (.6, .3)$) {\normalsize $r$};
+        \draw (CLK) -- (CLK1);
 
-        % INTERNAL WIRES - NAND GATES
-        \draw (NAND3OUT) -- (NAND1IN1) node[pos=0] (S1) {};
-        \node at ($(S1) + (-.2, .3)$) {\normalsize $s1$};
-        \draw (NAND4OUT) -- (NAND2IN2) node[pos=0] (R1) {};
-        \node at ($(R1) + (-.2, .3)$) {\normalsize $r1$};
-        \draw (NAND1OUT) -- ++(0,-0.5) -- ($(NAND2IN1) + (0,0.5)$)  -- (NAND2IN1);
-        \draw (NAND2OUT) -- ++(0,0.5)  -- ($(NAND1IN2) + (0,-0.5)$) -- (NAND1IN2);
-
-        % INTERNAL WIRES - CLOCK
-        \draw (NAND3IN2) -- (NAND4IN1) node[my-branch, pos=1/2] (CLKBRANCH) {};
-        \draw (CLK) -- (CLKBRANCH);
-
-        % DRAW DOTTED LINE BOX AROUND SR LATCH
-        \draw[thick, dashed, green] ($(NAND1IN1) + (-.75, .8)$) rectangle ($(NAND2OUT) + (1, -1)$);
-        \node[green] at ($(NAND1) + (1.8, .6)$) {\normalsize SR LATCH};
-
-        % DRAW DOTTED LINE BOX AROUND SR FLIP-FLOP
-        \draw[thick, dashed, red] ($(NAND3IN1) + (-.5, 1.3)$) rectangle ($(NAND2OUT) + (1.7, -1.7)$);
-        \node[red] at ($(NAND1) + (2.1, 1.3)$) {\normalsize SR FLIP-FLOP};
+        % DRAW DOTTED LINE BOX AROUND D FLIP-FLOP
+        \draw[thick, dashed, blue] ($(NAND3IN1) + (-2.8, 2.0)$) rectangle ($(NAND2OUT) + (2.4, -2.4)$);
+        \node[blue] at ($(NAND1) + (2.1, 2.0)$) {\normalsize D FLIP-FLOP};
 
     \end{tikzpicture}
 }

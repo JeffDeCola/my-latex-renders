@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2023.2.14)  13 APR 2023 01:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2023.2.14)  15 APR 2023 00:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -422,9 +422,9 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
  ABD: EveryShipout initializing macros
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 244.
+(Font)              <7> on input line 315.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 244.
+(Font)              <5> on input line 315.
  [1
 
 ] [2
@@ -432,12 +432,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ]
 (./d-flip-flop-pos-edge.aux) ) 
 Here is how much of TeX's memory you used:
- 13098 strings out of 481240
- 279270 string characters out of 5920403
- 540152 words of memory out of 5000000
- 28158 multiletter control sequences out of 15000+600000
+ 13122 strings out of 481240
+ 279634 string characters out of 5920403
+ 545799 words of memory out of 5000000
+ 28182 multiletter control sequences out of 15000+600000
  532338 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,6n,65p,477b,684s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,6n,65p,477b,682s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on d-flip-flop-pos-edge.dvi (2 pages, 37864 bytes).
+Output written on d-flip-flop-pos-edge.dvi (2 pages, 39712 bytes).
