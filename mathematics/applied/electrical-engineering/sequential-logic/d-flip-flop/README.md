@@ -9,13 +9,13 @@ to create a d flip-flop._
 
 ## TEX FILE
 
-[d-flip-flop.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/sequencial-logic/d-flip-flop/d-flip-flop.tex)
+[d-flip-flop.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/sequential-logic/d-flip-flop/d-flip-flop.tex)
 
 Uses LaTeX package `tikz` for creating graphs.
 
 ## CREATE
 
-[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/sequencial-logic/d-flip-flop/run.sh)
+[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/sequential-logic/d-flip-flop/run.sh)
 
 ```bash
 latex d-flip-flop.tex
