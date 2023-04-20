@@ -9,14 +9,14 @@ to graph a function._
 
 ## TEX FILE
 
-[f-of-x-equals-minus-1-over-3-times-x-minus-3.tex](f-of-x-equals-minus-1-over-3-times-x-minus-3.tex)
+[f-of-x-equals-minus-1-over-3-times-x-minus-3.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/pure/structures/algebra/f-of-x-equals-minus-1-over-3-times-x-minus-3/f-of-x-equals-minus-1-over-3-times-x-minus-3.tex)
 
 Uses LaTeX package `tikz` for creating graphs
 and `pgfplots` for scientific graphs.
 
 ## CREATE
 
-[run.sh](run.sh)
+[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/pure/structures/algebra/f-of-x-equals-minus-1-over-3-times-x-minus-3/run.sh)
 
 ```bash
 latex f-of-x-equals-minus-1-over-3-times-x-minus-3.tex

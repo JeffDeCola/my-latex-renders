@@ -12,14 +12,14 @@ altitude correct.  I'll come back to it someday.
 
 ## TEX FILE
 
-[celestial-sphere.tex](celestial-sphere.tex)
+[celestial-sphere.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/science/earth-and-space-science/astronomy/celestial-sphere/celestial-sphere.tex)
 
 Uses LaTeX package `tikz` for creating graphs
 and `pgfplots` for scientific graphs.
 
 ## CREATE
 
-[run.sh](run.sh)
+[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/science/earth-and-space-science/astronomy/celestial-sphere/run.sh)
 
 ```bash
 latex celestial-sphere.tex

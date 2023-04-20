@@ -9,14 +9,14 @@ to create a second 3d coordinate plane on a sphere._
 
 ## TEX FILE
 
-[a-second-3d-coordinate-plane-on-a-sphere.tex](a-second-3d-coordinate-plane-on-a-sphere.tex)
+[a-second-3d-coordinate-plane-on-a-sphere.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/pure/spaces/geometry/a-second-3d-coordinate-plane-on-a-sphere/a-second-3d-coordinate-plane-on-a-sphere.tex)
 
 Uses LaTeX package `tikz` for creating graphs
 and `tikz-3dplot` for 3d graphs.
 
 ## CREATE
 
-[run.sh](run.sh)
+[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/pure/spaces/geometry/a-second-3d-coordinate-plane-on-a-sphere/run.sh)
 
 ```bash
 latex a-second-3d-coordinate-plane-on-a-sphere.tex

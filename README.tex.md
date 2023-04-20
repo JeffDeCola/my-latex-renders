@@ -70,30 +70,25 @@ Documentation and Reference
 * CALCULUS
 
   * [example](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/changes/calculus/example)
-    _Coming soon_
 
 ### FOUNDATIONS
 
 * MATHEMATICS LOGIC
 
   * [example](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/foundations/mathematics-logic/example)
-    _Coming soon_
 
 ### NUMBER SYSTEMS
 
 * PRIME NUMBERS
 
   * [example](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/number-systems/prime-numbers/example)
-    _Coming soon_
 
 ### SPACES
 
 * GEOMETRY
 
   * [3d-coordinate-plane-on-a-sphere](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/spaces/geometry/3d-coordinate-plane-on-a-sphere)
-    _3D Coordinate Plane on a Sphere_
   * [a-second-3d-coordinate-plane-on-a-sphere](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/spaces/geometry/a-second-3d-coordinate-plane-on-a-sphere)
-    _A second 3D Coordinate Plane on a Sphere_
 
 ### STRUCTURES
 
@@ -109,7 +104,6 @@ Documentation and Reference
 ### ASTRONOMY
 
 * [celestial-sphere](https://github.com/JeffDeCola/my-latex-renders/tree/master/science/earth-and-space-science/astronomy/celestial-sphere)
-  _Celestial Sphere_
 
 ## SCIENCE - PHYSICAL SCIENCE
 

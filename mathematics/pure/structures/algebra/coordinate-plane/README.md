@@ -9,14 +9,14 @@ to create a coordinate plane._
 
 ## TEX FILE
 
-[coordinate-plane.tex](coordinate-plane.tex)
+[coordinate-plane.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/pure/structures/algebra/coordinate-plane/coordinate-plane.tex)
 
 Uses LaTeX package `tikz` for creating graphs
 and `pgfplots` for scientific graphs.
 
 ## CREATE
 
-[run.sh](run.sh)
+[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/pure/structures/algebra/coordinate-plane/run.sh)
 
 ```bash
 latex coordinate-plane.tex

@@ -9,14 +9,14 @@ to create a 3d coordinate plane on a sphere._
 
 ## TEX FILE
 
-[3d-coordinate-plane-on-a-sphere.tex](3d-coordinate-plane-on-a-sphere.tex)
+[3d-coordinate-plane-on-a-sphere.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/pure/spaces/geometry/3d-coordinate-plane-on-a-sphere/3d-coordinate-plane-on-a-sphere.tex)
 
 Uses LaTeX package `tikz` for creating graphs
 and `tikz-3dplot` for 3d graphs.
 
 ## CREATE
 
-[run.sh](run.sh)
+[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/pure/spaces/geometry/3d-coordinate-plane-on-a-sphere/run.sh)
 
 ```bash
 latex 3d-coordinate-plane-on-a-sphere.tex
