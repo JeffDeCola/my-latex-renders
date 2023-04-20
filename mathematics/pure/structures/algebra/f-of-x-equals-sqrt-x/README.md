@@ -9,14 +9,14 @@ to graph a function._
 
 ## TEX FILE
 
-[f-of-x-equals-sqrt-x.tex](f-of-x-equals-sqrt-x.tex)
+[f-of-x-equals-sqrt-x.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/pure/structures/algebra/f-of-x-equals-sqrt-x/f-of-x-equals-sqrt-x.tex)
 
 Uses LaTeX package `tikz` for creating graphs
 and `pgfplots` for scientific graphs.
 
 ## CREATE
 
-[run.sh](run.sh)
+[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/pure/structures/algebra/f-of-x-equals-sqrt-x/run.sh)
 
 ```bash
 latex f-of-x-equals-sqrt-x.tex

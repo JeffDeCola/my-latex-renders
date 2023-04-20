@@ -9,13 +9,13 @@ to create an equation._
 
 ## TEX FILE
 
-[e-equals-mc-squared.tex](e-equals-mc-squared.tex)
+[e-equals-mc-squared.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/science/physical-science/physics/e-equals-mc-squared/e-equals-mc-squared.tex)
 
 Uses LaTeX package `amsmath` for math equations.
 
 ## CREATE
 
-[run.sh](run.sh)
+[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/science/physical-science/physics/e-equals-mc-squared/run.sh)
 
 ```bash
 latex e-equals-mc-squared.tex
