@@ -5,7 +5,7 @@
 
 _Using
 [LaTeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/)
-to create an AND logic gate._
+to create a celestial sphere._
 
 I'm pretty happy with this.  I can't figure out how to get the azimuth and
 altitude correct.  I'll come back to it someday.
