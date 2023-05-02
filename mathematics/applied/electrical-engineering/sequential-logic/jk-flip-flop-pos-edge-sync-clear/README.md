@@ -1,4 +1,4 @@
-# JK FLIP-FLOP SYNC CLEAR
+# JK FLIP-FLOP POS EDGE SYNC CLEAR
 
 [![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
@@ -11,7 +11,7 @@ to create a positive edge jk flip-flop with synchronous clear._
 
 [jk-flip-flop-pos-edge-sync-clear.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/sequential-logic/jk-flip-flop-pos-edge-sync-clear/jk-flip-flop-pos-edge-sync-clear.tex)
 
-Uses LaTeX package `tikz` for creating graphs.
+Uses LaTeX package `circuitikz` for creating this flip-flop.
 
 ## CREATE
 

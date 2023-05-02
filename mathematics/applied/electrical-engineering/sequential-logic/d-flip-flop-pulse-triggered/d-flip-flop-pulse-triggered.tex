@@ -20,7 +20,7 @@
 
     \begin{tikzpicture}[label distance=2mm]
 
-        % D FLIP-FLOP POS EDGE ------------------------------------------------------------------------
+        % D FLIP-FLOP PULSE TRIGGERED -----------------------------------------------------------------
 
         % INPUTS
         \node[] (D)   at (0,0)             {\normalsize $d$};
@@ -100,7 +100,7 @@
 
         % OUTPUTS - SR LATCH *****POSITION*****
         \coordinate[] (Q1)    at ($(NAND5OUT) + (4, 0)$) {};
-        \node[] (Q1BAR) at ($(NAND6OUT) + (3.2, 0)$) {\normalsize $\bar{q1}$};
+        \node[] (Q1BAR)       at ($(NAND6OUT) + (3.2, 0)$) {\normalsize $\bar{q1}$};
         
         % LABEL IT
         \node at ($(Q1)   + (-.2, -.3)$) {\normalsize $q1$};
@@ -283,7 +283,7 @@
         \draw[thick, dashed, blue] ($(NAND3IN1) + (-2.8, 2.0)$) rectangle ($(NAND2OUT) + (2.4, -2.4)$);
         \node[blue] at ($(NAND1) + (2.1, 2.0)$) {\normalsize D FLIP-FLOP (SLAVE)};
 
-        % D FLIP-FLOP POS EDGE (CONTINUED) ------------------------------------------------------------
+        % D FLIP-FLOP PULSE TRIGGERED (CONTINUED) -----------------------------------------------------
 
         % CONNECT D FLIP-FLOPS
         \draw (Q1) -- (D2);
