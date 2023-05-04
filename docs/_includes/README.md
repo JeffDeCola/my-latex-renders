@@ -15,6 +15,8 @@
   * [xor](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/xor)
   * [combinational-logic-example1](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/combinational-logic-example1)
   * [combinational-logic-example2](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/combinational-logic-example2)
+  * [half_adder](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/half_adder)
+  * [full_adder](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/full_adder)
 
 * SEQUENTIAL LOGIC
 
@@ -25,7 +27,6 @@
   * [jk-flip-flop-pos-edge-sync-clear](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/sequential-logic/jk-flip-flop-pos-edge-sync-clear)
   * [t-flip-flop](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/sequential-logic/t-flip-flop)
   * [d-flip-flop](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/sequential-logic/d-flip-flop)
-  * [d-flip-flop-box](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/sequential-logic/d-flip-flop-box)
   * [d-flip-flop-pulse-triggered](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/sequential-logic/d-flip-flop-pulse-triggered)
   * [d-flip-flop-pos-edge-sync-en](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/sequential-logic/d-flip-flop-pos-edge-sync-en)
   * [priority-arbiter](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/sequential-logic/priority-arbiter)
