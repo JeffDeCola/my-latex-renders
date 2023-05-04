@@ -49,6 +49,8 @@ Documentation and Reference
   * [xor](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/xor)
   * [combinational-logic-example1](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/combinational-logic-example1)
   * [combinational-logic-example2](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/combinational-logic-example2)
+  * [half_adder](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/half_adder)
+  * [full_adder](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/full_adder)
 
 * SEQUENTIAL LOGIC
 
