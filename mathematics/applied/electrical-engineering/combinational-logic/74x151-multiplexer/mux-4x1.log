@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2023.2.14)  5 MAY 2023 04:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2023.2.14)  5 MAY 2023 01:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**mux-to-demux.tex
-(./mux-to-demux.tex
+**mux-4x1.tex
+(./mux-4x1.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -553,23 +553,23 @@ zlibraryshapes.gates.logic.IEC.code.tex
 File: tikzlibraryshapes.gates.logic.IEC.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/pgflib
-raryshapes.gates.logic.IEC.code.tex)) (./mux-to-demux.aux)
-\openout1 = `mux-to-demux.aux'.
+raryshapes.gates.logic.IEC.code.tex)) (./mux-4x1.aux)
+\openout1 = `mux-4x1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
 ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
@@ -580,22 +580,22 @@ Dictionary: translator-basic-dictionary, Language: English
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 28.
+(Font)              <7> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 28.
+(Font)              <5> on input line 18.
 
 [1
 
 ] [2
 
-] (./mux-to-demux.aux) ) 
+] (./mux-4x1.aux) ) 
 Here is how much of TeX's memory you used:
- 27020 strings out of 481240
- 697375 string characters out of 5920403
- 1040865 words of memory out of 5000000
- 41975 multiletter control sequences out of 15000+600000
+ 26909 strings out of 481240
+ 695515 string characters out of 5920403
+ 1036698 words of memory out of 5000000
+ 41864 multiletter control sequences out of 15000+600000
  534352 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,6n,71p,491b,683s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,6n,71p,486b,683s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on mux-to-demux.dvi (2 pages, 17552 bytes).
+Output written on mux-4x1.dvi (2 pages, 13748 bytes).

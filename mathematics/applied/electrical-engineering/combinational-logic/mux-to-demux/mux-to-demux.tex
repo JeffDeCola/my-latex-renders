@@ -35,17 +35,17 @@
 
             \node[mux4x1]                         (MUX)   at (0,0)                              {};
             %LEFT
-            \foreach \i/\lab [count=\iz from 0] in {1/a, 2/b, 3/c, 4/d} {
+            \foreach \i/\lab [count=\iz from 0] in {1/a1, 2/b1, 3/c1, 4/d1} {
                 \node[right, font=\tiny\ttfamily] (INP\iz)  at ($(MUX.blpin \i) + (0, 0)$)      {\normalsize $\lab$};
                 \coordinate[]                     (IN\iz)   at ($(MUX.blpin \i) + (-1, 0)$)     {};
             }
             %RIGHT
-            \node[left, font=\tiny\ttfamily]      (Y1P)     at ($(MUX.brpin 1) + (0, 0)$)       {\normalsize $y$};
+            \node[left, font=\tiny\ttfamily]      (Y1P)     at ($(MUX.brpin 1) + (0, 0)$)       {\normalsize $y1$};
             \coordinate[]                         (Y1)      at ($(MUX.brpin 1) + (1, 0)$)       {};
             %TOP
             \node[]                               (NAME1)   at ($(MUX) + (0, 3.0)$)             {\Large \textbf {MUX 4X1}};
             %BOTTOM
-            \node[above, font=\tiny\ttfamily]     (SEL1P)    at ($(MUX.bbpin 1) + (0, .1)$)      {\normalsize $sel$};
+            \node[above, font=\tiny\ttfamily]     (SEL1P)    at ($(MUX.bbpin 1) + (0, .1)$)      {\normalsize $sel1$};
             \coordinate[]                         (SEL1)     at ($(MUX.bbpin 1) + (0, -1)$)      {};
             %CONNECT
             \foreach \i [count=\iz from 0] in {1,...,4} {
@@ -70,17 +70,17 @@
 
             \node[demux1x4]                       (DEMUX)   at ($(MUX) + (5,0)$)                {};
             %LEFT
-            \node[right, font=\tiny\ttfamily]     (Y2P)      at ($(DEMUX.blpin 1) + (0, 0)$)     {\normalsize $y$};
+            \node[right, font=\tiny\ttfamily]     (Y2P)      at ($(DEMUX.blpin 1) + (0, 0)$)     {\normalsize $y2$};
             \coordinate[]                         (Y2)       at ($(DEMUX.blpin 1) + (-1, 0)$)    {};
             %RIGHT
-            \foreach \i/\lab [count=\iz from 0] in {1/a, 2/b, 3/c, 4/d} {
+            \foreach \i/\lab [count=\iz from 0] in {1/a2, 2/b2, 3/c2, 4/d2} {
                 \node[left, font=\tiny\ttfamily]  (OUTP\iz) at ($(DEMUX.brpin \i) + (0, 0)$)    {\normalsize $\lab$};
                 \coordinate[]                     (OUT\iz)  at ($(DEMUX.brpin \i) + (1, 0)$)    {};
             }
             %TOP
             \node[]                               (NAME2)   at ($(DEMUX) + (0, 3.0)$)           {\Large \textbf {DEMUX 1X4}};
             %BOTTOM
-            \node[above, font=\tiny\ttfamily]     (SEL2P)    at ($(DEMUX.bbpin 1) + (0, .1)$)     {\normalsize $sel$};
+            \node[above, font=\tiny\ttfamily]     (SEL2P)    at ($(DEMUX.bbpin 1) + (0, .1)$)     {\normalsize $sel2$};
             \coordinate[]                         (SEL2)     at ($(DEMUX.bbpin 1) + (0, -1)$)    {};
             %CONNECT
             \draw[] (DEMUX.blpin 1) -- (Y2);
