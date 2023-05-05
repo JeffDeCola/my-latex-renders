@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2023.2.14)  5 MAY 2023 01:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2023.2.14)  5 MAY 2023 14:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -590,12 +590,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ] (./mux-4x1.aux) ) 
 Here is how much of TeX's memory you used:
- 26909 strings out of 481240
- 695515 string characters out of 5920403
- 1036698 words of memory out of 5000000
- 41864 multiletter control sequences out of 15000+600000
+ 26910 strings out of 481240
+ 695530 string characters out of 5920403
+ 1036699 words of memory out of 5000000
+ 41865 multiletter control sequences out of 15000+600000
  534352 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,6n,71p,486b,683s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on mux-4x1.dvi (2 pages, 13748 bytes).
+Output written on mux-4x1.dvi (2 pages, 13740 bytes).
