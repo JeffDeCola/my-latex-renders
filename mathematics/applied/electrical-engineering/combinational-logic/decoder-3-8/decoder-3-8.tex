@@ -1,0 +1,58 @@
+\documentclass[border=3mm]{standalone}
+\usepackage[siunitx, RPvoltages]{circuitikz}
+\usetikzlibrary{arrows, shapes.gates.logic.US, shapes.gates.logic.IEC, calc}
+
+\tikzset{
+    my3to8/.style={
+        muxdemux, muxdemux def={
+            Lh=8, Rh=8, w=6,  % both left and right size =8 units, wide top
+            NT=0,             % none top
+            NB=0,             % none bottom
+            NL=1,             % 1 pins on the left
+            NR=8,             % 8 pins on the right
+        },
+        % draw only left pins={1},
+    },
+}
+
+\begin{document}
+
+\resizebox{10cm}{!}{
+
+    \begin{circuitikz}[scale=1.0, transform shape]
+        
+        \node[my3to8]                         (DECODE)   at (0,0)                                {};
+        %LEFT
+        \node[right, font=\tiny\ttfamily]     (DIN0)    at ($(DECODE.blpin 1) + (0, 0)$)     {\normalsize $[2\:0]in$};
+        \coordinate[]                         (IN0)     at ($(DECODE.blpin 1) + (-1, 0)$)    {};
+        %RIGHT
+        \foreach \i [count=\iz from 0] in {1,...,8} {
+            \node[left, font=\tiny\ttfamily]  (DOUT\iz) at ($(DECODE.brpin \i) + (0, 0)$)    {\normalsize $out[\iz]$};
+            \coordinate[]                     (OUT\iz)  at ($(DECODE.brpin \i) + (1, 0)$)    {};
+        }
+        %TOP
+        \node[]                               (NAME)    at ($(DECODE) + (0, 3.0)$)           {\Large \textbf {DECODER 3-8}};
+        %CONNECT
+        \draw[] (DECODE.blpin 1) -- (IN0);
+        \foreach \i [count=\iz from 0] in {1,...,8} {
+            \draw[] (DECODE.brpin \i) -- (OUT\iz);
+        }
+        
+        % INPUTS
+        \node[] (INPUT0)  at ($(IN0) + (-.3, 0)$)  {\normalsize $010$};
+
+        %OUTPUTS
+        \node[]       (OUTPUT0)  at ($(OUT0) + (.3, 0)$)  {\normalsize $0$};
+        \node[green]  (OUTPUT0)  at ($(OUT1) + (.3, 0)$)  {\normalsize $1$};
+        \node[]       (OUTPUT0)  at ($(OUT2) + (.3, 0)$)  {\normalsize $0$};
+        \node[]       (OUTPUT0)  at ($(OUT3) + (.3, 0)$)  {\normalsize $0$};
+        \node[]       (OUTPUT0)  at ($(OUT4) + (.3, 0)$)  {\normalsize $0$};
+        \node[]       (OUTPUT0)  at ($(OUT5) + (.3, 0)$)  {\normalsize $0$};
+        \node[]       (OUTPUT0)  at ($(OUT6) + (.3, 0)$)  {\normalsize $0$};
+        \node[]       (OUTPUT0)  at ($(OUT7) + (.3, 0)$)  {\normalsize $0$};
+        
+    \end{circuitikz}
+
+}
+
+\end{document} 
