@@ -1,11 +1,11 @@
-# ENCODER 8-3 GATE
+# ENCODER 8-3
 
 [![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
 
 _Using
 [LaTeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/)
-to create an AND logic gate._
+to create an ENCODER logic gate._
 
 ## TEX FILE
 

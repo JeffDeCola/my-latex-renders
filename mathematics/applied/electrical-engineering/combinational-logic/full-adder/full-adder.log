@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2023.2.14)  4 MAY 2023 03:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2023.2.14)  4 MAY 2023 23:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**half_adder.tex
-(./half_adder.tex
+**full-adder.tex
+(./full-adder.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -403,41 +403,40 @@ File: l3backend-dvips.def 2020-02-03 L3 backend support: dvips
 \g__pdf_backend_link_int=\count268
 \g__pdf_backend_link_sf_int=\count269
 )
-(./half_adder.aux)
-\openout1 = `half_adder.aux'.
+No file full-adder.aux.
+\openout1 = `full-adder.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
- ABD: EveryShipout initializing macros
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+ABD: EveryShipout initializing macros
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 66.
+(Font)              <7> on input line 121.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 66.
+(Font)              <5> on input line 121.
  [1
 
 ] [2
 
-]
-(./half_adder.aux) ) 
+] (./full-adder.aux) ) 
 Here is how much of TeX's memory you used:
- 12837 strings out of 481240
- 275005 string characters out of 5920403
- 500369 words of memory out of 5000000
- 27897 multiletter control sequences out of 15000+600000
+ 12963 strings out of 481240
+ 277161 string characters out of 5920403
+ 511277 words of memory out of 5000000
+ 28025 multiletter control sequences out of 15000+600000
  532338 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,6n,66p,467b,686s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,6n,66p,467b,697s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on half_adder.dvi (2 pages, 17572 bytes).
+Output written on full-adder.dvi (2 pages, 26728 bytes).

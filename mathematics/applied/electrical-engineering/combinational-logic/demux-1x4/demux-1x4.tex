@@ -1,0 +1,64 @@
+\documentclass[border=3mm]{standalone}
+\usepackage[siunitx, RPvoltages]{circuitikz}
+\usetikzlibrary{arrows, shapes.gates.logic.US, shapes.gates.logic.IEC, calc}
+
+\tikzset{
+    demux1x4/.style={
+        muxdemux, muxdemux def={
+            Lh=4, Rh=8, w=4,  % Size
+            NT=0,             % None top
+            NB=1,             % 1 pin on bottom
+            NL=1,             % 1 pins on the left
+            NR=4,             % 4 pins on the right
+        },
+        % draw only left pins={1},
+    },
+}
+
+\begin{document}
+
+\resizebox{10cm}{!}{
+
+    \begin{circuitikz}[scale=1.0, transform shape]
+        
+        \node[demux1x4]                       (DEMUX)   at (0,0)                            {};
+        %LEFT
+        \node[right, font=\tiny\ttfamily]     (YP)      at ($(DEMUX.blpin 1) + (0, 0)$)     {\normalsize $y$};
+        \coordinate[]                         (Y)       at ($(DEMUX.blpin 1) + (-1, 0)$)    {};
+        %RIGHT
+        \foreach \i/\lab [count=\iz from 0] in {1/a, 2/b, 3/c, 4/d} {
+            \node[left, font=\tiny\ttfamily]  (OUTP\iz) at ($(DEMUX.brpin \i) + (0, 0)$)    {\normalsize $\lab$};
+            \coordinate[]                     (OUT\iz)  at ($(DEMUX.brpin \i) + (1, 0)$)    {};
+        }
+        %TOP
+        \node[]                               (NAME)    at ($(DEMUX) + (0, 3.0)$)           {\Large \textbf {DEMUX 1X4}};
+        %BOTTOM
+        \node[above, font=\tiny\ttfamily]     (SELP)    at ($(DEMUX.bbpin 1) + (0, .1)$)     {\normalsize $sel$};
+        \coordinate[]                         (SEL)     at ($(DEMUX.bbpin 1) + (0, -1)$)    {};
+        %CONNECT
+        \draw[] (DEMUX.blpin 1) -- (Y);
+        \foreach \i [count=\iz from 0] in {1,...,4} {
+            \draw[] (DEMUX.brpin \i) -- (OUT\iz);
+        }
+        \draw[] (DEMUX.bbpin 1) -- (SEL);
+        
+        %DOTTED LINE
+        \draw[dotted] ($(DEMUX.blpin 1) + (0, 0)$) -- ($(DEMUX.brpin 2) + (0, 0)$);
+
+        % INPUTS
+        \node[] (INPUT0)  at ($(Y) + (-1, 0)$)  {\normalsize $...0110110$};
+
+        %OUTPUTS
+        \node[]       (OUTPUT0)  at ($(OUT0) + (.3, 0)$)  {\normalsize $0$};
+        \node[green]  (OUTPUT0)  at ($(OUT1) + ( 1, 0)$)  {\normalsize $...0110110$};
+        \node[]       (OUTPUT0)  at ($(OUT2) + (.3, 0)$)  {\normalsize $0$};
+        \node[]       (OUTPUT0)  at ($(OUT3) + (.3, 0)$)  {\normalsize $0$};
+        
+        %SELECT
+        \node[] (SELECT)  at ($(SEL) + (0, -.3)$)  {\normalsize $01$};
+
+    \end{circuitikz}
+
+}
+
+\end{document} 
