@@ -3,21 +3,21 @@
 \usetikzlibrary{arrows, shapes.gates.logic.US, shapes.gates.logic.IEC, calc}
 
 \tikzset{
-    my3to8/.style={
+  decode3to8/.style={
         muxdemux, muxdemux def={
-            Lh=8, Rh=8, w=6,  % both left and right size =8 units, wide top
-            NT=0,             % none top
-            NB=0,             % none bottom
+            Lh=8, Rh=8, w=6,  % Size
+            NT=0,             % None top
+            NB=0,             % None bottom
             NL=1,             % 1 pins on the left
             NR=8,             % 8 pins on the right
         },
         % draw only left pins={1},
     },
-    my8to3/.style={
+    encode8to3/.style={
         muxdemux, muxdemux def={
-            Lh=8, Rh=8, w=6,  % both left and right size =8 units, wide top
-            NT=0,             % none top
-            NB=0,             % none bottom
+            Lh=8, Rh=8, w=6,  % Size
+            NT=0,             % None top
+            NB=0,             % None bottom
             NL=8,             % 8 pins on the left
             NR=1,             % 1 pins on the right
         },
@@ -33,7 +33,7 @@
         
         % DECODER *********************************************************************
 
-            \node[my3to8]                         (DECODE)   at (0,0)                            {};
+            \node[decode3to8]                     (DECODE)   at (0,0)                            {};
             %LEFT
             \node[right, font=\tiny\ttfamily]     (DPIN0)    at ($(DECODE.blpin 1) + (0, 0)$)     {\normalsize $[2\:0]in$};
             \coordinate[]                         (DIN0)     at ($(DECODE.blpin 1) + (-1, 0)$)    {};
@@ -55,7 +55,7 @@
         
         % ENCODER *********************************************************************
 
-            \node[my8to3]                         (ENCODE) at ($(DECODE) + (6, 0)$)              {};
+            \node[encode8to3]                     (ENCODE) at ($(DECODE) + (6, 0)$)              {};
             %LEFT
             \foreach \i [count=\iz from 0] in {1,...,8} {
                 \node[right, font=\tiny\ttfamily] (EPIN\iz) at ($(ENCODE.blpin \i) + (0, 0)$)     {\normalsize $in[\iz]$};

@@ -3,11 +3,11 @@
 \usetikzlibrary{arrows, shapes.gates.logic.US, shapes.gates.logic.IEC, calc}
 
 \tikzset{
-    my8to3/.style={
+    encode8to3/.style={
         muxdemux, muxdemux def={
-            Lh=8, Rh=8, w=6,  % both left and right size =8 units, wide top
-            NT=0,             % none top
-            NB=0,             % none bottom
+            Lh=8, Rh=8, w=6,  % Size
+            NT=0,             % None top
+            NB=0,             % None bottom
             NL=8,             % 8 pins on the left
             NR=1,             % 1 pins on the right
         },
@@ -21,7 +21,7 @@
 
     \begin{circuitikz}[scale=1.0, transform shape]
         
-        \node[my8to3]                         (ENCODE)   at (0,0)                            {};
+        \node[encode8to3]                     (ENCODE)   at (0,0)                            {};
         %LEFT
         \foreach \i [count=\iz from 0] in {1,...,8} {
             \node[right, font=\tiny\ttfamily] (DIN\iz) at ($(ENCODE.blpin \i) + (0, 0)$)     {\normalsize $in[\iz]$};
