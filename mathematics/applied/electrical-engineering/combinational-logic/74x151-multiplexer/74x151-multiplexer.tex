@@ -1,0 +1,84 @@
+\documentclass[border=3mm]{standalone}
+\usepackage[siunitx, RPvoltages]{circuitikz}
+\usetikzlibrary{arrows, shapes.gates.logic.US, shapes.gates.logic.IEC, calc}
+
+\tikzset{
+    mux4x1/.style={
+        muxdemux, muxdemux def={
+            Lh=8, Rh=6, w=4,  % Size
+            NT=0,             % None top
+            NB=3,             % 3 pin on bottom
+            NL=9,             % 9 pins on the left
+            NR=2,             % 2 pins on the right
+        },
+        % draw only left pins={1},
+    },
+}
+
+\begin{document}
+
+\resizebox{10cm}{!}{
+
+    \begin{circuitikz}[scale=1.0, transform shape]
+        
+        \node[mux4x1]                         (MUX)   at (0,0)                            {};
+        %LEFT
+        \foreach \i [count=\iz from 0] in {1,...,8} {
+            \node[right, font=\tiny\ttfamily] (DP\iz) at ($(MUX.blpin \i) + (0, 0)$)    {\normalsize $d\iz$};
+            \coordinate[]                     (D\iz)  at ($(MUX.blpin \i) + (-1, 0)$)   {};
+        }
+        \node[right, font=\tiny\ttfamily]     (ENP)   at ($(MUX.blpin 9) + (0, 0)$)     {\normalsize $en$};
+        \coordinate[]                         (EN)    at ($(MUX.blpin 9) + (-1, 0)$)    {};
+        %RIGHT
+        \node[left, font=\tiny\ttfamily]      (YP)    at ($(MUX.brpin 1) + (0, 0)$)     {\normalsize $y$};
+        \coordinate[]                         (Y)     at ($(MUX.brpin 1) + (1, 0)$)     {};
+        \node[left, font=\tiny\ttfamily]      (WP)    at ($(MUX.brpin 2) + (0, 0)$)     {\normalsize $w$};
+        \coordinate[]                         (W)     at ($(MUX.brpin 2) + (1, 0)$)     {};
+        %TOP
+        \node[]                               (NAME)  at ($(MUX) + (0, 3.0)$)           {\Large \textbf {74x151 MULTIPLEXER}};
+        %BOTTOM
+        \node[above, font=\tiny\ttfamily]     (AP)    at ($(MUX.bbpin 1) + (0, .1)$)    {\normalsize $a$};
+        \coordinate[]                         (A)     at ($(MUX.bbpin 1) + (0, -1)$)    {};
+        \node[above, font=\tiny\ttfamily]     (BP)    at ($(MUX.bbpin 2) + (0, .1)$)    {\normalsize $b$};
+        \coordinate[]                         (B)     at ($(MUX.bbpin 2) + (0, -1)$)    {};
+        \node[above, font=\tiny\ttfamily]     (CP)    at ($(MUX.bbpin 3) + (0, .1)$)    {\normalsize $c$};
+        \coordinate[]                         (C)     at ($(MUX.bbpin 3) + (0, -1)$)    {};
+        %CONNECT
+        \foreach \i [count=\iz from 0] in {1,...,8} {
+            \draw[] (MUX.blpin \i) -- (D\iz);
+        }
+        \draw[] (MUX.blpin 9) -- (EN);
+        \draw[] (MUX.brpin 1) -- (Y);
+        \draw[] (MUX.brpin 2) -- (W);
+        \draw[] (MUX.bbpin 1) -- (A);
+        \draw[] (MUX.bbpin 2) -- (B);
+        \draw[] (MUX.bbpin 3) -- (C);
+        
+        %DOTTED LINE
+        \draw[dotted] ($(MUX.blpin 2) + (0, 0)$) -- ($(MUX.brpin 1) + (0, 0)$);
+
+        %INPUTS
+        \node[]       (INPUT0)  at ($(D0) + (-.3, 0)$)  {\normalsize $0$};
+        \node[green]  (INPUT1)  at ($(D1) + ( -1, 0)$)  {\normalsize $...0110110$};
+        \node[]       (INPUT2)  at ($(D2) + (-.3, 0)$)  {\normalsize $0$};
+        \node[]       (INPUT3)  at ($(D3) + (-.3, 0)$)  {\normalsize $0$};
+        \node[]       (INPUT4)  at ($(D4) + (-.3, 0)$)  {\normalsize $0$};
+        \node[]       (INPUT5)  at ($(D5) + (-.3, 0)$)  {\normalsize $0$};
+        \node[]       (INPUT6)  at ($(D6) + (-.3, 0)$)  {\normalsize $0$};
+        \node[]       (INPUT7)  at ($(D7) + (-.3, 0)$)  {\normalsize $0$};
+        \node[]       (ENABLE)  at ($(EN) + (-.3, 0)$)  {\normalsize $1$};
+        
+        %OUTPUTS
+        \node[]       (OUTPUT1) at ($(Y) + (1, 0)$)  {\normalsize $...0110110$};
+        \node[]       (OUTPUT1) at ($(W) + (1, 0)$)  {\normalsize $...1001001$};
+
+        %SELECT
+        \node[]       (SEL1)    at ($(A) + (0, -.3)$)  {\normalsize $0$};
+        \node[]       (SEL2)    at ($(B) + (0, -.3)$)  {\normalsize $1$};
+        \node[]       (SEL3)    at ($(C) + (0, -.3)$)  {\normalsize $0$};
+
+    \end{circuitikz}
+
+}
+
+\end{document} 

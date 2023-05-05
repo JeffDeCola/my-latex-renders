@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2023.2.14)  5 MAY 2023 01:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2023.2.14)  5 MAY 2023 16:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**mux-4x1.tex
-(./mux-4x1.tex
+**74x151-multiplexer.tex
+(./74x151-multiplexer.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -553,8 +553,8 @@ zlibraryshapes.gates.logic.IEC.code.tex
 File: tikzlibraryshapes.gates.logic.IEC.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/pgflib
-raryshapes.gates.logic.IEC.code.tex)) (./mux-4x1.aux)
-\openout1 = `mux-4x1.aux'.
+raryshapes.gates.logic.IEC.code.tex)) (./74x151-multiplexer.aux)
+\openout1 = `74x151-multiplexer.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
@@ -588,14 +588,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ] [2
 
-] (./mux-4x1.aux) ) 
+] (./74x151-multiplexer.aux) ) 
 Here is how much of TeX's memory you used:
- 26909 strings out of 481240
- 695515 string characters out of 5920403
- 1036698 words of memory out of 5000000
- 41864 multiletter control sequences out of 15000+600000
+ 27138 strings out of 481240
+ 699146 string characters out of 5920403
+ 1041732 words of memory out of 5000000
+ 42093 multiletter control sequences out of 15000+600000
  534352 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,6n,71p,486b,683s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,6n,71p,497b,689s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on mux-4x1.dvi (2 pages, 13748 bytes).
+Output written on 74x151-multiplexer.dvi (2 pages, 18068 bytes).
