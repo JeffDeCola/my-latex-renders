@@ -54,9 +54,9 @@ Documentation and Reference
   
   * DECODERS & ENCODERS
 
-    * [decoder-3-8](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/decoder-3-8)
     * [encoder-8-3](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/encoder-8-3)
-    * [decoder-to-encoder](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/decoder-to-encoder)
+    * [decoder-3-8](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/decoder-3-8)
+    * [encoder-to-decoder](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/encoder-to-decoder)
   
   * MULTIPLEXERS & DEMULTIPLEXERS
 
