@@ -1,0 +1,106 @@
+\documentclass[border=3mm]{standalone}
+\usepackage[siunitx, RPvoltages]{circuitikz}
+\usetikzlibrary{arrows, shapes.gates.logic.US, shapes.gates.logic.IEC, calc}
+
+\tikzset{
+    quadmux/.style={
+        muxdemux, muxdemux def={
+            Lh=12, Rh=10, w=4,  % Size
+            NT=0,             % None top
+            NB=1,             % 1 pin on bottom
+            NL=18,            % Using 9
+            NR=6,             % Using 4
+        },
+        draw only left pins={},
+        draw only right pins={},
+        draw only bottom pins={},
+    },
+}
+
+\begin{document}
+
+\resizebox{10cm}{!}{
+
+    \begin{circuitikz}[scale=1.0, transform shape]
+        
+        \node[quadmux]                         (MUX)   at (0,0)                            {};
+        %LEFT
+        \node[right, font=\tiny\ttfamily]     (1AP)   at ($(MUX.blpin 3) + (0, 0)$)     {\normalsize $1a$};
+        \coordinate[]                         (1A)    at ($(MUX.blpin 3) + (-1, 0)$)    {};
+        \node[right, font=\tiny\ttfamily]     (1BP)   at ($(MUX.blpin 4) + (0, 0)$)     {\normalsize $1b$};
+        \coordinate[]                         (1B)    at ($(MUX.blpin 4) + (-1, 0)$)    {};
+        \node[right, font=\tiny\ttfamily]     (2AP)   at ($(MUX.blpin 6) + (0, 0)$)     {\normalsize $2a$};
+        \coordinate[]                         (2A)    at ($(MUX.blpin 6) + (-1, 0)$)    {};
+        \node[right, font=\tiny\ttfamily]     (2BP)   at ($(MUX.blpin 7) + (0, 0)$)     {\normalsize $2b$};
+        \coordinate[]                         (2B)    at ($(MUX.blpin 7) + (-1, 0)$)    {};
+        \node[right, font=\tiny\ttfamily]     (3AP)   at ($(MUX.blpin 9) + (0, 0)$)     {\normalsize $3a$};
+        \coordinate[]                         (3A)    at ($(MUX.blpin 9) + (-1, 0)$)    {};
+        \node[right, font=\tiny\ttfamily]     (3BP)   at ($(MUX.blpin 10) + (0, 0)$)     {\normalsize $3b$};
+        \coordinate[]                         (3B)    at ($(MUX.blpin 10) + (-1, 0)$)    {};
+        \node[right, font=\tiny\ttfamily]     (4AP)   at ($(MUX.blpin 12) + (0, 0)$)     {\normalsize $4a$};
+        \coordinate[]                         (4A)    at ($(MUX.blpin 12) + (-1, 0)$)    {};
+        \node[right, font=\tiny\ttfamily]     (4BP)   at ($(MUX.blpin 13) + (0, 0)$)    {\normalsize $4b$};
+        \coordinate[]                         (4B)    at ($(MUX.blpin 13) + (-1, 0)$)   {};
+        \node[right, font=\tiny\ttfamily]     (ENP)   at ($(MUX.blpin 15) + (0, 0)$)    {\normalsize $en$};
+        \coordinate[]                         (EN)    at ($(MUX.blpin 15) + (-1, 0)$)   {};
+        %RIGHT
+        \node[left, font=\tiny\ttfamily]      (1YP)   at ($(MUX.brpin 2) + (0, 0)$)     {\normalsize $1y$};
+        \coordinate[]                         (1Y)    at ($(MUX.brpin 2) + (1, 0)$)     {};
+        \node[left, font=\tiny\ttfamily]      (2YP)   at ($(MUX.brpin 3) + (0, 0)$)     {\normalsize $2y$};
+        \coordinate[]                         (2Y)    at ($(MUX.brpin 3) + (1, 0)$)     {};
+        \node[left, font=\tiny\ttfamily]      (3YP)   at ($(MUX.brpin 4) + (0, 0)$)     {\normalsize $3y$};
+        \coordinate[]                         (3Y)    at ($(MUX.brpin 4) + (1, 0)$)     {};
+        \node[left, font=\tiny\ttfamily]      (4YP)   at ($(MUX.brpin 5) + (0, 0)$)     {\normalsize $4y$};
+        \coordinate[]                         (4Y)    at ($(MUX.brpin 5) + (1, 0)$)     {};
+        %TOP
+        \node[]                               (NAME)  at ($(MUX) + (0, 4.0)$)           {\Large \textbf {74x157 QUAD MULTIPLEXER}};
+        %BOTTOM
+        \node[above, font=\tiny\ttfamily]     (SP)    at ($(MUX.bbpin 1) + (0, .1)$)    {\normalsize $s$};
+        \coordinate[]                         (S)     at ($(MUX.bbpin 1) + (0, -1)$)    {};
+        %CONNECT
+        \draw[] (MUX.blpin 3)  -- (1A);
+        \draw[] (MUX.blpin 4)  -- (1B);
+        \draw[] (MUX.blpin 6)  -- (2A);
+        \draw[] (MUX.blpin 7)  -- (2B);
+        \draw[] (MUX.blpin 9)  -- (3A);
+        \draw[] (MUX.blpin 10) -- (3B);
+        \draw[] (MUX.blpin 12) -- (4A);
+        \draw[] (MUX.blpin 13) -- (4B);
+        \draw[] (MUX.blpin 15) -- (EN);
+        \draw[] (MUX.brpin 2)  -- (1Y);
+        \draw[] (MUX.brpin 3)  -- (2Y);
+        \draw[] (MUX.brpin 4)  -- (3Y);
+        \draw[] (MUX.brpin 5)  -- (4Y);
+        \draw[] (MUX.bbpin 1)  -- (S);
+        
+        %DOTTED LINE
+        \draw[dotted] ($(MUX.blpin 4) + (0, 0)$)  -- ($(MUX.brpin 2) + (0, 0)$);
+        \draw[dotted] ($(MUX.blpin 7) + (0, 0)$)  -- ($(MUX.brpin 3) + (0, 0)$);
+        \draw[dotted] ($(MUX.blpin 10) + (0, 0)$) -- ($(MUX.brpin 4) + (0, 0)$);
+        \draw[dotted] ($(MUX.blpin 13) + (0, 0)$) -- ($(MUX.brpin 5) + (0, 0)$);
+
+        %INPUTS
+        \node[]       (INPUT0)  at ($(1A) + (-.3, 0)$)  {\normalsize $x$};
+        \node[]       (INPUT1)  at ($(1B) + ( -.6, 0)$) {\normalsize $...1101$};
+        \node[]       (INPUT0)  at ($(2A) + (-.3, 0)$)  {\normalsize $x$};
+        \node[]       (INPUT1)  at ($(2B) + ( -.6, 0)$) {\normalsize $...0110$};
+        \node[]       (INPUT0)  at ($(3A) + (-.3, 0)$)  {\normalsize $x$};
+        \node[]       (INPUT1)  at ($(3B) + ( -.6, 0)$) {\normalsize $...1111$};
+        \node[]       (INPUT0)  at ($(4A) + (-.3, 0)$)  {\normalsize $x$};
+        \node[]       (INPUT1)  at ($(4B) + ( -.6, 0)$) {\normalsize $...0000$};
+        \node[]       (ENABLE)  at ($(EN) + (-.3, 0)$)  {\normalsize $1$};
+        
+        %OUTPUTS
+        \node[]       (OUTPUT1) at ($(1Y) + (.7, 0)$)  {\normalsize $...1101$};
+        \node[]       (OUTPUT1) at ($(2Y) + (.7, 0)$)  {\normalsize $...0110$};
+        \node[]       (OUTPUT1) at ($(3Y) + (.7, 0)$)  {\normalsize $...1111$};
+        \node[]       (OUTPUT1) at ($(4Y) + (.7, 0)$)  {\normalsize $...0000$};
+
+        %SELECT
+        \node[]       (SEL)     at ($(S) + (0, -.3)$)  {\normalsize $1$};
+
+    \end{circuitikz}
+
+}
+
+\end{document} 
