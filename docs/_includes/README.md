@@ -30,6 +30,7 @@
     * [demux-1x4](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/demux-1x4)
     * [mux-to-demux](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/mux-to-demux)
     * [74x151-multiplexer](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/74x151-multiplexer)
+    * [74x157-quad-multiplexer](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/74x157-quad-multiplexer)
     * [half-adder](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/half-adder)
     * [full-adder](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/full-adder)
 
