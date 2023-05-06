@@ -51,13 +51,13 @@ Documentation and Reference
     * [xor](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/xor)
     * [combinational-logic-example1](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/combinational-logic-example1)
     * [combinational-logic-example2](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/combinational-logic-example2)
-  
+
   * DECODERS & ENCODERS
 
     * [encoder-8-3](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/encoder-8-3)
     * [decoder-3-8](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/decoder-3-8)
     * [encoder-to-decoder](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/encoder-to-decoder)
-  
+
   * MULTIPLEXERS & DEMULTIPLEXERS
 
     * [mux-4x1](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/applied/electrical-engineering/combinational-logic/mux-4x1)
