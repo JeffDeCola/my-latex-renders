@@ -1,6 +1,6 @@
 # PRIORITY ADDER
 
-[![MIT License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
 
 _Using
@@ -11,8 +11,7 @@ to create a priority arbiter._
 
 [priority-arbiter.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/applied/electrical-engineering/sequential-logic/priority-arbiter/priority-arbiter.tex)
 
-Uses LaTeX package `tikz` for creating graphs
-and `amsmath` for displaying equations.
+Uses LaTeX package `tikz` for creating graphs.
 
 ## CREATE
 

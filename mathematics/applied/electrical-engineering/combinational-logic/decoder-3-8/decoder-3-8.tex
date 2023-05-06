@@ -21,10 +21,10 @@
 
     \begin{circuitikz}[scale=1.0, transform shape]
         
-        \node[decode3to8]                     (DECODE)   at (0,0)                                {};
+        \node[decode3to8]                     (DECODE)  at (0,0)                                {};
         %LEFT
-        \node[right, font=\tiny\ttfamily]     (DIN0)    at ($(DECODE.blpin 1) + (0, 0)$)     {\normalsize $[2\:0]in$};
-        \coordinate[]                         (IN0)     at ($(DECODE.blpin 1) + (-1, 0)$)    {};
+        \node[right, font=\tiny\ttfamily]     (DIN)     at ($(DECODE.blpin 1) + (0, 0)$)     {\normalsize $[2\:0]in$};
+        \coordinate[]                         (IN)      at ($(DECODE.blpin 1) + (-1, 0)$)    {};
         %RIGHT
         \foreach \i [count=\iz from 0] in {1,...,8} {
             \node[left, font=\tiny\ttfamily]  (DOUT\iz) at ($(DECODE.brpin \i) + (0, 0)$)    {\normalsize $out[\iz]$};
@@ -33,23 +33,23 @@
         %TOP
         \node[]                               (NAME)    at ($(DECODE) + (0, 3.0)$)           {\Large \textbf {DECODER 3-8}};
         %CONNECT
-        \draw[] (DECODE.blpin 1) -- (IN0);
+        \draw[] (DECODE.blpin 1) -- (IN);
         \foreach \i [count=\iz from 0] in {1,...,8} {
             \draw[] (DECODE.brpin \i) -- (OUT\iz);
         }
         
         % INPUTS
-        \node[] (INPUT0)  at ($(IN0) + (-.3, 0)$)  {\normalsize $010$};
+        \node[]       (INPUT)   at  ($(IN) + (-.3, 0)$)   {\normalsize $010$};
 
         %OUTPUTS
         \node[]       (OUTPUT0)  at ($(OUT0) + (.3, 0)$)  {\normalsize $0$};
-        \node[]       (OUTPUT0)  at ($(OUT1) + (.3, 0)$)  {\normalsize $1$};
-        \node[]       (OUTPUT0)  at ($(OUT2) + (.3, 0)$)  {\normalsize $0$};
-        \node[]       (OUTPUT0)  at ($(OUT3) + (.3, 0)$)  {\normalsize $0$};
-        \node[]       (OUTPUT0)  at ($(OUT4) + (.3, 0)$)  {\normalsize $0$};
-        \node[]       (OUTPUT0)  at ($(OUT5) + (.3, 0)$)  {\normalsize $0$};
-        \node[]       (OUTPUT0)  at ($(OUT6) + (.3, 0)$)  {\normalsize $0$};
-        \node[]       (OUTPUT0)  at ($(OUT7) + (.3, 0)$)  {\normalsize $0$};
+        \node[]       (OUTPUT1)  at ($(OUT1) + (.3, 0)$)  {\normalsize $1$};
+        \node[]       (OUTPUT2)  at ($(OUT2) + (.3, 0)$)  {\normalsize $0$};
+        \node[]       (OUTPUT3)  at ($(OUT3) + (.3, 0)$)  {\normalsize $0$};
+        \node[]       (OUTPUT4)  at ($(OUT4) + (.3, 0)$)  {\normalsize $0$};
+        \node[]       (OUTPUT5)  at ($(OUT5) + (.3, 0)$)  {\normalsize $0$};
+        \node[]       (OUTPUT6)  at ($(OUT6) + (.3, 0)$)  {\normalsize $0$};
+        \node[]       (OUTPUT7)  at ($(OUT7) + (.3, 0)$)  {\normalsize $0$};
         
     \end{circuitikz}
 
