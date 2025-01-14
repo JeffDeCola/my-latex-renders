@@ -112,10 +112,10 @@ Documentation and Reference
 
 * ALGEBRA
 
-  * [coordinate-plane](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/structures/algebra/coordinate-plane) _The coordinate plane (2D Number plane) with plot_ <img src="svgs/c2b3cecb67a773c47721114a4b95184e.svg?invert_in_darkmode" align="middle" width="36.52973609999999pt" height="24.65753399999998pt" />
-  * [f-of-x-equals-2x](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-2x) <img src="svgs/1c9d6807786d5d3d1c49ccb5c3b6556f.svg?invert_in_darkmode" align="middle" width="71.52966314999999pt" height="24.65753399999998pt" />
-  * [f-of-x-equals-minus-1-over-3-times-x-minus-3](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-minus-1-over-3-times-x-minus-3) <img src="svgs/03245464a2f5dfd20e1017d0c6a2d9f2.svg?invert_in_darkmode" align="middle" width="114.90402495pt" height="27.77565449999998pt" />
-  * [f-of-x-equals-sqrt-x](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-sqrt-x) <img src="svgs/ac95dfbba07837bc60d1bd101cd4a439.svg?invert_in_darkmode" align="middle" width="77.00912505pt" height="24.995338500000003pt" />
+  * [coordinate-plane](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/structures/algebra/coordinate-plane) _The coordinate plane (2D Number plane) with plot_ $(3,2)$
+  * [f-of-x-equals-2x](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-2x) $f(x) = 2x$
+  * [f-of-x-equals-minus-1-over-3-times-x-minus-3](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-minus-1-over-3-times-x-minus-3) $f(x)=-\frac{1}{3}x-3$
+  * [f-of-x-equals-sqrt-x](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-sqrt-x) $f(x) = \sqrt{x}$
 
 ## SCIENCE - EARTH & SPACE SCIENCE
 
@@ -127,4 +127,4 @@ Documentation and Reference
 
 ### PHYSICS
 
-* [e-equals-mc-squared](https://github.com/JeffDeCola/my-latex-renders/tree/master/science/physical-science/physics/e-equals-mc-squared) <img src="svgs/ccb175704c18ad5a81177f1274fcd39f.svg?invert_in_darkmode" align="middle" width="63.09925874999999pt" height="26.76175259999998pt" />
+* [e-equals-mc-squared](https://github.com/JeffDeCola/my-latex-renders/tree/master/science/physical-science/physics/e-equals-mc-squared) $E=mc^2$
