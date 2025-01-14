@@ -10,6 +10,7 @@ I use these figures in other repos._
 
 Table of Contents
 
+* [OVERVIEW](https://github.com/JeffDeCola/my-latex-renders#overview)
 * [MATHEMATICS - APPLIED](https://github.com/JeffDeCola/my-latex-renders#mathematics---applied)
   * [ELECTRICAL ENGINEERING](https://github.com/JeffDeCola/my-latex-renders#electrical-engineering)
 * [MATHEMATICS - PURE](https://github.com/JeffDeCola/my-latex-renders#mathematics---pure)
@@ -34,6 +35,12 @@ Documentation and Reference
   [github webpage](https://jeffdecola.github.io/my-latex-renders/)
   _built with
   [concourse](https://github.com/JeffDeCola/my-latex-renders/blob/master/ci-README.md)_
+
+## OVERVIEW
+
+The flow to create an image `.svg` from a `.tex` file,
+
+![IMAGE - latex-software-flow-to-create-svg-image-file - IMAGE](docs/pics/latex-software-flow-to-create-svg-image-file.jpg)
 
 ## MATHEMATICS - APPLIED
 
