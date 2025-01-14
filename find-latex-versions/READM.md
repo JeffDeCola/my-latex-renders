@@ -9,7 +9,7 @@ to find the LaTeX versions._
 
 ## TEX FILE
 
-[versions.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/find-latex-version/versions.tex)
+[versions.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/find-latex-versions/versions.tex)
 
 ## CREATE
 
