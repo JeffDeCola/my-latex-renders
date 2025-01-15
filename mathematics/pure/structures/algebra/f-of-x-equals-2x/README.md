@@ -21,7 +21,7 @@ and `pgfplots` for scientific graphs.
 ```bash
 latex f-of-x-equals-2x.tex
 dvisvgm -n -a -o f-of-x-equals-2x f-of-x-equals-2x.dvi
-cp f-of-x-equals-2x.svg ~/cheatsheets/my-cheat-sheets/other/mathematics/pure/structures/algebra-cheat-sheet/pgfplots-pics/.
+cp f-of-x-equals-2x.svg ~/cheatsheets/my-cheat-sheets/other/stem/math/pure/structures/algebra-cheat-sheet/svgs/.
 ```
 
 <p align="center">
