@@ -17,8 +17,8 @@ echo "    -a This option forces dvisvgm to vectorize everything"
 dvisvgm -n -a -o f-of-x-equals-sqrt-x f-of-x-equals-sqrt-x.dvi
 echo " "
 
-echo "cp f-of-x-equals-sqrt-x.svg ~/cheatsheets/my-cheat-sheets/other/mathematics/pure/structures/algebra-cheat-sheet/pgfplots-pics/."
-cp f-of-x-equals-sqrt-x.svg ~/cheatsheets/my-cheat-sheets/other/mathematics/pure/structures/algebra-cheat-sheet/pgfplots-pics/.
+echo "cp f-of-x-equals-sqrt-x.svg ~/cheatsheets/my-cheat-sheets/other/stem/math/pure/structures/algebra-cheat-sheet/svgs/."
+cp f-of-x-equals-sqrt-x.svg ~/cheatsheets/my-cheat-sheets/other/stem/math/pure/structures/algebra-cheat-sheet/svgs/.
 echo " "
 
 echo "********************************************************* run.sh (END) *"
