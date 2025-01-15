@@ -1,0 +1,18 @@
+\documentclass[border=5mm]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1]
+
+    % Draw the circle
+    \draw (2,2) circle (3cm);
+
+    % Add a point on the circle
+    % For example, a point at 45 degrees (pi/4 radians) from the center
+    \fill ($(2,2) + (45:3cm)$) circle (2pt);
+
+\end{tikzpicture}
+
+\end{document}
