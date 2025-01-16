@@ -1,39 +1,10 @@
-# CONCOURSE
-.credentials.yml
+# repo-generic-.gitignore
 
-# GO
-coverage.out
+# CONCOURSE SECRETS
+.credentials.yml
 
 # macOS
 .DS_Store
 
 # WINDOWS
 *.jpg:Zone.Identifier
-
-# Ignore binaries
-**/bin/hello-go
-
-# Ignore test coverage
-**/test/test_coverage.txt
-
-# Ignore binary used for docker build
-**/build-push/hello-go
-
-# FIND-LATEX-VERSION
-find-latex-versions/test.aux
-find-latex-versions/test.dvi
-find-latex-versions/test.log
-find-latex-versions/test.svg
-
-# Ignore .vagrant
-**/.vagrant
-**/.log
-
-**/ubuntu-1604-virtualbox-vm/*.log
-
-# Ignore Packer
-**/packer_cache
-**/*.box
-**/*.iso
-**/*.iso.lock
-**/*.vdi
