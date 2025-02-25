@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=latex 2025.1.14)  24 FEB 2025 15:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=latex 2025.1.14)  24 FEB 2025 23:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -523,9 +523,9 @@ your preamble.
  on input line 6.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 80.
+(Font)              <7> on input line 79.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 80.
+(Font)              <5> on input line 79.
 [1
 
 ] (./limit-definition-of-the-derivative.aux)
@@ -535,13 +535,13 @@ L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 22660 strings out of 474223
- 612035 string characters out of 5748759
+ 22661 strings out of 474223
+ 612043 string characters out of 5748759
  1938972 words of memory out of 5000000
- 44598 multiletter control sequences out of 15000+600000
+ 44599 multiletter control sequences out of 15000+600000
  558069 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,18n,107p,758b,2183s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on limit-definition-of-the-derivative.dvi (1 page, 26924 bytes).
+Output written on limit-definition-of-the-derivative.dvi (1 page, 26900 bytes).
 
