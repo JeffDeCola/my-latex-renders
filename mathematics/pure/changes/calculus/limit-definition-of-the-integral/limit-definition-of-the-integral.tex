@@ -13,7 +13,7 @@
         axis line style={Stealth-Stealth,very thick},
         xlabel=$x$,
         ylabel={$f(x)$},
-        xmin=-2,xmax=5,ymin=-5,ymax=10,
+        xmin=-2,xmax=7,ymin=-5,ymax=10,
         xtick distance=2,
         ytick distance=2,
         grid=major,
@@ -28,21 +28,28 @@
         }
     ]
     \addplot[
-        domain= 0:7,
+        domain= -.5:7,
         samples=200,
         color=red
         ]
         {x + 2};
+    % Add rectangles to illustrate integration
+    \draw[fill=blue, fill opacity=0.5, draw=blue] (axis cs:2,0) rectangle (axis cs:3,4);
+    \draw[fill=blue, fill opacity=0.5, draw=blue] (axis cs:3,0) rectangle (axis cs:4,5);
+    \draw[fill=blue, fill opacity=0.5, draw=blue] (axis cs:4,0) rectangle (axis cs:5,6);
+
+    \node at (axis cs:2,-1) {$a$};
+    \node at (axis cs:5,-1) {$b$};
+
     \addplot[
         color=blue,
         mark=none,
         dashed
         ]
         coordinates {
-            (2,0)
-            (2,4)
+            (3,0)
+            (3,-4)
         };
-    \node at (axis cs:2,-1) {$x$};
     \addplot[
         color=blue,
         mark=none,
@@ -50,30 +57,12 @@
         ]
         coordinates {
             (4,0)
-            (4,6)
+            (4,-4)
         };
-    \node at (axis cs:4,-1) {$x+\Delta{x}$};
-    \addplot[
-        color=blue,
-        mark=none,
-        dashed
-        ]
-        coordinates {
-            (0,4)
-            (2,4)
-        };
-    \node at (axis cs:-1,4) {$f(x)$};
-    \addplot[
-        color=blue,
-        mark=none,
-        dashed
-        ]
-        coordinates {
-            (0,6)
-            (4,6)
-        };
-    \node at (axis cs:-1,6) {$f(x+\Delta{x})$};
-    \addlegendentry{$\int f(x) dx = \lim_{{\Delta x \to 0}} \sum_{i=1}^{n} f(x_i) \Delta x$}
+    \node at (axis cs:3.5,-3) {$\Delta x$};
+
+    \addlegendentry{$AREA = \int_{a}^{b} f(x) dx = \lim_{{\Delta x \to 0}}
+                            \sum_{i=1}^{n} f(x_i) \Delta x$}
     \end{axis}
     \end{tikzpicture}
 }
