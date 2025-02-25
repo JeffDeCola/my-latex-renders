@@ -17,7 +17,13 @@
         xtick distance=2,
         ytick distance=2,
         grid=major,
-        grid style={thin,densely dotted,black!20}
+        grid style={thin,densely dotted,black!20},
+        % Bottom center
+        legend style={
+            at={(0.5,-0.1)},
+            anchor=north,
+            cells={anchor=west}
+        }
     ]
     \addplot[
         domain= -7:7,

@@ -26,23 +26,19 @@
         }
     ]
     \addplot[
-        domain= 0:7,
-        samples=200,
+        domain= -7:7,
+        samples=50,
         color=red
-        ] 
-        {sqrt(x)};
-    \addplot[
-        domain= 0:7,
-        samples=200,
-        color=red
-        ] 
-        {-sqrt(x)};
-    \addplot[
-        color=blue, 
-        mark=none
         ]
-        coordinates {(2, -6) (2, 6)};
-    \addlegendentry{$f(x) = \sqrt{x}$}
+        {x^2+2};
+    % Add tangent line at x = 2
+    \addplot[
+        domain= 1:7,
+        samples=50,
+        color=blue
+        ]
+        {4*x-2};
+    \addlegendentry{$f(x) = x^2+2$}
     \end{axis}
     \end{tikzpicture}
 }

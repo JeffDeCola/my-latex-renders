@@ -1,0 +1,30 @@
+# LIMIT DEFINITION OF THE DERIVATIVE
+
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+
+_Using
+[LaTeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/)
+to graph a function._
+
+## TEX FILE
+
+[limit-definition-of-the-derivative.tex](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/pure/changes/calculus/limit-definition-of-the-derivative/limit-definition-of-the-derivative.tex)
+
+Uses LaTeX package `tikz` for creating graphs
+and `pgfplots` for scientific graphs.
+
+## CREATE
+
+[run.sh](https://github.com/JeffDeCola/my-latex-renders/blob/master/mathematics/pure/changes/calculus/limit-definition-of-the-derivative/run.sh)
+
+```bash
+latex limit-definition-of-the-derivative.tex
+dvisvgm -n -a -o limit-definition-of-the-derivative limit-definition-of-the-derivative.dvi
+cp limit-definition-of-the-derivative.svg ~/cheatsheets/my-cheat-sheets/other/stem/math/pure/changes/calculus-cheat-sheet/svgs/.
+```
+
+<p align="center">
+    <img src="limit-definition-of-the-derivative.svg"
+    align="middle"
+</p>

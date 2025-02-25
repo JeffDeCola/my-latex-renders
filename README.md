@@ -94,7 +94,8 @@ The flow to create an image `.svg` from a `.tex` file,
 
 * CALCULUS
 
-  * [example](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/changes/calculus/example)
+  * [limit-definition-of-the-derivative](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/changes/calculus/limit-definition-of-the-derivative)
+  * [limit-definition-of-the-integral](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/changes/calculus/limit-definition-of-the-integral)
 
 ### FOUNDATIONS
 
@@ -121,9 +122,11 @@ The flow to create an image `.svg` from a `.tex` file,
 * ALGEBRA
 
   * [coordinate-plane](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/structures/algebra/coordinate-plane) _The coordinate plane (2D Number plane) with plot_ $(3,2)$
+  * [f-of-x-equals-1-over-x](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-1-over-x) $f(x) = \frac{1}{x}$
   * [f-of-x-equals-2x](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-2x) $f(x) = 2x$
   * [f-of-x-equals-minus-1-over-3-times-x-minus-3](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-minus-1-over-3-times-x-minus-3) $f(x)=-\frac{1}{3}x-3$
   * [f-of-x-equals-sqrt-x](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-sqrt-x) $f(x) = \sqrt{x}$
+  * [f-of-x-equals-x-squared-plus-2](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/structures/algebra/f-of-x-equals-x-squared-plus-2) $f(x) = x^2 + 2$
 
 ## SCIENCE - EARTH & SPACE SCIENCE
 
