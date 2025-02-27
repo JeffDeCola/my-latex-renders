@@ -15,8 +15,6 @@ Table of Contents
   * [ELECTRICAL ENGINEERING](https://github.com/JeffDeCola/my-latex-renders#electrical-engineering)
 * [MATHEMATICS - PURE](https://github.com/JeffDeCola/my-latex-renders#mathematics---pure)
   * [CHANGES](https://github.com/JeffDeCola/my-latex-renders#changes)
-  * [FOUNDATIONS](https://github.com/JeffDeCola/my-latex-renders#foundations)
-  * [NUMBER SYSTEMS](https://github.com/JeffDeCola/my-latex-renders#number-systems)
   * [SPACES](https://github.com/JeffDeCola/my-latex-renders#spaces)
   * [STRUCTURES](https://github.com/JeffDeCola/my-latex-renders#structures)
 * [SCIENCE - EARTH & SPACE SCIENCE](https://github.com/JeffDeCola/my-latex-renders#science---earth--space-science)
@@ -97,18 +95,6 @@ The flow to create an image `.svg` from a `.tex` file,
   * [limit-definition-of-the-derivative](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/changes/calculus/limit-definition-of-the-derivative)
   * [limit-definition-of-the-integral](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/changes/calculus/limit-definition-of-the-integral)
   * [sigmoid-function](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/changes/calculus/sigmoid-function)
-
-### FOUNDATIONS
-
-* MATHEMATICS LOGIC
-
-  * [example](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/foundations/mathematics-logic/example)
-
-### NUMBER SYSTEMS
-
-* PRIME NUMBERS
-
-  * [example](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/number-systems/prime-numbers/example)
 
 ### SPACES
 
