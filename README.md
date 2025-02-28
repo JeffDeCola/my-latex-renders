@@ -95,6 +95,7 @@ The flow to create an image `.svg` from a `.tex` file,
   * [limit-definition-of-the-derivative](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/changes/calculus/limit-definition-of-the-derivative)
   * [limit-definition-of-the-integral](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/changes/calculus/limit-definition-of-the-integral)
   * [sigmoid-function](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/changes/calculus/sigmoid-function)
+  * [tanh-function](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/changes/calculus/tanh-function)
 
 ### SPACES
 
