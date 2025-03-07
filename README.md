@@ -104,6 +104,7 @@ The flow to create an image `.svg` from a `.tex` file,
   * [3d-coordinate-plane-on-a-sphere](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/spaces/geometry/3d-coordinate-plane-on-a-sphere)
   * [a-point-on-a-circle](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/spaces/geometry/a-point-on-a-circle)
   * [a-second-3d-coordinate-plane-on-a-sphere](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/spaces/geometry/a-second-3d-coordinate-plane-on-a-sphere)
+  * [# f-of-x-and-y-equals-x-squared-plus-y-squared](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/spaces/geometry/f-of-x-and-y-equals-x-squared-plus-y-squared)
 
 ### STRUCTURES
 

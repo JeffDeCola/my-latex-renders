@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=latex 2025.1.14)  6 MAR 2025 18:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=latex 2025.1.14)  6 MAR 2025 23:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**f-of-x-equals-minus-1-over-3-times-x-minus-3.tex
-(./f-of-x-equals-minus-1-over-3-times-x-minus-3.tex
+**f-of-x-and-y-equals-x-squared-plus-y-squared.tex
+(./f-of-x-and-y-equals-x-squared-plus-y-squared.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -498,50 +498,47 @@ File: l3backend-dvips.def 2024-01-04 L3 backend support: dvips
 \g__pdf_backend_link_int=\count295
 \g__pdf_backend_link_sf_int=\count296
 )
-(./f-of-x-equals-minus-1-over-3-times-x-minus-3.aux)
-\openout1 = `f-of-x-equals-minus-1-over-3-times-x-minus-3.aux'.
+(./f-of-x-and-y-equals-x-squared-plus-y-squared.aux)
+\openout1 = `f-of-x-and-y-equals-x-squared-plus-y-squared.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
 
-
-Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
-ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
-your preamble.
- on input line 6.
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 37.
+(Font)              <7> on input line 54.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 37.
+(Font)              <5> on input line 54.
 [1
 
-] (./f-of-x-equals-minus-1-over-3-times-x-minus-3.aux)
+] (./f-of-x-and-y-equals-x-squared-plus-y-squared.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 22661 strings out of 474223
- 612160 string characters out of 5748759
- 1936972 words of memory out of 5000000
- 44599 multiletter control sequences out of 15000+600000
+ 22758 strings out of 474223
+ 614329 string characters out of 5748759
+ 3112917 words of memory out of 5000000
+ 44696 multiletter control sequences out of 15000+600000
  558069 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,17n,107p,768b,2171s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,17n,107p,765b,2428s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on f-of-x-equals-minus-1-over-3-times-x-minus-3.dvi (1 page, 226
-92 bytes).
+Output written on f-of-x-and-y-equals-x-squared-plus-y-squared.dvi (1 page, 874
+332 bytes).
