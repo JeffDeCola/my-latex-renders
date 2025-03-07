@@ -7,7 +7,7 @@
 
 % DEFINE YOUR 3D COORDINATE FRAME / ORIENTATION (using tikz-3dplot)
 % Will set the orientation of x,y,z
-% Set polar coordinate. theta ( z -> phi) phi (x -> y) 
+% Set polar coordinate. theta ( z -> phi) phi (x -> y)
 % Syntax: \tdplotsetdisplay{\theta_d}{\phi_d}
 \tdplotsetmaincoords{70}{120}
 
@@ -15,7 +15,7 @@
 
     % Set sphere radius
     \pgfmathsetmacro{\sphereRadius}{1}
-    
+
     % Set Polar (2D) Coordinates for New Coordinate System
     \pgfmathsetmacro{\vectorRadiusP}{.8}
     \pgfmathsetmacro{\vectorThetaP}{30}
@@ -38,13 +38,13 @@
     % DRAW SPHERE EQUATOR
     \draw[thin, fill, color=white] (\sphereRadius,0,0) arc (0:360:\sphereRadius);
     \draw[thin, color=black] (\sphereRadius,0,0) arc (0:360:\sphereRadius);
-    
+
     % DRAW MAIN COORDINATE SYSTEM AXES - X, Y, Z AXIS WITH LABEL (NODE)
     % Syntax: \draw[characteristics] (start point) -- (end point) node [anchor=position] {label};
     \draw[thick, color=black, ->] (Origin) -- (\sphereRadius+.5,0,0) node[anchor=north east] {$x$};
     \draw[thick, color=black, ->] (Origin) -- (0,\sphereRadius+.5,0) node[anchor=north west] {$y$};
     \draw[thick, color=black, ->] (Origin) -- (0,0,\sphereRadius+.5) node[anchor=south] {$z$};
-    
+
     % DRAW DOTS ON COORDINATES INTERSECTING SPHERE
     \node at (\sphereRadius,0,0) [circle, color=black, fill, inner sep=1.5pt] {};
     \node at (0,\sphereRadius,0) [circle, color=black, fill, inner sep=1.5pt] {};
@@ -86,11 +86,11 @@
     % TRANSLATE ROTATED COORDINATE SYSTEM TO THE POINT P
     % Syntax: \tdplotsetrotatedcoordsorigin{point}
     \tdplotsetrotatedcoordsorigin{(P)}
-    
+
     % DRAW SECOND WHITE EQUATOR CIRCLE
     \draw[tdplot_rotated_coords, thin, fill, color=white, opacity=0.5] (\sphereRadius/3,0,0) arc (0:360:\sphereRadius/3);
     \draw[tdplot_rotated_coords, thin, color=black] (\sphereRadius/3,0,0) arc (0:360:\sphereRadius/3);
-    
+
     % DRAW SECOND COORDINATE SYSTEM AXES (BLUE) - X, Y, Z AXIS
     \draw[tdplot_rotated_coords, thick, color=blue, , ->] (0,0,0) -- (\vectorRadiusP/1.6,0,0) node[anchor=north west]{$x'$};
     \draw[tdplot_rotated_coords, thick, color=blue, ->] (0,0,0) -- (0,\vectorRadiusP/1.6,0) node[anchor=west]{$y'$};
