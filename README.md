@@ -1,11 +1,10 @@
 # MY LaTeX RENDERS
 
-[![codeclimate Issue Count](https://codeclimate.com/github/JeffDeCola/my-latex-renders/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-latex-renders/issues)
-[![License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
 _A place to keep all my figures, equations
-and graphs in LaTex `.tex` files.
+and graphs in LaTex .tex files.
 I use these figures in other repos._
 
 Table of Contents
@@ -38,7 +37,7 @@ Documentation and Reference
 
 The flow to create an image `.svg` from a `.tex` file,
 
-![IMAGE - latex-software-flow-to-create-svg-image-file - IMAGE](docs/pics/latex-software-flow-to-create-svg-image-file.jpg)
+![IMAGE - latex-software-flow-to-create-svg-image-file - IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/docs/pics/software/development/latex-software-flow-to-create-svg-image-file.svg)
 
 ## MATHEMATICS - APPLIED
 
@@ -104,7 +103,7 @@ The flow to create an image `.svg` from a `.tex` file,
   * [3d-coordinate-plane-on-a-sphere](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/spaces/geometry/3d-coordinate-plane-on-a-sphere)
   * [a-point-on-a-circle](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/spaces/geometry/a-point-on-a-circle)
   * [a-second-3d-coordinate-plane-on-a-sphere](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/spaces/geometry/a-second-3d-coordinate-plane-on-a-sphere)
-  * [# f-of-x-and-y-equals-x-squared-plus-y-squared](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/spaces/geometry/f-of-x-and-y-equals-x-squared-plus-y-squared)
+  * [f-of-x-and-y-equals-x-squared-plus-y-squared](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/spaces/geometry/f-of-x-and-y-equals-x-squared-plus-y-squared)
 
 ### STRUCTURES
 
