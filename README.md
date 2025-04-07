@@ -23,11 +23,10 @@ Table of Contents
 
 Documentation and Reference
 
-* My
-  [LaTeX cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
+* [LaTeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
 * To find your LaTeX version and what packages you have installed use
   my script in
-  [/find-latex-versions](https://github.com/JeffDeCola/my-latex-renders/tree/master/find-latex-versions).
+  [/find-latex-versions](https://github.com/JeffDeCola/my-latex-renders/tree/master/find-latex-versions)
 * This repos
   [github webpage](https://jeffdecola.github.io/my-latex-renders/)
   _built with
@@ -37,7 +36,7 @@ Documentation and Reference
 
 The flow to create an image `.svg` from a `.tex` file,
 
-![IMAGE - latex-software-flow-to-create-svg-image-file - IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/docs/pics/software/development/latex-software-flow-to-create-svg-image-file.svg)
+![IMAGE - latex-software-flow-to-create-svg-image-file - IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/docs/pics/software/development/latex-software-flow-to-create-svg-image-file.svg?raw=true)
 
 ## MATHEMATICS - APPLIED
 
