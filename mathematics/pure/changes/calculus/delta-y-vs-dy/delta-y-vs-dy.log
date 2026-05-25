@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=latex 2025.1.14)  24 MAY 2026 23:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=latex 2025.1.14)  24 MAY 2026 23:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**sigmoid-function.tex
-(./sigmoid-function.tex
+**delta-y-vs-dy.tex
+(./delta-y-vs-dy.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -498,8 +498,8 @@ File: l3backend-dvips.def 2024-01-04 L3 backend support: dvips
 \g__pdf_backend_link_int=\count295
 \g__pdf_backend_link_sf_int=\count296
 )
-(./sigmoid-function.aux)
-\openout1 = `sigmoid-function.aux'.
+(./delta-y-vs-dy.aux)
+\openout1 = `delta-y-vs-dy.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
@@ -523,24 +523,24 @@ your preamble.
  on input line 6.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 51.
+(Font)              <7> on input line 85.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 51.
+(Font)              <5> on input line 85.
 [1
 
-] (./sigmoid-function.aux)
+] (./delta-y-vs-dy.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 22672 strings out of 474223
- 612023 string characters out of 5748759
- 1946972 words of memory out of 5000000
- 44610 multiletter control sequences out of 15000+600000
+ 22669 strings out of 474223
+ 611897 string characters out of 5748759
+ 1935972 words of memory out of 5000000
+ 44607 multiletter control sequences out of 15000+600000
  558069 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,18n,107p,740b,2175s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,17n,107p,737b,2167s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on sigmoid-function.dvi (1 page, 36592 bytes).
+Output written on delta-y-vs-dy.dvi (1 page, 28932 bytes).

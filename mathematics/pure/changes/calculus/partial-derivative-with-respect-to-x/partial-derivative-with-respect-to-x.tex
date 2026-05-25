@@ -12,15 +12,15 @@
         axis lines=middle,
         axis line style={Stealth-Stealth,very thick},
         xlabel=$x$,
-        ylabel={$\sigma(x)$},
-        xmin=-8,xmax=8,ymin=-0.5,ymax=1.2,
+        ylabel={$f(x, y)$},
+        xmin=-3,xmax=3,ymin=-2,ymax=30,
         xtick distance=1,
-        ytick distance=1,
+        ytick distance=5,
         grid=major,
         grid style={thin,densely dotted,black!20},
         % Numbers on axes
-        xtick={-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8},
-        ytick={-0.4,-0.2,0,.2,.4,.6,.8,1},
+        xtick={-3,-2,-1,0,1,2,3},
+        ytick={0,5,10,15,20,25,30},
         % Legend
         legend style={
             at={(0.5,-0.1)}, % Position at the center bottom
@@ -29,23 +29,32 @@
             draw=none % No box around legend
         }
     ]
-    % Plot the sigmoid function
-    \addplot[
-        domain= -8:8,
-        samples=200,
-        color=red
-        ]
-        {1/(1 + exp(-x))};
 
-    % Plot the derivative of the sigmoid function
-    \addplot[
-        domain= -8:8,
+    % Plot the curve: f(x, 2) = 2x^2 + 6
+        \addplot[
+        domain=-3:3,
         samples=200,
-        color=blue
+        color=blue,
+        thick
         ]
-        {exp(-x)/(1 + exp(-x))^2};
-    \addlegendentry{$\sigma(x) = \frac{1}{1 + e^{-x}}$}
-    \addlegendentry{$\sigma'(x) = \frac{e^{-x}}{(1 + e^{-x})^2}$}
+        {2*x^2 + 6};
+    \addlegendentry{$f(x, 2) = 2x^2 + 6$}
+
+    % Tangent line at x = 1: slope = 4, point (1, 8)
+    % y = 8 + 4(x - 1) = 4x + 4
+    \addplot[
+        domain=-0.5:2.5,
+        samples=2,
+        color=green!50!black,
+        thick,
+        dashed
+        ]
+        {4*x + 4};
+    \addlegendentry{slope $= \frac{\partial f}{\partial x} = 2xy$}
+
+    % Mark the point at (1, 8)
+    \node[circle, fill=green!50!black, inner sep=2pt] at (axis cs:1,8) {};
+
     \end{axis}
     \end{tikzpicture}
 }

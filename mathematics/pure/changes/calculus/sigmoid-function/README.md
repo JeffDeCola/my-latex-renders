@@ -22,10 +22,10 @@ and `pgfplots` for scientific graphs.
 latex sigmoid-function.tex
 dvisvgm -n -a -o sigmoid-function sigmoid-function.dvi
 cp sigmoid-function.svg ~/cheatsheets/my-cheat-sheets/other/stem/math/pure/changes/calculus-cheat-sheet/svgs/.
-cp sigmoid-function.svg ~/cheatsheets/my-cheat-sheets/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/svgs/.
+cp sigmoid-function.svg ~/cheatsheets/my-cheat-sheets/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet/svgs/.
+cp sigmoid-function.svg ~/cheatsheets/my-cheat-sheets/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet/svgs/.
 ```
 
 <p align="center">
-    <img src="sigmoid-function.svg"
-    align="middle"
+    <img src="sigmoid-function.svg" alt="sigmoid function">
 </p>

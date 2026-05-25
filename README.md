@@ -90,8 +90,11 @@ The flow to create an image `.svg` from a `.tex` file,
 
 * CALCULUS
 
+  * [delta-y-vs-dy](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/changes/calculus/delta-y-vs-dy)
   * [limit-definition-of-the-derivative](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/changes/calculus/limit-definition-of-the-derivative)
   * [limit-definition-of-the-integral](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/changes/calculus/limit-definition-of-the-integral)
+  * [partial-derivative-with-respect-to-x](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/changes/calculus/partial-derivative-with-respect-to-x)
+  * [partial-derivative-with-respect-to-y](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/changes/calculus/partial-derivative-with-respect-to-y)
   * [sigmoid-function](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/changes/calculus/sigmoid-function)
   * [tanh-function](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/changes/calculus/tanh-function)
 
