@@ -25,6 +25,5 @@ cp limit-definition-of-the-integral.svg ~/cheatsheets/my-cheat-sheets/other/stem
 ```
 
 <p align="center">
-    <img src="limit-definition-of-the-integral.svg"
-    align="middle"
+    <img src="limit-definition-of-the-integral.svg" alt="limit definition of the integral">
 </p>

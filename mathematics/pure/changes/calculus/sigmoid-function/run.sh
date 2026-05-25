@@ -19,8 +19,10 @@ echo " "
 
 echo "cp sigmoid-function.svg ~/cheatsheets/my-cheat-sheets/other/stem/math/pure/changes/calculus-cheat-sheet/svgs/."
 cp sigmoid-function.svg ~/cheatsheets/my-cheat-sheets/other/stem/math/pure/changes/calculus-cheat-sheet/svgs/.
-echo "cp sigmoid-function.svg ~/cheatsheets/my-cheat-sheets/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/svgs/."
-cp sigmoid-function.svg ~/cheatsheets/my-cheat-sheets/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/svgs/.
+echo "cp sigmoid-function.svg ~/cheatsheets/my-cheat-sheets/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet/svgs/."
+cp sigmoid-function.svg ~/cheatsheets/my-cheat-sheets/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet/svgs/.
+echo "cp sigmoid-function.svg ~/cheatsheets/my-cheat-sheets/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet/svgs/."
+cp sigmoid-function.svg ~/cheatsheets/my-cheat-sheets/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet/svgs/.
 echo " "
 
 echo "********************************************************* run.sh (END) *"

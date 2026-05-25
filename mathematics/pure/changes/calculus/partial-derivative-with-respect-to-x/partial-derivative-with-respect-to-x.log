@@ -2,8 +2,8 @@ This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloade
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**sigmoid-function.tex
-(./sigmoid-function.tex
+**partial-derivative-with-respect-to-x.tex
+(./partial-derivative-with-respect-to-x.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -498,8 +498,8 @@ File: l3backend-dvips.def 2024-01-04 L3 backend support: dvips
 \g__pdf_backend_link_int=\count295
 \g__pdf_backend_link_sf_int=\count296
 )
-(./sigmoid-function.aux)
-\openout1 = `sigmoid-function.aux'.
+(./partial-derivative-with-respect-to-x.aux)
+\openout1 = `partial-derivative-with-respect-to-x.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
@@ -523,24 +523,25 @@ your preamble.
  on input line 6.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 51.
+(Font)              <7> on input line 60.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 51.
+(Font)              <5> on input line 60.
 [1
 
-] (./sigmoid-function.aux)
+] (./partial-derivative-with-respect-to-x.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 22672 strings out of 474223
- 612023 string characters out of 5748759
- 1946972 words of memory out of 5000000
- 44610 multiletter control sequences out of 15000+600000
+ 22673 strings out of 474223
+ 612351 string characters out of 5748759
+ 1939972 words of memory out of 5000000
+ 44611 multiletter control sequences out of 15000+600000
  558069 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,18n,107p,740b,2175s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,17n,107p,760b,2195s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on sigmoid-function.dvi (1 page, 36592 bytes).
+Output written on partial-derivative-with-respect-to-x.dvi (1 page, 27528 bytes
+).

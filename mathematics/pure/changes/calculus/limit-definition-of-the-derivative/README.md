@@ -25,6 +25,5 @@ cp limit-definition-of-the-derivative.svg ~/cheatsheets/my-cheat-sheets/other/st
 ```
 
 <p align="center">
-    <img src="limit-definition-of-the-derivative.svg"
-    align="middle"
+    <img src="limit-definition-of-the-derivative.svg" alt="limit definition of the derivative">
 </p>
